@@ -1,7 +1,7 @@
 import React from "react";
 import { Paper, Box, Stack, Chip, Typography } from "@mui/material";
 
-export default function StatsBar({ total, uniqueCompanies, yearsRange = [] }) {
+export default function StatsBar({ total, uniqueCompanies, yearsRange = [], avgMark = null, aiModelsCount = 0 }) {
     const firstYear = yearsRange[yearsRange.length - 1];
     const lastYear = yearsRange[0];
 
@@ -24,6 +24,10 @@ export default function StatsBar({ total, uniqueCompanies, yearsRange = [] }) {
                     {yearsRange.length > 0 && (
                         <Chip size="small" label={`Years: ${firstYear}–${lastYear}`} />
                     )}
+                    {avgMark !== null && (
+                        <Chip size="small" label={`Avg mark: ${avgMark}/10`} />
+                    )}
+                    <Chip size="small" label={`AI models: ${aiModelsCount}`} />
                 </Stack>
             </Box>
         </Paper>

@@ -18,6 +18,8 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import LocalOfferIcon from "@mui/icons-material/LocalOffer";
 import CategoryIcon from "@mui/icons-material/Category";
 import DescriptionIcon from "@mui/icons-material/Description";
+import StarBorderRoundedIcon from "@mui/icons-material/StarBorderRounded";
+import MemoryIcon from "@mui/icons-material/Memory";
 import { truncate } from "../utils/format.js";
 
 export default function OpportunityCard({ item }) {
@@ -26,6 +28,7 @@ export default function OpportunityCard({ item }) {
         title,
         description,
         example,
+        roadmap = [],
         tags = [],
         industry = [],
         companies_mentioned = [],
@@ -34,6 +37,9 @@ export default function OpportunityCard({ item }) {
         source_url,
         source_name,
         source_origin,
+        opportunity_mark,
+        ai_model,
+        ai_model_type,
     } = item || {};
 
     const initials = useMemo(() => {
@@ -73,9 +79,22 @@ export default function OpportunityCard({ item }) {
                 title={title}
                 subheader={[company_name, year].filter(Boolean).join(" • ")}
                 action={
-                    source_origin ? <Chip size="small" icon={<DescriptionIcon />} label={source_origin} /> : null
+                    <Stack direction="row" spacing={0.5}>
+                        {typeof opportunity_mark === "number" && (
+                            <Chip
+                                size="small"
+                                icon={<StarBorderRoundedIcon />}
+                                label={`${opportunity_mark}/10`}
+                                color="primary"
+                                variant="outlined"
+                            />
+                        )}
+                        {source_origin ? (
+                            <Chip size="small" icon={<DescriptionIcon />} label={source_origin} />
+                        ) : null}
+                    </Stack>
                 }
-                sx={{ pb: 0.5 }}   // tighter header -> content gap on mobile
+                sx={{ pb: 0.5 }}
             />
 
             <CardContent sx={{ flexGrow: 1, pt: { xs: 1, sm: 1.25 } }}>
@@ -95,6 +114,14 @@ export default function OpportunityCard({ item }) {
                             {tags.map((t) => (
                                 <Chip key={t} size="small" label={t} />
                             ))}
+                        </Stack>
+                    )}
+
+                    {(ai_model || ai_model_type) && (
+                        <Stack direction="row" spacing={1} useFlexGap flexWrap="wrap" sx={{ mt: 0.25 }}>
+                            <Chip size="small" icon={<MemoryIcon />} label="AI" />
+                            {ai_model && <Chip size="small" label={ai_model} />}
+                            {ai_model_type && <Chip size="small" variant="outlined" label={ai_model_type} />}
                         </Stack>
                     )}
 
@@ -119,6 +146,26 @@ export default function OpportunityCard({ item }) {
                             <Typography variant="body2">
                                 {expanded ? example : truncate(example, 220)}
                             </Typography>
+                        </Stack>
+                    )}
+
+                    {Array.isArray(roadmap) && roadmap.length > 0 && (
+                        <Stack spacing={0.5}>
+                            <Typography variant="subtitle2" color="text.secondary">
+                                Roadmap
+                            </Typography>
+                            <Stack component="ul" sx={{ pl: 2, m: 0 }} spacing={0.5}>
+                                {roadmap.slice(0, expanded ? roadmap.length : 3).map((step, i) => (
+                                    <Typography key={i} component="li" variant="body2">
+                                        {step}
+                                    </Typography>
+                                ))}
+                                {!expanded && roadmap.length > 3 && (
+                                    <Typography variant="body2" color="text.secondary">
+                                        …and {roadmap.length - 3} more
+                                    </Typography>
+                                )}
+                            </Stack>
                         </Stack>
                     )}
 
@@ -154,15 +201,17 @@ export default function OpportunityCard({ item }) {
                     <Button size="small" onClick={() => setExpanded((v) => !v)}>
                         {expanded ? "Less" : "More"}
                     </Button>
-                    <Tooltip title={source_name || "Open source"}>
-                        <Button
-                            size="small"
-                            endIcon={<OpenInNewIcon />}
-                            onClick={() => window.open(source_url, "_blank", "noopener")}
-                        >
-                            Source
-                        </Button>
-                    </Tooltip>
+                    {source_url && (
+                        <Tooltip title={source_name || "Open source"}>
+                            <Button
+                                size="small"
+                                endIcon={<OpenInNewIcon />}
+                                onClick={() => window.open(source_url, "_blank", "noopener")}
+                            >
+                                Source
+                            </Button>
+                        </Tooltip>
+                    )}
                 </Stack>
             </CardActions>
         </Card>

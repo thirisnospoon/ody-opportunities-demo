@@ -1,0 +1,70 @@
+[
+    {
+        "title": "Partnership Opportunities with Zelo for SMEs",
+        "description": "Zelo, the rebranded invoice financing platform of IHC, addresses the USD 250 billion SME credit shortfall by providing fast and digital-first access to working capital.",
+        "example": "Logistics and construction companies can partner with Zelo to streamline their cash flow. By using Zelo's platform for invoice financing, they can reduce cash flow delays and enhance operational agility. This cooperation is valuable as it allows these companies to maintain steady growth and reinvest in operations without facing financial bottlenecks.",
+        "roadmap": [
+            "Step 1: Identify key SMEs in logistics and construction sectors that need financing solutions.",
+            "Step 2: Establish partnership terms and integration between Zelo's platform and SMEs' financial processes.",
+            "Step 3: Launch a marketing campaign targeting SMEs to promote the benefits of using Zelo's invoice financing.",
+            "Step 4: Monitor and analyze transaction data to optimize funding offerings and terms."
+        ],
+        "tags": [
+            "Partnerships",
+            "Funding",
+            "Expansion",
+            "Technology"
+        ],
+        "industry": [
+            "Logistics",
+            "Construction",
+            "Healthcare",
+            "Industrial Services",
+            "Oil & Gas"
+        ],
+        "companies_mentioned": [
+            "Zelo",
+            "IHC"
+        ],
+        "year": 2025,
+        "opportunity_mark": 9,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/7c61200b-11cd-4b04-8607-fdbb38a8b520?download",
+        "source_name": "IHC Completes Acquisition of eFunder and Rebrands the Platform as Zelo to Strengthen SME Capital Access in the UAE",
+        "source_origin": "newspost",
+        "ai_model": "gpt-4o-mini",
+        "ai_model_type": "mini"
+    },
+    {
+        "title": "Collaboration with Other FinTechs for Enhanced Offerings",
+        "description": "IHC's acquisition of Zelo strengthens its position in the fintech innovation space. By collaborating with other fintech firms, IHC can enhance Zelo's offerings and expand its reach.",
+        "example": "A partnership with a tech firm specializing in AI-driven credit scoring could help Zelo improve its automated funding decisions and risk assessment processes. This would provide better service to SMEs by offering tailored financing options based on performance metrics.",
+        "roadmap": [
+            "Step 1: Identify potential fintech partners with complementary technologies.",
+            "Step 2: Conduct joint research and development on new features for Zelo's platform.",
+            "Step 3: Test integrated solutions in pilot programs.",
+            "Step 4: Officially launch improved platform features to the market, highlighting the unique benefits."
+        ],
+        "tags": [
+            "Partnerships",
+            "Technology",
+            "Expansion"
+        ],
+        "industry": [
+            "Fintech",
+            "Technology"
+        ],
+        "companies_mentioned": [
+            "Zelo",
+            "IHC"
+        ],
+        "year": 2025,
+        "opportunity_mark": 8,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/7c61200b-11cd-4b04-8607-fdbb38a8b520?download",
+        "source_name": "IHC Completes Acquisition of eFunder and Rebrands the Platform as Zelo to Strengthen SME Capital Access in the UAE",
+        "source_origin": "newspost",
+        "ai_model": "gpt-4o-mini",
+        "ai_model_type": "mini"
+    }
+]

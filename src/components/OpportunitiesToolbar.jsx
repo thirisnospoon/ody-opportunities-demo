@@ -25,7 +25,6 @@ export default function OpportunitiesToolbar({
     return (
         <Paper variant="outlined" sx={{ mb: 2 }}>
             <Box p={2}>
-                {/* Stack vertically on xs, horizontally from sm+ to avoid overlap */}
                 <Stack
                     direction={{ xs: "column", sm: "row" }}
                     spacing={1.5}
@@ -63,11 +62,10 @@ export default function OpportunitiesToolbar({
                     <FormControl
                         size="small"
                         sx={{
-                            minWidth: { xs: "100%", sm: 160 },
+                            minWidth: { xs: "100%", sm: 180 },
                             width: { xs: "100%", sm: "auto" },
                         }}
                     >
-                        {/* Keep label text-only to avoid layout glitches */}
                         <InputLabel id="sort-by-label">Sort</InputLabel>
                         <Select
                             labelId="sort-by-label"
@@ -77,6 +75,7 @@ export default function OpportunitiesToolbar({
                         >
                             <MenuItem value="year_desc">Newest year</MenuItem>
                             <MenuItem value="title_asc">Title A–Z</MenuItem>
+                            <MenuItem value="mark_desc">Mark (High→Low)</MenuItem>
                         </Select>
                     </FormControl>
                 </Stack>

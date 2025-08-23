@@ -1,0 +1,98 @@
+[
+    {
+        "title": "Collaborative AI Development for Reinsurance",
+        "description": "RIQ aims to use AI to enhance underwriting precision and risk assessment, presenting an opportunity for tech companies to collaborate in developing specialized AI tools for the reinsurance industry.",
+        "example": "Tech firms specializing in AI algorithms and data analytics can partner with RIQ to develop customized solutions that improve risk assessment accuracy in insurance. This could significantly reduce claims and increase profitability for reinsurance firms, creating a win-win partnership.",
+        "roadmap": [
+            "Identify tech firms with expertise in AI and data analytics.",
+            "Engage in discussions to understand RIQ\u2019s specific AI needs.",
+            "Develop collaborative proposals for tailored AI solutions.",
+            "Pilot the AI solutions within RIQ\u2019s operations.",
+            "Evaluate results and make improvements before full implementation."
+        ],
+        "tags": [
+            "Partnerships",
+            "Technology"
+        ],
+        "industry": [
+            "Insurance",
+            "Technology"
+        ],
+        "companies_mentioned": [
+            "IHC",
+            "BlackRock",
+            "Lunate"
+        ],
+        "year": 2025,
+        "opportunity_mark": 8,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/29708537-b1eb-4c0e-8b2b-70b3461df34a?download",
+        "source_name": "IHC Reveals \u201cRIQ\u201d as Official Name of the New Global Reinsurance Platform  Based in Abu Dhabi",
+        "source_origin": "newspost",
+        "ai_model": "gpt-4o-mini",
+        "ai_model_type": "mini"
+    },
+    {
+        "title": "Capital Investment Partnerships",
+        "description": "With over $1 billion in equity commitments for RIQ, there lies an opportunity for investment firms to collaborate for expanded capital deployment in reinsurance.",
+        "example": "Investment firms can establish a joint fund with RIQ targeting specific high-growth markets, enabling shared investment in innovative reinsurance strategies while minimizing risks through diversification.",
+        "roadmap": [
+            "Research high-growth potential markets targeted by RIQ.",
+            "Conduct meetings with RIQ\u2019s leadership to discuss partnership structures.",
+            "Outline investment strategies and risk assessment frameworks together.",
+            "Create joint investment agreements and capital rules.",
+            "Launch the investment fund and monitor the outcomes."
+        ],
+        "tags": [
+            "Funding",
+            "Partnerships"
+        ],
+        "industry": [
+            "Finance",
+            "Insurance"
+        ],
+        "companies_mentioned": [
+            "IHC",
+            "BlackRock"
+        ],
+        "year": 2025,
+        "opportunity_mark": 7,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/29708537-b1eb-4c0e-8b2b-70b3461df34a?download",
+        "source_name": "IHC Reveals \u201cRIQ\u201d as Official Name of the New Global Reinsurance Platform  Based in Abu Dhabi",
+        "source_origin": "newspost",
+        "ai_model": "gpt-4o-mini",
+        "ai_model_type": "mini"
+    },
+    {
+        "title": "Regulatory Consultancy Services for RIQ",
+        "description": "As RIQ progresses through regulatory steps with the FSRA of ADGM, there\u2019s potential for consultancy companies to offer expertise in regulatory compliance specific to reinsurance.",
+        "example": "Regulatory consultancy firms can partner with RIQ to ensure compliance with international and local regulations during the launch phase. This can prevent costly delays and align RIQ's operations with best practices in financial services.",
+        "roadmap": [
+            "Identify leading regulatory consultancy firms with experience in the financial sector.",
+            "Gauge RIQ\u2019s specific compliance requirements.",
+            "Negotiate partnership terms that align with RIQ\u2019s operational timeline.",
+            "Conduct regulatory risk assessments and compliance training.",
+            "Implement ongoing compliance monitoring solutions."
+        ],
+        "tags": [
+            "Regulation",
+            "Partnerships"
+        ],
+        "industry": [
+            "Insurance",
+            "Consulting"
+        ],
+        "companies_mentioned": [
+            "IHC"
+        ],
+        "year": 2025,
+        "opportunity_mark": 6,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/29708537-b1eb-4c0e-8b2b-70b3461df34a?download",
+        "source_name": "IHC Reveals \u201cRIQ\u201d as Official Name of the New Global Reinsurance Platform  Based in Abu Dhabi",
+        "source_origin": "newspost",
+        "ai_model": "gpt-4o-mini",
+        "ai_model_type": "mini"
+    }
+]

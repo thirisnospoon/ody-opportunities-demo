@@ -30,7 +30,8 @@ export default function App() {
     const theme = useTheme();
     const isMdUp = useMediaQuery(theme.breakpoints.up("md"));
 
-    const { data, loading, error, facets } = useOpportunities("/data.json");
+    // Using folder support (can also be a single json or array per previous update)
+    const { data, loading, error, facets } = useOpportunities("/data");
 
     // UI state
     const [search, setSearch] = useState("");
@@ -40,10 +41,25 @@ export default function App() {
     const [selectedCompanies, setSelectedCompanies] = useState([]);
     const [selectedMentioned, setSelectedMentioned] = useState([]);
     const [selectedOrigins, setSelectedOrigins] = useState([]);
+
+    // New filters from the previous iteration
+    const [selectedAiModels, setSelectedAiModels] = useState([]);
+    const [selectedAiTypes, setSelectedAiTypes] = useState([]);
+    const [markRange, setMarkRange] = useState([0, 10]);
+
     const [sortBy, setSortBy] = useState("year_desc");
     const [page, setPage] = useState(1);
     const [perPage, setPerPage] = useState(ITEMS_PER_PAGE_DEFAULT);
-    const [filtersOpen, setFiltersOpen] = useState(false); // mobile bottom sheet
+    const [filtersOpen, setFiltersOpen] = useState(false);
+
+    useEffect(() => {
+        if (facets?.marksRange) setMarkRange(facets.marksRange);
+    }, [facets?.marksRange?.[0], facets?.marksRange?.[1]]);
+
+    const marksDirty =
+        Array.isArray(markRange) &&
+        Array.isArray(facets?.marksRange) &&
+        (markRange[0] !== facets.marksRange[0] || markRange[1] !== facets.marksRange[1]);
 
     // Filtering + sorting
     const filtered = useMemo(() => {
@@ -55,6 +71,10 @@ export default function App() {
             companies: selectedCompanies,
             mentioned: selectedMentioned,
             origins: selectedOrigins,
+            aiModels: selectedAiModels,
+            aiTypes: selectedAiTypes,
+            marksRange: markRange,
+            strictMark: marksDirty,
             sortBy,
         };
         return applyFiltersAndSort(data, filters);
@@ -67,10 +87,14 @@ export default function App() {
         selectedCompanies,
         selectedMentioned,
         selectedOrigins,
+        selectedAiModels,
+        selectedAiTypes,
+        markRange,
+        marksDirty,
         sortBy,
     ]);
 
-    // Tab counts (respect filters except the tab itself)
+    // Tab counts
     const tabCounts = useMemo(() => {
         const filtersExceptTab = {
             search,
@@ -80,6 +104,10 @@ export default function App() {
             companies: selectedCompanies,
             mentioned: selectedMentioned,
             origins: selectedOrigins,
+            aiModels: selectedAiModels,
+            aiTypes: selectedAiTypes,
+            marksRange: markRange,
+            strictMark: marksDirty,
             sortBy,
         };
         const pool = applyFiltersAndSort(data, filtersExceptTab);
@@ -97,6 +125,10 @@ export default function App() {
         selectedCompanies,
         selectedMentioned,
         selectedOrigins,
+        selectedAiModels,
+        selectedAiTypes,
+        markRange,
+        marksDirty,
         sortBy,
     ]);
 
@@ -111,11 +143,30 @@ export default function App() {
 
     useEffect(() => {
         setPage(1);
-    }, [search, tabIndustry, selectedTags, selectedYears, selectedCompanies, selectedMentioned, selectedOrigins, sortBy]);
+    }, [
+        search,
+        tabIndustry,
+        selectedTags,
+        selectedYears,
+        selectedCompanies,
+        selectedMentioned,
+        selectedOrigins,
+        selectedAiModels,
+        selectedAiTypes,
+        markRange,
+        sortBy,
+    ]);
 
-    // FIX: ensure boolean (prevents rendering a stray 0)
-    const anyFilters = [selectedTags, selectedYears, selectedCompanies, selectedMentioned, selectedOrigins]
-        .some(arr => arr.length > 0);
+    const anyFilters =
+        [
+            selectedTags,
+            selectedYears,
+            selectedCompanies,
+            selectedMentioned,
+            selectedOrigins,
+            selectedAiModels,
+            selectedAiTypes,
+        ].some((arr) => (arr || []).length > 0) || marksDirty;
 
     return (
         <Box>
@@ -146,6 +197,7 @@ export default function App() {
                                 gap: 2,
                             }}
                         >
+                            {/* Left: filters (sticky) */}
                             <Box>
                                 <FiltersDrawer
                                     permanent
@@ -157,6 +209,9 @@ export default function App() {
                                         companies: selectedCompanies,
                                         mentioned: selectedMentioned,
                                         origins: selectedOrigins,
+                                        aiModels: selectedAiModels,
+                                        aiTypes: selectedAiTypes,
+                                        marksRange: markRange,
                                     }}
                                     onChange={{
                                         tags: setSelectedTags,
@@ -164,24 +219,48 @@ export default function App() {
                                         companies: setSelectedCompanies,
                                         mentioned: setSelectedMentioned,
                                         origins: setSelectedOrigins,
+                                        aiModels: setSelectedAiModels,
+                                        aiTypes: setSelectedAiTypes,
+                                        marksRange: setMarkRange,
                                     }}
+                                    onResetMarks={() => setMarkRange(facets.marksRange)}
                                 />
                             </Box>
 
+                            {/* Right: content list - NOW single column (one card per row) */}
                             <Box>
                                 <OpportunitiesToolbar
                                     search={search}
                                     onSearch={setSearch}
                                     sortBy={sortBy}
                                     onSortBy={setSortBy}
-                                    showFiltersButton={false}
-                                    onOpenFilters={() => {}}
                                 />
 
                                 <StatsBar
                                     total={total}
                                     uniqueCompanies={new Set(filtered.map((o) => o.company_name)).size}
                                     yearsRange={facets.years}
+                                    avgMark={
+                                        filtered.length
+                                            ? (
+                                                filtered
+                                                    .map((o) =>
+                                                        typeof o.opportunity_mark === "number"
+                                                            ? o.opportunity_mark
+                                                            : null
+                                                    )
+                                                    .filter((v) => v !== null)
+                                                    .reduce((a, b) => a + b, 0) /
+                                                Math.max(
+                                                    1,
+                                                    filtered.filter(
+                                                        (o) => typeof o.opportunity_mark === "number"
+                                                    ).length
+                                                )
+                                            ).toFixed(1)
+                                            : null
+                                    }
+                                    aiModelsCount={new Set(filtered.map((o) => o.ai_model).filter(Boolean)).size}
                                 />
 
                                 {loading ? (
@@ -191,23 +270,22 @@ export default function App() {
                                 ) : error ? (
                                     <EmptyState title="Could not load data" subtitle={String(error)} />
                                 ) : total === 0 ? (
-                                    <EmptyState title="No matches" subtitle="Try adjusting your filters or search terms." />
+                                    <EmptyState
+                                        title="No matches"
+                                        subtitle="Try adjusting your filters or search terms."
+                                    />
                                 ) : (
                                     <>
+                                        {/* SINGLE COLUMN on desktop */}
                                         <Box
                                             sx={{
                                                 display: "grid",
-                                                gridTemplateColumns: {
-                                                    xs: "1fr",
-                                                    sm: "repeat(auto-fill, 320px)",
-                                                    md: "repeat(auto-fill, 340px)",
-                                                },
+                                                gridTemplateColumns: "1fr",
                                                 gap: 2,
-                                                justifyContent: { xs: "stretch", sm: "start" },
                                             }}
                                         >
                                             {paged.map((item, idx) => (
-                                                <Box key={`${item.title}-${idx}`} sx={{ width: { xs: "100%", sm: 320, md: 340 } }}>
+                                                <Box key={`${item.title}-${idx}`} sx={{ width: "100%" }}>
                                                     <OpportunityCard item={item} />
                                                 </Box>
                                             ))}
@@ -228,6 +306,7 @@ export default function App() {
                             </Box>
                         </Box>
                     ) : (
+                        // Mobile stays single column as before
                         <Box>
                             <OpportunitiesToolbar
                                 search={search}
@@ -246,6 +325,10 @@ export default function App() {
                                         companies: selectedCompanies,
                                         mentioned: selectedMentioned,
                                         origins: selectedOrigins,
+                                        aiModels: selectedAiModels,
+                                        aiTypes: selectedAiTypes,
+                                        marksRange: markRange,
+                                        defaultMarksRange: facets.marksRange,
                                     }}
                                     onChange={{
                                         tags: setSelectedTags,
@@ -253,7 +336,11 @@ export default function App() {
                                         companies: setSelectedCompanies,
                                         mentioned: setSelectedMentioned,
                                         origins: setSelectedOrigins,
+                                        aiModels: setSelectedAiModels,
+                                        aiTypes: setSelectedAiTypes,
+                                        marksRange: setMarkRange,
                                     }}
+                                    onResetMarks={() => setMarkRange(facets.marksRange)}
                                 />
                             )}
 
@@ -261,6 +348,27 @@ export default function App() {
                                 total={total}
                                 uniqueCompanies={new Set(filtered.map((o) => o.company_name)).size}
                                 yearsRange={facets.years}
+                                avgMark={
+                                    filtered.length
+                                        ? (
+                                            filtered
+                                                .map((o) =>
+                                                    typeof o.opportunity_mark === "number"
+                                                        ? o.opportunity_mark
+                                                        : null
+                                                )
+                                                .filter((v) => v !== null)
+                                                .reduce((a, b) => a + b, 0) /
+                                            Math.max(
+                                                1,
+                                                filtered.filter(
+                                                    (o) => typeof o.opportunity_mark === "number"
+                                                ).length
+                                            )
+                                        ).toFixed(1)
+                                        : null
+                                }
+                                aiModelsCount={new Set(filtered.map((o) => o.ai_model).filter(Boolean)).size}
                             />
 
                             {loading ? (
@@ -304,6 +412,9 @@ export default function App() {
                                     companies: selectedCompanies,
                                     mentioned: selectedMentioned,
                                     origins: selectedOrigins,
+                                    aiModels: selectedAiModels,
+                                    aiTypes: selectedAiTypes,
+                                    marksRange: markRange,
                                 }}
                                 onChange={{
                                     tags: setSelectedTags,
@@ -311,7 +422,11 @@ export default function App() {
                                     companies: setSelectedCompanies,
                                     mentioned: setSelectedMentioned,
                                     origins: setSelectedOrigins,
+                                    aiModels: setSelectedAiModels,
+                                    aiTypes: setSelectedAiTypes,
+                                    marksRange: setMarkRange,
                                 }}
+                                onResetMarks={() => setMarkRange(facets.marksRange)}
                             />
                         </Box>
                     )}

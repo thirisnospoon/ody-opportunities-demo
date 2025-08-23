@@ -1,0 +1,390 @@
+[
+    {
+        "title": "Collaboration on AI Marketplace (SAIF) and GPU Access",
+        "description": "IHC launched SAIF, the UAE\u2019s first marketplace for AI solutions, designed to accelerate access to GPUs and large language models for developers and enterprises.",
+        "example": "A regional or international AI startup can partner with IHC to deploy its AI products and tools on the SAIF marketplace, leveraging rapid GPU scalability and UAE data compliance. Cloud infrastructure companies could provide backend resources or white-label GPU clouds. Emirati government bodies and healthcare firms can adopt SAIF for secure, local language AI deployments.",
+        "roadmap": [
+            "step 1: Identify demand for GPU-based AI and large language model access within target sector.",
+            "step 2: Engage with IHC to onboard AI solutions or cloud services onto the SAIF marketplace.",
+            "step 3: Integrate necessary technical and compliance documentation.",
+            "step 4: Launch co-marketing campaigns to attract developers and enterprise users.",
+            "step 5: Scale solution across GCC, leveraging IHC networks and support."
+        ],
+        "tags": [
+            "Partnerships",
+            "Technology",
+            "Launches"
+        ],
+        "industry": [
+            "Artificial Intelligence",
+            "Technology",
+            "Healthcare",
+            "EdTech",
+            "Finance",
+            "Retail",
+            "Manufacturing",
+            "Other"
+        ],
+        "companies_mentioned": [
+            "IHC",
+            "SAIF"
+        ],
+        "year": "2025",
+        "opportunity_mark": 9,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/37c3f967-982a-4e17-a1b8-11c21e5ee9f3?download",
+        "source_name": "IHC Concludes Impactful Participation at \u201cMake it in the Emirates 2025\u201d with 30+ Strategic Announcements, Accelerating Innovation and Domestic Industrial Growth",
+        "source_origin": "newspost",
+        "ai_model": "gpt-4.1",
+        "ai_model_type": "standard"
+    },
+    {
+        "title": "Joint Energy Storage Solutions and Infrastructure Deployment",
+        "description": "EPointZero (an IHC subsidiary) signed a 1 GWh battery storage deal with Enercap by Apex Energy, one of the world\u2019s largest this year, enhancing clean energy sector capabilities.",
+        "example": "Renewable energy companies, smart grid integrators, or utilities in the Gulf region can partner with EPointZero and Enercap to deploy large-scale battery storage at solar or wind farms, reducing reliance on fossil fuels and ensuring grid stability. Urban developers can use this jointly to power new smart communities.",
+        "roadmap": [
+            "step 1: Assess energy storage requirements for regional infrastructure projects.",
+            "step 2: Negotiate JV or supply agreements with EPointZero/Enercap.",
+            "step 3: Localize assembly or co-develop new battery storage products.",
+            "step 4: Pilot deployment at agreed project sites.",
+            "step 5: Expand successful models to additional markets and industries."
+        ],
+        "tags": [
+            "Partnerships",
+            "Technology",
+            "Clean Tech",
+            "Expansion",
+            "Procurement"
+        ],
+        "industry": [
+            "Renewable Energy",
+            "Logistics",
+            "Real Estate Development",
+            "Mobility Tech",
+            "Agriculture"
+        ],
+        "companies_mentioned": [
+            "IHC",
+            "EPointZero",
+            "Enercap",
+            "Apex Energy"
+        ],
+        "year": "2025",
+        "opportunity_mark": 8,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/37c3f967-982a-4e17-a1b8-11c21e5ee9f3?download",
+        "source_name": "IHC Concludes Impactful Participation at \u201cMake it in the Emirates 2025\u201d with 30+ Strategic Announcements, Accelerating Innovation and Domestic Industrial Growth",
+        "source_origin": "newspost",
+        "ai_model": "gpt-4.1",
+        "ai_model_type": "standard"
+    },
+    {
+        "title": "Hydrogen-Based Steel Adoption in Construction Projects",
+        "description": "Aldar (IHC Group) became the region\u2019s first developer to adopt hydrogen-based steel rebars from Emsteel for the construction of Abu Dhabi\u2019s first net-zero carbon mosque.",
+        "example": "Construction firms or steel manufacturers across MENA can license Emsteel\u2019s technology or form supply partnerships for large-scale projects (e.g., corporate HQs, stadiums, public works) seeking LEED or net-zero certifications. This can be marketed to global investors interested in ESG-focused real estate assets.",
+        "roadmap": [
+            "step 1: Partner with Emsteel to access hydrogen-based steel production technology.",
+            "step 2: Pilot hydrogen-based steel in flagship local/international projects.",
+            "step 3: Gain third-party ESG and sustainability certifications.",
+            "step 4: Offer product as a competitive differentiator in tenders and investor pitches.",
+            "step 5: Scale adoption, creating economies of scale and cost competitiveness."
+        ],
+        "tags": [
+            "Partnerships",
+            "ESG",
+            "Construction",
+            "Technology",
+            "Procurement"
+        ],
+        "industry": [
+            "Construction",
+            "Real Estate Development",
+            "Renewable Energy",
+            "Engineering"
+        ],
+        "companies_mentioned": [
+            "Aldar",
+            "Emsteel",
+            "IHC"
+        ],
+        "year": "2025",
+        "opportunity_mark": 8,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/37c3f967-982a-4e17-a1b8-11c21e5ee9f3?download",
+        "source_name": "IHC Concludes Impactful Participation at \u201cMake it in the Emirates 2025\u201d with 30+ Strategic Announcements, Accelerating Innovation and Domestic Industrial Growth",
+        "source_origin": "newspost",
+        "ai_model": "gpt-4.1",
+        "ai_model_type": "standard"
+    },
+    {
+        "title": "Financial Digital Integration with First Abu Dhabi Bank (FAB)",
+        "description": "IHC signed agreements with FAB, making it the exclusive house bank and launching the FAB Business App across IHC portfolio companies to streamline financial processes.",
+        "example": "Other conglomerates or holding companies can adopt the FAB Business App for unified treasury and transaction management. Fintechs can collaborate with FAB on API integration, providing digital banking modules tailored to large holding structures.",
+        "roadmap": [
+            "step 1: Assess current ERP or financial system integration needs.",
+            "step 2: Partner with FAB to customize and deploy the Business App.",
+            "step 3: Train staff on digital workflows and financial automation tools.",
+            "step 4: Monitor performance and explore further integrations with fintech partners.",
+            "step 5: Benchmark results and expand scope to other markets."
+        ],
+        "tags": [
+            "Partnerships",
+            "Technology",
+            "Fintech",
+            "Leadership"
+        ],
+        "industry": [
+            "Finance",
+            "Fintech",
+            "Holding Company",
+            "Investment",
+            "Technology"
+        ],
+        "companies_mentioned": [
+            "IHC",
+            "First Abu Dhabi Bank (FAB)"
+        ],
+        "year": "2025",
+        "opportunity_mark": 7,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/37c3f967-982a-4e17-a1b8-11c21e5ee9f3?download",
+        "source_name": "IHC Concludes Impactful Participation at \u201cMake it in the Emirates 2025\u201d with 30+ Strategic Announcements, Accelerating Innovation and Domestic Industrial Growth",
+        "source_origin": "newspost",
+        "ai_model": "gpt-4.1",
+        "ai_model_type": "standard"
+    },
+    {
+        "title": "Co-development of Supercapacitor Systems for Next-Gen EVs",
+        "description": "Enercap partnered with ROX Motor to develop UAE-made supercapacitor systems for electric vehicles, supporting the supply chain for regional EV production.",
+        "example": "Automotive OEMs and component suppliers can collaborate with Enercap and ROX Motor to co-develop or source advanced energy storage for commercial fleets, taxis, or last-mile mobility startups. UAE universities or mobility tech accelerators could integrate the technology into research and pilot projects.",
+        "roadmap": [
+            "step 1: Identify EV assembly or component manufacturing partnership opportunities.",
+            "step 2: Formalize R&D, technology sharing and pilot testing agreements.",
+            "step 3: Manufacture supercapacitors locally; certify and test integration.",
+            "step 4: Launch limited batch of next-gen EVs equipped with the new systems.",
+            "step 5: Scale production and broaden to export markets."
+        ],
+        "tags": [
+            "Technology",
+            "Partnerships",
+            "Mobility Tech",
+            "Launches"
+        ],
+        "industry": [
+            "Mobility Tech",
+            "Manufacturing",
+            "Automotive",
+            "Renewable Energy",
+            "AgriTech"
+        ],
+        "companies_mentioned": [
+            "Enercap",
+            "ROX Motor",
+            "IHC"
+        ],
+        "year": "2025",
+        "opportunity_mark": 8,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/37c3f967-982a-4e17-a1b8-11c21e5ee9f3?download",
+        "source_name": "IHC Concludes Impactful Participation at \u201cMake it in the Emirates 2025\u201d with 30+ Strategic Announcements, Accelerating Innovation and Domestic Industrial Growth",
+        "source_origin": "newspost",
+        "ai_model": "gpt-4.1",
+        "ai_model_type": "standard"
+    },
+    {
+        "title": "Satellite Constellation Co-Manufacturing and Analytics Partnership",
+        "description": "Orbitworks revealed the Altair project\u2014a 10-satellite, AI-enabled Earth observation constellation assembled in Abu Dhabi.",
+        "example": "Geospatial analytics providers, AgriTech firms, and maritime logistics companies can partner to gain privileged access to high-resolution satellite data for crop monitoring, disaster management, or vessel tracking. Space component suppliers or AI software players can join the supply chain for future constellations.",
+        "roadmap": [
+            "step 1: Define target use case/application areas (agriculture, logistics, defense, etc).",
+            "step 2: Engage with Orbitworks for payload integration or downstream analytics partnership.",
+            "step 3: Arrange ground station/data access or white-label analytics services.",
+            "step 4: Initiate joint product offerings for target sectors.",
+            "step 5: Iterate on satellite capabilities based on market feedback."
+        ],
+        "tags": [
+            "Partnerships",
+            "Technology",
+            "Expansion",
+            "Launches"
+        ],
+        "industry": [
+            "Artificial Intelligence",
+            "AgriTech",
+            "Logistics",
+            "Maritime",
+            "Mobility Tech",
+            "Engineering",
+            "Other"
+        ],
+        "companies_mentioned": [
+            "Orbitworks",
+            "IHC"
+        ],
+        "year": "2025",
+        "opportunity_mark": 8,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/37c3f967-982a-4e17-a1b8-11c21e5ee9f3?download",
+        "source_name": "IHC Concludes Impactful Participation at \u201cMake it in the Emirates 2025\u201d with 30+ Strategic Announcements, Accelerating Innovation and Domestic Industrial Growth",
+        "source_origin": "newspost",
+        "ai_model": "gpt-4.1",
+        "ai_model_type": "standard"
+    },
+    {
+        "title": "Partnerships for Mining Decarbonization and ESG Transformation",
+        "description": "EPointZero and IRH (IHC\u2019s resources holding) agreed to drive full decarbonization across IRH\u2019s global mining operations.",
+        "example": "Mining groups, environmental consultancies, or technology firms with expertise in carbon capture, electrification, or green mining practices can collaborate to implement and commercialize decarbonization projects. ESG-focused investors may co-invest in transformation programs.",
+        "roadmap": [
+            "step 1: Conduct a comprehensive carbon footprint and process review.",
+            "step 2: Identify decarbonization technologies and partners with field experience.",
+            "step 3: Form working groups and secure capital for pilot projects.",
+            "step 4: Roll out pilots at key IRH/mining assets.",
+            "step 5: Measure, report, and market outcomes; expand best practices across portfolio."
+        ],
+        "tags": [
+            "Partnerships",
+            "ESG",
+            "Technology",
+            "Expansion"
+        ],
+        "industry": [
+            "Mining",
+            "Renewable Energy",
+            "Engineering",
+            "Other"
+        ],
+        "companies_mentioned": [
+            "EPointZero",
+            "IRH",
+            "IHC"
+        ],
+        "year": "2025",
+        "opportunity_mark": 7,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/37c3f967-982a-4e17-a1b8-11c21e5ee9f3?download",
+        "source_name": "IHC Concludes Impactful Participation at \u201cMake it in the Emirates 2025\u201d with 30+ Strategic Announcements, Accelerating Innovation and Domestic Industrial Growth",
+        "source_origin": "newspost",
+        "ai_model": "gpt-4.1",
+        "ai_model_type": "standard"
+    },
+    {
+        "title": "Local Pipeline Manufacturing Acceleration",
+        "description": "NMDC Energy signed an MoU with Al Gharbia to boost local pipeline production, addressing regional infrastructure projects and industrial capacity.",
+        "example": "Oil & gas, water, or industrial developers facing high import costs and supply chain disruption can partner to produce pipelines domestically. Engineering consultancies could integrate UAE-made pipelines in major infrastructure projects in the Middle East and Africa.",
+        "roadmap": [
+            "step 1: Assess regional/national pipeline demand projections.",
+            "step 2: Partner with NMDC Energy/Al Gharbia for co-investment or procurement.",
+            "step 3: Establish or upgrade local manufacturing facilities with latest technology.",
+            "step 4: Secure certifications and participate in tenders.",
+            "step 5: Use as reference for regional expansion."
+        ],
+        "tags": [
+            "Partnerships",
+            "Procurement",
+            "Expansion",
+            "Manufacturing",
+            "Launches"
+        ],
+        "industry": [
+            "Construction",
+            "Engineering",
+            "Manufacturing",
+            "Logistics",
+            "Renewable Energy"
+        ],
+        "companies_mentioned": [
+            "NMDC Energy",
+            "Al Gharbia",
+            "IHC"
+        ],
+        "year": "2025",
+        "opportunity_mark": 7,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/37c3f967-982a-4e17-a1b8-11c21e5ee9f3?download",
+        "source_name": "IHC Concludes Impactful Participation at \u201cMake it in the Emirates 2025\u201d with 30+ Strategic Announcements, Accelerating Innovation and Domestic Industrial Growth",
+        "source_origin": "newspost",
+        "ai_model": "gpt-4.1",
+        "ai_model_type": "standard"
+    },
+    {
+        "title": "Co-Development of Next-Gen Data Centers",
+        "description": "DCV Industries (Emircom) signed an MoU with Legrand to create integrated, high-performance data center infrastructure solutions in the UAE.",
+        "example": "IT service providers and hyperscale cloud platforms can partner to jointly design, build, and operate energy-efficient data centers using Legrand\u2019s tech. Real estate developers can integrate smart DC infrastructure into mixed-use technology parks.",
+        "roadmap": [
+            "step 1: Identify existing or greenfield data center opportunities.",
+            "step 2: Negotiate infrastructure development agreement leveraging Legrand\u2019s DC technology.",
+            "step 3: Integrate advanced automation, security, and energy management systems.",
+            "step 4: Market facilities to regional/international clients.",
+            "step 5: Facilitate cross-border expansion for multinational tenants."
+        ],
+        "tags": [
+            "Partnerships",
+            "Technology",
+            "Launches",
+            "Expansion"
+        ],
+        "industry": [
+            "Technology",
+            "Facilities Management",
+            "Real Estate Management",
+            "Engineering",
+            "Other"
+        ],
+        "companies_mentioned": [
+            "DCV Industries",
+            "Legrand",
+            "Emircom",
+            "IHC"
+        ],
+        "year": "2025",
+        "opportunity_mark": 8,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/37c3f967-982a-4e17-a1b8-11c21e5ee9f3?download",
+        "source_name": "IHC Concludes Impactful Participation at \u201cMake it in the Emirates 2025\u201d with 30+ Strategic Announcements, Accelerating Innovation and Domestic Industrial Growth",
+        "source_origin": "newspost",
+        "ai_model": "gpt-4.1",
+        "ai_model_type": "standard"
+    },
+    {
+        "title": "In-Country Value (ICV) Performance-Based Supplier Opportunities",
+        "description": "IHC and several portfolio firms (PureHealth, Aldar, NMDC Group) achieved top ICV scores, reinvesting billions into the local UAE economy and prioritizing local supply chains.",
+        "example": "Global medical equipment suppliers, construction material vendors, and marine services companies can establish UAE-based JVs or local subsidiaries to qualify for ICV-preferred procurement, accessing IHC\u2019s extensive project pipeline and improving bid scores.",
+        "roadmap": [
+            "step 1: Map ICV requirements and areas of local spend.",
+            "step 2: Register a local entity or partner with UAE-based firms.",
+            "step 3: Certify operations under ICV frameworks.",
+            "step 4: Engage with IHC subsidiaries as preferred vendor or service provider.",
+            "step 5: Secure contracts and grow business through increased local spend compliance."
+        ],
+        "tags": [
+            "Partnerships",
+            "Procurement",
+            "Expansion",
+            "Regulation",
+            "ESG"
+        ],
+        "industry": [
+            "Healthcare",
+            "Manufacturing",
+            "Construction",
+            "Engineering",
+            "Facilities Management",
+            "Food & Beverage",
+            "Other"
+        ],
+        "companies_mentioned": [
+            "IHC",
+            "PureHealth",
+            "Aldar",
+            "NMDC Group"
+        ],
+        "year": "2025",
+        "opportunity_mark": 9,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/37c3f967-982a-4e17-a1b8-11c21e5ee9f3?download",
+        "source_name": "IHC Concludes Impactful Participation at \u201cMake it in the Emirates 2025\u201d with 30+ Strategic Announcements, Accelerating Innovation and Domestic Industrial Growth",
+        "source_origin": "newspost",
+        "ai_model": "gpt-4.1",
+        "ai_model_type": "standard"
+    }
+]
