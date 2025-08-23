@@ -1,0 +1,122 @@
+[
+    {
+        "title": "Partnerships for GPU and LLM Procurement via AI Marketplace",
+        "description": "IHC's new AI marketplace, launched with the Emirati AI Agent 'SAIF,' will enable developers, companies, and institutions worldwide to procure GPUs, AI modules, and custom AI stacks as-needed, without being constrained by bulk purchase minimums.",
+        "example": "A mid-sized AgriTech firm in Africa can partner with IHC through the AI marketplace to access GPUs and AI modules for big data analysis and precision agriculture without the financial overhead of bulk hardware purchases. An EdTech platform in Southeast Asia could leverage the LLMs available to build advanced AI-powered tutoring applications, directly accessing resources without typical procurement barriers.",
+        "roadmap": [
+            "step 1: Evaluate AI hardware and software needs for new or ongoing projects.",
+            "step 2: Register on IHC's AI marketplace platform and set up business profile.",
+            "step 3: Browse and select appropriate GPUs, AI models, or custom AI stacks via SAIF's multilingual agent interface.",
+            "step 4: Negotiate procurement terms and finalize purchase.",
+            "step 5: Integrate acquired AI solutions into existing product/service architecture.",
+            "step 6: Monitor performance, provide feedback, and explore further collaboration opportunities."
+        ],
+        "tags": [
+            "Procurement",
+            "Partnerships",
+            "Technology",
+            "Expansion"
+        ],
+        "industry": [
+            "Artificial Intelligence",
+            "AgriTech",
+            "EdTech",
+            "Healthcare",
+            "Health Tech",
+            "Food & Beverage",
+            "Fintech",
+            "Retail",
+            "Manufacturing",
+            "Investment",
+            "Technology"
+        ],
+        "companies_mentioned": [
+            "IHC"
+        ],
+        "year": "2025",
+        "opportunity_mark": 9,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/1b5c1523-24d0-496f-9efc-a7dd8726695c?download",
+        "source_name": "IHC Launches UAE-Built Global Marketplace for AI to Accelerate Access to Advanced Intelligence",
+        "source_origin": "newspost",
+        "ai_model": "gpt-4.1",
+        "ai_model_type": "standard"
+    },
+    {
+        "title": "International Collaborations for AI Marketplace Expansion",
+        "description": "IHC\u2019s AI marketplace is built for global reach and welcomes international partnerships to onboard more AI modules, datasets, and technology providers, fostering a broader ecosystem.",
+        "example": "A European AI startup specializing in NLP could become a vetted module provider on IHC\u2019s marketplace, immediately accessing new markets in the Middle East, Africa, and Asia. Alternatively, a logistics giant could work directly with IHC to co-develop AI solutions tailored for regional supply chain needs and list these offerings on the marketplace.",
+        "roadmap": [
+            "step 1: Identify core AI offerings suitable for the marketplace.",
+            "step 2: Initiate contact with IHC partnership teams via media or official channels.",
+            "step 3: Undergo onboarding and compliance vetting.",
+            "step 4: Integrate products/services into the AI marketplace ecosystem.",
+            "step 5: Co-market new solutions globally through both companies' marketing channels.",
+            "step 6: Track usage, customer feedback, and iterate on offerings."
+        ],
+        "tags": [
+            "Partnerships",
+            "Launches",
+            "Expansion",
+            "Technology"
+        ],
+        "industry": [
+            "Artificial Intelligence",
+            "Logistics",
+            "Mobility Tech",
+            "Manufacturing",
+            "Technology",
+            "Blockchain",
+            "Healthcare"
+        ],
+        "companies_mentioned": [
+            "IHC"
+        ],
+        "year": "2025",
+        "opportunity_mark": 8,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/1b5c1523-24d0-496f-9efc-a7dd8726695c?download",
+        "source_name": "IHC Launches UAE-Built Global Marketplace for AI to Accelerate Access to Advanced Intelligence",
+        "source_origin": "newspost",
+        "ai_model": "gpt-4.1",
+        "ai_model_type": "standard"
+    },
+    {
+        "title": "Custom Intelligent Infrastructure Solutions for Governments and Enterprises",
+        "description": "Through the AI marketplace and SAIF\u2019s multi-language support, governments and large enterprises can create bespoke AI-powered infrastructure for digital transformation, irrespective of language or geographic barriers.",
+        "example": "A South American government can collaborate with IHC to build national-scale digital identity verification systems using AI modules and GPU resources provided through the marketplace. A real estate developer in Southeast Asia could use the AI stack for smart city projects, assembling custom solutions via SAIF\u2019s assistance.",
+        "roadmap": [
+            "step 1: Assess digital transformation or infrastructure requirements.",
+            "step 2: Initiate discussions with IHC for discovery and requirements gathering.",
+            "step 3: Use SAIF for consultation and rapid prototyping of potential AI solutions.",
+            "step 4: Procure and deploy required AI hardware/software through the marketplace.",
+            "step 5: Integrate the AI solutions with existing IT or infrastructure.",
+            "step 6: Scale up or optimize based on results and ongoing support."
+        ],
+        "tags": [
+            "Technology",
+            "Expansion",
+            "Partnerships"
+        ],
+        "industry": [
+            "Real Estate Development",
+            "Engineering",
+            "Government",
+            "Technology",
+            "Mobility Tech",
+            "Healthcare",
+            "Other"
+        ],
+        "companies_mentioned": [
+            "IHC"
+        ],
+        "year": "2025",
+        "opportunity_mark": 7,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/1b5c1523-24d0-496f-9efc-a7dd8726695c?download",
+        "source_name": "IHC Launches UAE-Built Global Marketplace for AI to Accelerate Access to Advanced Intelligence",
+        "source_origin": "newspost",
+        "ai_model": "gpt-4.1",
+        "ai_model_type": "standard"
+    }
+]

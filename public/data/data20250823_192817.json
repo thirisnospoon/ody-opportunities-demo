@@ -1,0 +1,382 @@
+[
+    {
+        "title": "Capacity partnerships with MENA/Asia primary insurers and MGAs",
+        "description": "RIQ is an AI-native reinsurance platform launched by IHC with BlackRock and Lunate, headquartered in ADGM and funded with $1B+ equity, targeting P&C, Life and specialized lines in high-growth markets. This enables immediate, scalable capacity deals with regional insurers/MGAs looking to improve loss ratios via AI-driven risk selection.",
+        "example": "ADNIC (Abu Dhabi National Insurance Company) partners with RIQ on a UAE/Oman SME property and flood excess-of-loss treaty (~$200m limit), with RIQ\u2019s AI triaging location-level flood exposure to improve underwriting. In parallel, GIG Gulf places a 25% quota share of its mid-market motor portfolio with RIQ, leveraging telematics-based selection. Democrance (MENA insurtech distributor) integrates RIQ\u2019s APIs to launch micro-property covers in Egypt, ceding 50% to RIQ.",
+        "roadmap": [
+            "Identify 5\u20137 priority cedents/MGAs in UAE, KSA, Egypt, Oman and Pakistan with growth capacity needs",
+            "Run portfolio diagnostics (loss triangles, exposure mapping) and price treaties with RIQ AI models",
+            "Negotiate terms and security with cedents and brokers; obtain FSRA approvals where required",
+            "Integrate policy/exposure bordereaux via API; set up event/attritional loss monitoring",
+            "Bind pilot treaties (12\u201315 months); embed AI-driven underwriting guidelines; expand limits post-performance review"
+        ],
+        "tags": [
+            "Partnerships",
+            "Expansion",
+            "Technology",
+            "Launches"
+        ],
+        "industry": [
+            "Finance",
+            "Technology"
+        ],
+        "companies_mentioned": [
+            "IHC",
+            "RIQ",
+            "BlackRock",
+            "Lunate",
+            "Abu Dhabi Global Market (ADGM)",
+            "Financial Services Regulatory Authority (FSRA)",
+            "Edelman Smithfield Middle East"
+        ],
+        "year": "2025",
+        "opportunity_mark": 9,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/29708537-b1eb-4c0e-8b2b-70b3461df34a?download",
+        "source_name": "IHC Reveals \u201cRIQ\u201d as Official Name of the New Global Reinsurance Platform  Based in Abu Dhabi",
+        "source_origin": "newspost",
+        "ai_model": "gpt-5",
+        "ai_model_type": "standard"
+    },
+    {
+        "title": "AI-grade hazard and behavioral data partnerships for underwriting",
+        "description": "RIQ\u2019s strategy centers on AI-enabled risk selection. Partnering with satellite, climate, geospatial, and telematics providers can materially improve peril modeling and pricing across P&C.",
+        "example": "ICEYE supplies near-real-time SAR flood depth maps to RIQ for event response and pricing calibration in UAE and Pakistan. Planet Labs provides daily imagery to refine exposure accumulation. Fathom\u2019s global flood hazard maps feed property pricing in KSA. Octo Telematics shares anonymized driving scores for motor quota-share selection with GIG Gulf portfolios ceded to RIQ.",
+        "roadmap": [
+            "Issue RFP for flood, wind, quake, wildfire, and mobility data across target geographies",
+            "Execute data-sharing and compliance agreements; set FSRA-aligned data governance",
+            "Validate predictive lift vs. historical loss data; integrate into RIQ pricing APIs",
+            "Roll out peril-specific underwriting rules to cedents/brokers; monitor model drift",
+            "Expand to additional perils and territories; negotiate multi-year data pricing"
+        ],
+        "tags": [
+            "Technology",
+            "Procurement",
+            "Partnerships"
+        ],
+        "industry": [
+            "Artificial Intelligence",
+            "Technology"
+        ],
+        "companies_mentioned": [
+            "IHC",
+            "RIQ",
+            "BlackRock",
+            "Lunate",
+            "Abu Dhabi Global Market (ADGM)",
+            "Financial Services Regulatory Authority (FSRA)",
+            "Edelman Smithfield Middle East"
+        ],
+        "year": "2025",
+        "opportunity_mark": 8,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/29708537-b1eb-4c0e-8b2b-70b3461df34a?download",
+        "source_name": "IHC Reveals \u201cRIQ\u201d as Official Name of the New Global Reinsurance Platform  Based in Abu Dhabi",
+        "source_origin": "newspost",
+        "ai_model": "gpt-5",
+        "ai_model_type": "standard"
+    },
+    {
+        "title": "Cloud and AI infrastructure build-out with hyperscalers",
+        "description": "As an AI-native reinsurer in ADGM, RIQ can partner with hyperscalers to deploy compliant, high-performance AI/ML infrastructure for underwriting and claims.",
+        "example": "Microsoft Azure (UAE North/Abu Dhabi) hosts RIQ\u2019s model training and inference with confidential computing; Databricks for feature store and model ops; Snowflake for governed data-sharing with cedents and brokers. Alternative: AWS Middle East (UAE) with Bedrock model endpoints and Lake Formation governance.",
+        "roadmap": [
+            "Define target AI workloads (pricing, portfolio optimization, claims triage) and data residency constraints",
+            "Run a competitive RFP with Azure/AWS/GCP on cost, latency, compliance, and FSRA requirements",
+            "Pilot secured data lake and model ops; complete threat modeling and pen tests",
+            "Migrate underwriting workbench and bind APIs; formalize SLAs and resiliency playbooks",
+            "Scale to multi-region DR; optimize compute costs and performance"
+        ],
+        "tags": [
+            "Technology",
+            "Procurement",
+            "Regulation"
+        ],
+        "industry": [
+            "Technology",
+            "Artificial Intelligence"
+        ],
+        "companies_mentioned": [
+            "IHC",
+            "RIQ",
+            "BlackRock",
+            "Lunate",
+            "Abu Dhabi Global Market (ADGM)",
+            "Financial Services Regulatory Authority (FSRA)",
+            "Edelman Smithfield Middle East"
+        ],
+        "year": "2025",
+        "opportunity_mark": 7,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/29708537-b1eb-4c0e-8b2b-70b3461df34a?download",
+        "source_name": "IHC Reveals \u201cRIQ\u201d as Official Name of the New Global Reinsurance Platform  Based in Abu Dhabi",
+        "source_origin": "newspost",
+        "ai_model": "gpt-5",
+        "ai_model_type": "standard"
+    },
+    {
+        "title": "ILS/sidecar capital program with BlackRock/Lunate distribution",
+        "description": "RIQ has deep capital backing and world-class investment partners. Building insurance-linked securities (ILS) and sidecars can scale liabilities toward the $10B target while diversifying risk capital.",
+        "example": "RIQ and BlackRock Alternatives launch \u201cRIQ Sidecar 2026\u201d ($500m) backed by property-cat and specialty reinsurance; Aon Securities or GC Securities structures the vehicle; SPV domiciled in ADGM (subject to FSRA framework) or Bermuda; notes listed on BSX. Lunate anchors with $100m; GCC pension funds participate for diversifying, uncorrelated returns.",
+        "roadmap": [
+            "Define eligible lines/portfolio and target return-volatility profile",
+            "Engage structuring advisor; confirm domicile and regulatory pathway with FSRA (or Bermuda if required)",
+            "Prepare offering docs, risk models, and independent validation",
+            "Market to institutional investors via BlackRock/Lunate channels; price and allocate",
+            "Bind reinsurance contracts into the vehicle; implement reporting and collateral management"
+        ],
+        "tags": [
+            "Funding",
+            "Partnerships",
+            "Expansion",
+            "Regulation"
+        ],
+        "industry": [
+            "Finance",
+            "Investment"
+        ],
+        "companies_mentioned": [
+            "IHC",
+            "RIQ",
+            "BlackRock",
+            "Lunate",
+            "Abu Dhabi Global Market (ADGM)",
+            "Financial Services Regulatory Authority (FSRA)",
+            "Edelman Smithfield Middle East"
+        ],
+        "year": "2025",
+        "opportunity_mark": 8,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/29708537-b1eb-4c0e-8b2b-70b3461df34a?download",
+        "source_name": "IHC Reveals \u201cRIQ\u201d as Official Name of the New Global Reinsurance Platform  Based in Abu Dhabi",
+        "source_origin": "newspost",
+        "ai_model": "gpt-5",
+        "ai_model_type": "standard"
+    },
+    {
+        "title": "Parametric NatCat programs for governments and infrastructure",
+        "description": "RIQ\u2019s AI and capital enable simple, fast-paying parametric covers for perils like flood, cyclone, and extreme rainfall across high-growth markets in MENA/Asia.",
+        "example": "Abu Dhabi Department of Municipalities & Transport purchases a rainfall/flood parametric cover triggered by gauge and satellite indices; DEWA secures substation flood downtime protection. In KSA, National Water Company buys drought/flash flood cover for critical assets. RIQ provides reinsurance capacity behind local carriers administering policies.",
+        "roadmap": [
+            "Identify priority perils and public/infra buyers; gather historical hazard and exposure data",
+            "Calibrate transparent triggers (rainfall depth, water level, wind speed) with validation partners",
+            "Select local insurer for fronting/administration; finalize reinsurance structure with RIQ",
+            "Secure regulatory and procurement approvals; run a 6\u201312 month pilot season",
+            "Scale limits/geographies and embed automated claims payout rails"
+        ],
+        "tags": [
+            "Partnerships",
+            "ESG",
+            "Expansion",
+            "Technology"
+        ],
+        "industry": [
+            "Engineering",
+            "Other"
+        ],
+        "companies_mentioned": [
+            "IHC",
+            "RIQ",
+            "BlackRock",
+            "Lunate",
+            "Abu Dhabi Global Market (ADGM)",
+            "Financial Services Regulatory Authority (FSRA)",
+            "Edelman Smithfield Middle East"
+        ],
+        "year": "2025",
+        "opportunity_mark": 7,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/29708537-b1eb-4c0e-8b2b-70b3461df34a?download",
+        "source_name": "IHC Reveals \u201cRIQ\u201d as Official Name of the New Global Reinsurance Platform  Based in Abu Dhabi",
+        "source_origin": "newspost",
+        "ai_model": "gpt-5",
+        "ai_model_type": "standard"
+    },
+    {
+        "title": "Life reinsurance for bancassurance and credit protection",
+        "description": "RIQ plans to write Life and specialized segments. Partnering with banks for credit life, term life, and embedded protection can rapidly scale premium in target regions.",
+        "example": "First Abu Dhabi Bank (FAB) partners with a local insurer to issue credit life on personal loans and cards, ceding 60% to RIQ. Emirates NBD co-develops income protection embedded in digital banking. In Egypt, CIB launches term life via app distribution with RIQ quota share support and AI-based lapse/claim propensity models.",
+        "roadmap": [
+            "Select bank partners with strong retail bases and existing insurance licenses/partners",
+            "Design products (credit life, term, income protection) and pricing; align on reinsurance treaties",
+            "Integrate digital onboarding/underwriting journeys; set non-medical limits and risk rules",
+            "Complete regulatory filings and data privacy assessments in each market",
+            "Launch pilots; monitor claims and lapse; optimize pricing; expand to additional bank partners"
+        ],
+        "tags": [
+            "Partnerships",
+            "Expansion"
+        ],
+        "industry": [
+            "Finance"
+        ],
+        "companies_mentioned": [
+            "IHC",
+            "RIQ",
+            "BlackRock",
+            "Lunate",
+            "Abu Dhabi Global Market (ADGM)",
+            "Financial Services Regulatory Authority (FSRA)",
+            "Edelman Smithfield Middle East"
+        ],
+        "year": "2025",
+        "opportunity_mark": 8,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/29708537-b1eb-4c0e-8b2b-70b3461df34a?download",
+        "source_name": "IHC Reveals \u201cRIQ\u201d as Official Name of the New Global Reinsurance Platform  Based in Abu Dhabi",
+        "source_origin": "newspost",
+        "ai_model": "gpt-5",
+        "ai_model_type": "standard"
+    },
+    {
+        "title": "Cyber risk reinsurance with telemetry-enabled underwriting",
+        "description": "With AI-first underwriting, RIQ can support regional cyber insurers by incorporating real-time security telemetry to reduce loss ratios and aggregate risk.",
+        "example": "e& enterprise (Help AG) and CrowdStrike provide continuous control telemetry (EDR posture, patching cadence) on SME clients to inform pricing. ADNIC or GIG Gulf writes primary cyber; RIQ takes a 30% quota share with event-based aggregate stop-loss, using telemetry to adjust attachment points and pricing.",
+        "roadmap": [
+            "Define telemetry schema and consent model with MSSPs and insureds",
+            "Co-design cyber coverages (SME/Mid-market) with primary insurers; price with telemetry features",
+            "Pilot a cohort of 1,000\u20132,000 SMEs; monitor incident frequency and severity",
+            "Bind quota share and aggregate protections; implement incident response partnerships",
+            "Scale to additional sectors (healthcare, retail) and geographies"
+        ],
+        "tags": [
+            "Technology",
+            "Partnerships"
+        ],
+        "industry": [
+            "Technology",
+            "Finance"
+        ],
+        "companies_mentioned": [
+            "IHC",
+            "RIQ",
+            "BlackRock",
+            "Lunate",
+            "Abu Dhabi Global Market (ADGM)",
+            "Financial Services Regulatory Authority (FSRA)",
+            "Edelman Smithfield Middle East"
+        ],
+        "year": "2025",
+        "opportunity_mark": 7,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/29708537-b1eb-4c0e-8b2b-70b3461df34a?download",
+        "source_name": "IHC Reveals \u201cRIQ\u201d as Official Name of the New Global Reinsurance Platform  Based in Abu Dhabi",
+        "source_origin": "newspost",
+        "ai_model": "gpt-5",
+        "ai_model_type": "standard"
+    },
+    {
+        "title": "Sharia-compliant retakaful capacity",
+        "description": "RIQ\u2019s regional anchor and global aspirations make a Sharia-compliant retakaful window viable to support Islamic insurers across GCC and Asia.",
+        "example": "SALAMA (Islamic Arab Insurance) places family takaful risk with a new RIQ retakaful window; Watania Takaful in the UAE cedes medical takaful layers. Saudi Re collaborates on facultative retakaful for large property risks, with RIQ providing additional capacity under Sharia board oversight.",
+        "roadmap": [
+            "Constitute a Sharia supervisory board and define retakaful operating model (wakala/mudaraba)",
+            "Obtain FSRA approvals; draft policy wordings and surplus distribution mechanisms",
+            "Target initial cedents in UAE and KSA; price family and general takaful treaties",
+            "Launch with conservative limits; monitor surplus/deficit and governance adherence",
+            "Expand to Malaysia, Pakistan and Indonesia with local regulatory alignment"
+        ],
+        "tags": [
+            "Regulation",
+            "Partnerships",
+            "Expansion",
+            "ESG"
+        ],
+        "industry": [
+            "Finance"
+        ],
+        "companies_mentioned": [
+            "IHC",
+            "RIQ",
+            "BlackRock",
+            "Lunate",
+            "Abu Dhabi Global Market (ADGM)",
+            "Financial Services Regulatory Authority (FSRA)",
+            "Edelman Smithfield Middle East"
+        ],
+        "year": "2025",
+        "opportunity_mark": 7,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/29708537-b1eb-4c0e-8b2b-70b3461df34a?download",
+        "source_name": "IHC Reveals \u201cRIQ\u201d as Official Name of the New Global Reinsurance Platform  Based in Abu Dhabi",
+        "source_origin": "newspost",
+        "ai_model": "gpt-5",
+        "ai_model_type": "standard"
+    },
+    {
+        "title": "Claims and catastrophe response partnerships with TPAs",
+        "description": "RIQ\u2019s global engagement and AI focus can be complemented by third-party administrators to accelerate triage and settlement, especially for NatCat events.",
+        "example": "Crawford & Company Middle East and Sedgwick MENA integrate with RIQ\u2019s claims API to automate FNOL routing and deploy drone/imagery assessments after flood events in the UAE and Oman, reducing LAE and cycle times for cedent portfolios.",
+        "roadmap": [
+            "Select TPAs by territory/peril; agree SLAs and surge capacity",
+            "Integrate TPAs with RIQ claims triage and image analytics",
+            "Run tabletop exercises for NatCat surge; refine workflows",
+            "Deploy during first event season; measure LAE and cycle-time improvements",
+            "Scale partnerships and add specialty lines (marine, energy)"
+        ],
+        "tags": [
+            "Partnerships",
+            "Technology",
+            "Procurement"
+        ],
+        "industry": [
+            "Technology",
+            "Other"
+        ],
+        "companies_mentioned": [
+            "IHC",
+            "RIQ",
+            "BlackRock",
+            "Lunate",
+            "Abu Dhabi Global Market (ADGM)",
+            "Financial Services Regulatory Authority (FSRA)",
+            "Edelman Smithfield Middle East"
+        ],
+        "year": "2025",
+        "opportunity_mark": 6,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/29708537-b1eb-4c0e-8b2b-70b3461df34a?download",
+        "source_name": "IHC Reveals \u201cRIQ\u201d as Official Name of the New Global Reinsurance Platform  Based in Abu Dhabi",
+        "source_origin": "newspost",
+        "ai_model": "gpt-5",
+        "ai_model_type": "standard"
+    },
+    {
+        "title": "AI and actuarial talent pipeline with UAE universities",
+        "description": "RIQ plans to invest in top-tier talent. Establishing structured programs with UAE institutions can secure AI/actuarial capability for underwriting and risk analytics.",
+        "example": "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI) and NYU Abu Dhabi co-develop an applied research lab with RIQ on catastrophe modeling, NLP for policy/claims documents, and explainable pricing models; internship-to-hire pathways fill data science and actuarial roles.",
+        "roadmap": [
+            "Define research themes and talent requirements with academic partners",
+            "Set up sponsored labs and scholarships; align on IP and publication policies",
+            "Build an internship/co-op program; rotate students through underwriting analytics",
+            "Publish validated methods; productionize successful prototypes",
+            "Expand to regional campuses and professional upskilling for existing staff"
+        ],
+        "tags": [
+            "Leadership",
+            "Technology",
+            "Partnerships"
+        ],
+        "industry": [
+            "Technology",
+            "Other"
+        ],
+        "companies_mentioned": [
+            "IHC",
+            "RIQ",
+            "BlackRock",
+            "Lunate",
+            "Abu Dhabi Global Market (ADGM)",
+            "Financial Services Regulatory Authority (FSRA)",
+            "Edelman Smithfield Middle East"
+        ],
+        "year": "2025",
+        "opportunity_mark": 6,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/29708537-b1eb-4c0e-8b2b-70b3461df34a?download",
+        "source_name": "IHC Reveals \u201cRIQ\u201d as Official Name of the New Global Reinsurance Platform  Based in Abu Dhabi",
+        "source_origin": "newspost",
+        "ai_model": "gpt-5",
+        "ai_model_type": "standard"
+    }
+]

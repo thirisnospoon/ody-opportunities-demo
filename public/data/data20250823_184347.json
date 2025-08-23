@@ -1,0 +1,39 @@
+[
+    {
+        "title": "Strategic Alliance for AI-Powered Risk Transfer Solutions",
+        "description": "IHC has entered a strategic partnership with RIQ to utilize AI-native risk transfer solutions with an aim of generating over USD 500 million in reinsurance premiums over the next decade. This collaboration is focused on delivering innovative reinsurance solutions leveraging advanced data modeling and AI-driven underwriting.",
+        "example": "Companies in Finance and Insurance sectors can collaborate with RIQ to develop tailored reinsurance products that cater to emerging risks. For instance, a healthcare provider can work with RIQ to cover new AI-related liabilities, thus enhancing operational resilience. This is valuable as it aligns with growing trends in intelligent risk management and the need for specialized coverage.",
+        "roadmap": [
+            "Step 1: Identify target industries and sectors that require innovative reinsurance solutions.",
+            "Step 2: Collaborate with RIQ to develop specialized risk assessment models tailored to the identified sectors.",
+            "Step 3: Launch pilot programs with selected partners to test AI-driven reinsurance solutions.",
+            "Step 4: Gather data and feedback to refine offerings before a wider rollout.",
+            "Step 5: Market the new tailored reinsurance products to potential clients in the targeted sectors."
+        ],
+        "tags": [
+            "Partnerships",
+            "Technology",
+            "Expansion"
+        ],
+        "industry": [
+            "Finance",
+            "Healthcare",
+            "Insurance",
+            "Technology"
+        ],
+        "companies_mentioned": [
+            "IHC",
+            "RIQ",
+            "BlackRock",
+            "Lunate"
+        ],
+        "year": "2025",
+        "opportunity_mark": 8,
+        "company_name": "IHC",
+        "source_url": "https://ihccms.directus.app/assets/c2581695-039b-4e81-b6dc-9f1af89e68e5?download",
+        "source_name": "IHC and RIQ Announce Strategic 10-year Alliance Anchored by Over USD 500 Million in Reinsurance Premiums",
+        "source_origin": "newspost",
+        "ai_model": "gpt-4o-mini",
+        "ai_model_type": "mini"
+    }
+]
