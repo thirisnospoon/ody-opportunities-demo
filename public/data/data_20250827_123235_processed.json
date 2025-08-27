@@ -1,0 +1,92 @@
+[
+  {
+    "title": "IHC and Lunate Sign MoU to Explore Ghaf Benefits Enrollment",
+    "description": "Lunate, an Abu Dhabi-based global investment manager, announced the signing of a Memorandum of Understanding (MoU) with International Holding Company (IHC) to explore enrolling IHC and its portfolio companies in the Ghaf Benefits plan, an Alternative End-of-Service Benefits fund platform launched by Lunate under the UAE’s voluntary scheme. Ghaf Benefits offers investment-backed end-of-service gratuity options to employees, aiming to enhance financial security and workplace benefits in the UAE.",
+    "tags": [
+      "Partnerships",
+      "Finance",
+      "ESG"
+    ],
+    "industry": [
+      "Finance",
+      "Investment",
+      "Holding Company",
+      "Financial Services",
+      "Technology",
+      "Healthcare",
+      "Real Estate Development"
+    ],
+    "companies_mentioned": [
+      "IHC",
+      "Lunate"
+    ],
+    "year": 2025,
+    "company_name": "IHC",
+    "source_url": "https://ihccms.directus.app/assets/2627941c-4193-492f-b3dc-4b4df70ffe86?download",
+    "source_name": "International Holding Company (IHC) signs MoU with Lunate to join Ghaf Benefits",
+    "source_origin": "pdf",
+    "ai_model": "gpt-4.1-mini-2025-04-14",
+    "ai_model_type": "mini",
+    "opportunities": [
+      {
+        "title": "Payroll Integration for Ghaf Benefits",
+        "description": "Payroll software providers can integrate their platforms with Ghaf Benefits to streamline employee enrollment, contributions tracking, and reporting, making it easier for companies to adopt the new end-of-service scheme and comply with UAE regulations.",
+        "industry": "Technology",
+        "possibility_mark": 8,
+        "roadmap_steps": [
+          "Research Ghaf Benefits platform technical requirements",
+          "Contact Lunate for integration guidelines",
+          "Develop APIs or plug-ins for payroll software to interface with Ghaf Benefits",
+          "Pilot integration with select clients",
+          "Market the integrated solution to UAE-based companies"
+        ]
+      },
+      {
+        "title": "HR Consultancy Services for Ghaf Benefits Adoption",
+        "description": "Human resources consultancies can offer advisory and implementation services to companies considering the transition to the Ghaf Benefits end-of-service fund, helping them with policy adjustment, employee communications, and compliance.",
+        "industry": "Financial Services",
+        "possibility_mark": 9,
+        "roadmap_steps": [
+          "Study Ghaf Benefits plan features and regulatory framework",
+          "Develop an advisory package for Ghaf Benefits transition",
+          "Promote services to UAE-based enterprises and HR networks",
+          "Assist clients in plan rollout and transition management"
+        ]
+      },
+      {
+        "title": "Wellness Platform Partnership for Enhanced Employee Offering",
+        "description": "Employee wellness platforms can partner with Ghaf Benefits to offer bundled financial wellness tools and workshops, helping enrolled companies differentiate themselves in attracting and retaining talent.",
+        "industry": "Healthcare",
+        "possibility_mark": 7,
+        "roadmap_steps": [
+          "Propose value-add wellness services linked to Ghaf Benefits",
+          "Negotiate partnership terms with Lunate",
+          "Integrate digital tools and educational materials with Ghaf Benefits"
+        ]
+      },
+      {
+        "title": "Real Estate Savings Schemes for Employees",
+        "description": "Real estate developers can collaborate with Ghaf Benefits to offer exclusive property investment or home purchase schemes to employees using their end-of-service benefits, incentivizing enrollment in both the benefits program and real estate projects.",
+        "industry": "Real Estate Development",
+        "possibility_mark": 6,
+        "roadmap_steps": [
+          "Design property investment packages tailored for Ghaf Benefits users",
+          "Reach out to Lunate for co-marketing opportunities",
+          "Develop communication materials for HR departments and employees"
+        ]
+      },
+      {
+        "title": "FinTech Investment Product Integration",
+        "description": "FinTech firms specializing in employee investment or retirement products can integrate with the Ghaf Benefits platform, offering employees additional customized savings and investment options.",
+        "industry": "Finance",
+        "possibility_mark": 8,
+        "roadmap_steps": [
+          "Analyze Ghaf Benefits technical documentation",
+          "Develop investment products compliant with the platform",
+          "Collaborate with Lunate to enable product listing on Ghaf Benefits",
+          "Support onboarding and financial education campaigns"
+        ]
+      }
+    ]
+  }
+]

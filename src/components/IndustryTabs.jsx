@@ -1,10 +1,10 @@
+// components/IndustryTabs.jsx
 import React, { useMemo } from "react";
 import { Tabs, Tab, Chip, Box } from "@mui/material";
 
 export default function IndustryTabs({ industries = [], counts = {}, value, onChange }) {
-    // Build list with counts; active first (>0), then inactive (0)
     const ordered = useMemo(() => {
-        const names = ["All", ...industries];
+        const names = ["All", ...(industries || [])];
         const withCounts = names.map((n) => ({ name: n, cnt: counts?.[n] ?? 0 }));
         const active = withCounts.filter((x) => x.cnt > 0);
         const inactive = withCounts.filter((x) => x.cnt === 0);

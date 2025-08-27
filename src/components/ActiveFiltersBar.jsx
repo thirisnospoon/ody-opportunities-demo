@@ -1,7 +1,8 @@
+// components/ActiveFiltersBar.jsx
 import React from "react";
 import { Paper, Box, Stack, Chip } from "@mui/material";
 
-export default function ActiveFiltersBar({ selected = {}, onChange = {}, onResetMarks = () => {} }) {
+export default function ActiveFiltersBar({ selected = {}, onChange = {} }) {
     const {
         tags = [],
         years = [],
@@ -10,8 +11,6 @@ export default function ActiveFiltersBar({ selected = {}, onChange = {}, onReset
         origins = [],
         aiModels = [],
         aiTypes = [],
-        marksRange = [],
-        defaultMarksRange = [0, 10],
     } = selected;
 
     const remove = (key, value) => {
@@ -30,12 +29,7 @@ export default function ActiveFiltersBar({ selected = {}, onChange = {}, onReset
         ...aiTypes.map((v) => ({ key: "aiTypes", label: v })),
     ];
 
-    const marksDirty =
-        Array.isArray(marksRange) &&
-        Array.isArray(defaultMarksRange) &&
-        (marksRange[0] !== defaultMarksRange[0] || marksRange[1] !== defaultMarksRange[1]);
-
-    if (items.length === 0 && !marksDirty) return null;
+    if (items.length === 0) return null;
 
     return (
         <Paper variant="outlined">
@@ -49,15 +43,6 @@ export default function ActiveFiltersBar({ selected = {}, onChange = {}, onReset
                             onDelete={() => remove(key, label)}
                         />
                     ))}
-                    {marksDirty && (
-                        <Chip
-                            size="small"
-                            color="primary"
-                            variant="outlined"
-                            label={`Mark: ${marksRange[0]}–${marksRange[1]}`}
-                            onDelete={() => onResetMarks?.()}
-                        />
-                    )}
                 </Stack>
             </Box>
         </Paper>

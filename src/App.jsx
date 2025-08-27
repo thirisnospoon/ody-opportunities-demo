@@ -1,3 +1,4 @@
+// App.jsx  (UPDATED)
 import React, { useEffect, useMemo, useState } from "react";
 import {
     AppBar,
@@ -13,16 +14,17 @@ import {
 import { useTheme } from "@mui/material/styles";
 
 import IndustryTabs from "./components/IndustryTabs.jsx";
-import OpportunitiesToolbar from "./components/OpportunitiesToolbar.jsx";
+import EventsToolbar from "./components/EventsToolbar.jsx";
 import FiltersDrawer from "./components/FiltersDrawer.jsx";
-import OpportunityCard from "./components/OpportunityCard.jsx";
+import EventCard from "./components/EventCard.jsx";
 import PaginationBar from "./components/PaginationBar.jsx";
 import EmptyState from "./components/EmptyState.jsx";
 import StatsBar from "./components/StatsBar.jsx";
 import ActiveFiltersBar from "./components/ActiveFiltersBar.jsx";
+import EventDialog from "./components/EventDialog.jsx";
 
-import useOpportunities from "./hooks/useOpportunities.js";
-import { applyFiltersAndSort } from "./utils/filters.js";
+import useEvents from "./hooks/useEvents.js";
+import { applyEventFiltersAndSort } from "./utils/filters.js";
 
 const ITEMS_PER_PAGE_DEFAULT = 12;
 
@@ -31,7 +33,7 @@ export default function App() {
     const isMdUp = useMediaQuery(theme.breakpoints.up("md"));
 
     // Using folder support (can also be a single json or array per previous update)
-    const { data, loading, error, facets } = useOpportunities("/data");
+    const { data, loading, error, facets } = useEvents("/data");
 
     // UI state
     const [search, setSearch] = useState("");
@@ -42,24 +44,17 @@ export default function App() {
     const [selectedMentioned, setSelectedMentioned] = useState([]);
     const [selectedOrigins, setSelectedOrigins] = useState([]);
 
-    // New filters from the previous iteration
+    // AI filters
     const [selectedAiModels, setSelectedAiModels] = useState([]);
     const [selectedAiTypes, setSelectedAiTypes] = useState([]);
-    const [markRange, setMarkRange] = useState([0, 10]);
 
     const [sortBy, setSortBy] = useState("year_desc");
     const [page, setPage] = useState(1);
     const [perPage, setPerPage] = useState(ITEMS_PER_PAGE_DEFAULT);
     const [filtersOpen, setFiltersOpen] = useState(false);
 
-    useEffect(() => {
-        if (facets?.marksRange) setMarkRange(facets.marksRange);
-    }, [facets?.marksRange?.[0], facets?.marksRange?.[1]]);
-
-    const marksDirty =
-        Array.isArray(markRange) &&
-        Array.isArray(facets?.marksRange) &&
-        (markRange[0] !== facets.marksRange[0] || markRange[1] !== facets.marksRange[1]);
+    // Dialog state
+    const [selectedEvent, setSelectedEvent] = useState(null);
 
     // Filtering + sorting
     const filtered = useMemo(() => {
@@ -73,11 +68,9 @@ export default function App() {
             origins: selectedOrigins,
             aiModels: selectedAiModels,
             aiTypes: selectedAiTypes,
-            marksRange: markRange,
-            strictMark: marksDirty,
             sortBy,
         };
-        return applyFiltersAndSort(data, filters);
+        return applyEventFiltersAndSort(data, filters);
     }, [
         data,
         search,
@@ -89,8 +82,6 @@ export default function App() {
         selectedOrigins,
         selectedAiModels,
         selectedAiTypes,
-        markRange,
-        marksDirty,
         sortBy,
     ]);
 
@@ -106,19 +97,17 @@ export default function App() {
             origins: selectedOrigins,
             aiModels: selectedAiModels,
             aiTypes: selectedAiTypes,
-            marksRange: markRange,
-            strictMark: marksDirty,
             sortBy,
         };
-        const pool = applyFiltersAndSort(data, filtersExceptTab);
+        const pool = applyEventFiltersAndSort(data, filtersExceptTab);
         const counts = { All: pool.length };
-        facets.industries.forEach((ind) => {
+        (facets?.industries || []).forEach((ind) => {
             counts[ind] = pool.filter((o) => (o.industry || []).includes(ind)).length;
         });
         return counts;
     }, [
         data,
-        facets.industries,
+        facets?.industries,
         search,
         selectedTags,
         selectedYears,
@@ -127,8 +116,6 @@ export default function App() {
         selectedOrigins,
         selectedAiModels,
         selectedAiTypes,
-        markRange,
-        marksDirty,
         sortBy,
     ]);
 
@@ -141,6 +128,7 @@ export default function App() {
         return filtered.slice(start, start + perPage);
     }, [filtered, pageSafe, perPage]);
 
+    // Reset page on filter changes
     useEffect(() => {
         setPage(1);
     }, [
@@ -153,27 +141,28 @@ export default function App() {
         selectedOrigins,
         selectedAiModels,
         selectedAiTypes,
-        markRange,
         sortBy,
     ]);
 
-    const anyFilters =
-        [
-            selectedTags,
-            selectedYears,
-            selectedCompanies,
-            selectedMentioned,
-            selectedOrigins,
-            selectedAiModels,
-            selectedAiTypes,
-        ].some((arr) => (arr || []).length > 0) || marksDirty;
+    const anyFilters = [
+        selectedTags,
+        selectedYears,
+        selectedCompanies,
+        selectedMentioned,
+        selectedOrigins,
+        selectedAiModels,
+        selectedAiTypes,
+    ].some((arr) => (arr || []).length > 0);
+
+    const openDialog = (ev) => setSelectedEvent(ev);
+    const closeDialog = () => setSelectedEvent(null);
 
     return (
         <Box>
             <AppBar position="sticky" elevation={0}>
                 <Toolbar>
                     <Typography variant="h6" sx={{ flexGrow: 1 }}>
-                        Opportunities Explorer
+                        Events Explorer
                     </Typography>
                 </Toolbar>
             </AppBar>
@@ -211,7 +200,6 @@ export default function App() {
                                         origins: selectedOrigins,
                                         aiModels: selectedAiModels,
                                         aiTypes: selectedAiTypes,
-                                        marksRange: markRange,
                                     }}
                                     onChange={{
                                         tags: setSelectedTags,
@@ -221,15 +209,13 @@ export default function App() {
                                         origins: setSelectedOrigins,
                                         aiModels: setSelectedAiModels,
                                         aiTypes: setSelectedAiTypes,
-                                        marksRange: setMarkRange,
                                     }}
-                                    onResetMarks={() => setMarkRange(facets.marksRange)}
                                 />
                             </Box>
 
-                            {/* Right: content list - NOW single column (one card per row) */}
+                            {/* Right: content list - single column */}
                             <Box>
-                                <OpportunitiesToolbar
+                                <EventsToolbar
                                     search={search}
                                     onSearch={setSearch}
                                     sortBy={sortBy}
@@ -238,29 +224,13 @@ export default function App() {
 
                                 <StatsBar
                                     total={total}
-                                    uniqueCompanies={new Set(filtered.map((o) => o.company_name)).size}
-                                    yearsRange={facets.years}
-                                    avgMark={
-                                        filtered.length
-                                            ? (
-                                                filtered
-                                                    .map((o) =>
-                                                        typeof o.opportunity_mark === "number"
-                                                            ? o.opportunity_mark
-                                                            : null
-                                                    )
-                                                    .filter((v) => v !== null)
-                                                    .reduce((a, b) => a + b, 0) /
-                                                Math.max(
-                                                    1,
-                                                    filtered.filter(
-                                                        (o) => typeof o.opportunity_mark === "number"
-                                                    ).length
-                                                )
-                                            ).toFixed(1)
-                                            : null
+                                    uniqueCompanies={
+                                        new Set(filtered.map((o) => o.company_name).filter(Boolean)).size
                                     }
-                                    aiModelsCount={new Set(filtered.map((o) => o.ai_model).filter(Boolean)).size}
+                                    yearsRange={facets.years}
+                                    aiModelsCount={
+                                        new Set(filtered.map((o) => o.ai_model).filter(Boolean)).size
+                                    }
                                 />
 
                                 {loading ? (
@@ -276,7 +246,6 @@ export default function App() {
                                     />
                                 ) : (
                                     <>
-                                        {/* SINGLE COLUMN on desktop */}
                                         <Box
                                             sx={{
                                                 display: "grid",
@@ -286,7 +255,7 @@ export default function App() {
                                         >
                                             {paged.map((item, idx) => (
                                                 <Box key={`${item.title}-${idx}`} sx={{ width: "100%" }}>
-                                                    <OpportunityCard item={item} />
+                                                    <EventCard item={item} onOpen={() => openDialog(item)} />
                                                 </Box>
                                             ))}
                                         </Box>
@@ -306,9 +275,9 @@ export default function App() {
                             </Box>
                         </Box>
                     ) : (
-                        // Mobile stays single column as before
+                        // Mobile (single column + bottom-sheet filters)
                         <Box>
-                            <OpportunitiesToolbar
+                            <EventsToolbar
                                 search={search}
                                 onSearch={setSearch}
                                 sortBy={sortBy}
@@ -327,8 +296,6 @@ export default function App() {
                                         origins: selectedOrigins,
                                         aiModels: selectedAiModels,
                                         aiTypes: selectedAiTypes,
-                                        marksRange: markRange,
-                                        defaultMarksRange: facets.marksRange,
                                     }}
                                     onChange={{
                                         tags: setSelectedTags,
@@ -338,37 +305,19 @@ export default function App() {
                                         origins: setSelectedOrigins,
                                         aiModels: setSelectedAiModels,
                                         aiTypes: setSelectedAiTypes,
-                                        marksRange: setMarkRange,
                                     }}
-                                    onResetMarks={() => setMarkRange(facets.marksRange)}
                                 />
                             )}
 
                             <StatsBar
                                 total={total}
-                                uniqueCompanies={new Set(filtered.map((o) => o.company_name)).size}
-                                yearsRange={facets.years}
-                                avgMark={
-                                    filtered.length
-                                        ? (
-                                            filtered
-                                                .map((o) =>
-                                                    typeof o.opportunity_mark === "number"
-                                                        ? o.opportunity_mark
-                                                        : null
-                                                )
-                                                .filter((v) => v !== null)
-                                                .reduce((a, b) => a + b, 0) /
-                                            Math.max(
-                                                1,
-                                                filtered.filter(
-                                                    (o) => typeof o.opportunity_mark === "number"
-                                                ).length
-                                            )
-                                        ).toFixed(1)
-                                        : null
+                                uniqueCompanies={
+                                    new Set(filtered.map((o) => o.company_name).filter(Boolean)).size
                                 }
-                                aiModelsCount={new Set(filtered.map((o) => o.ai_model).filter(Boolean)).size}
+                                yearsRange={facets.years}
+                                aiModelsCount={
+                                    new Set(filtered.map((o) => o.ai_model).filter(Boolean)).size
+                                }
                             />
 
                             {loading ? (
@@ -378,13 +327,16 @@ export default function App() {
                             ) : error ? (
                                 <EmptyState title="Could not load data" subtitle={String(error)} />
                             ) : total === 0 ? (
-                                <EmptyState title="No matches" subtitle="Try adjusting your filters or search terms." />
+                                <EmptyState
+                                    title="No matches"
+                                    subtitle="Try adjusting your filters or search terms."
+                                />
                             ) : (
                                 <>
                                     <Box sx={{ display: "grid", gridTemplateColumns: "1fr", gap: 2 }}>
                                         {paged.map((item, idx) => (
                                             <Box key={`${item.title}-${idx}`} sx={{ width: "100%" }}>
-                                                <OpportunityCard item={item} />
+                                                <EventCard item={item} onOpen={() => openDialog(item)} />
                                             </Box>
                                         ))}
                                     </Box>
@@ -414,7 +366,6 @@ export default function App() {
                                     origins: selectedOrigins,
                                     aiModels: selectedAiModels,
                                     aiTypes: selectedAiTypes,
-                                    marksRange: markRange,
                                 }}
                                 onChange={{
                                     tags: setSelectedTags,
@@ -424,14 +375,15 @@ export default function App() {
                                     origins: setSelectedOrigins,
                                     aiModels: setSelectedAiModels,
                                     aiTypes: setSelectedAiTypes,
-                                    marksRange: setMarkRange,
                                 }}
-                                onResetMarks={() => setMarkRange(facets.marksRange)}
                             />
                         </Box>
                     )}
                 </Stack>
             </Container>
+
+            {/* Details dialog */}
+            <EventDialog open={Boolean(selectedEvent)} event={selectedEvent} onClose={closeDialog} />
         </Box>
     );
 }

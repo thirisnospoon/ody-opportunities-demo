@@ -1,3 +1,4 @@
+// components/EmptyState.jsx
 import React from "react";
 import { Paper, Box, Typography } from "@mui/material";
 
