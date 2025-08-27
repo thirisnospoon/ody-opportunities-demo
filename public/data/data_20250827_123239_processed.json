@@ -20,7 +20,7 @@
     "company_name": "IHC",
     "source_url": "https://ihccms.directus.app/assets/8cbfd0f1-111e-4e02-8dd7-7586d6713f59?download",
     "source_name": "IHC’s AI Board Observer Aiden Insight Elevates Corporate Strategy with Real-Time Insights",
-    "source_origin": "newspost"
+    "source_origin": "newspost",
     "ai_model": "gpt-4.1-mini-2025-04-14",
     "ai_model_type": "mini",
     "opportunities": [

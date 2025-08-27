@@ -25,7 +25,7 @@
     "company_name": "IHC",
     "source_url": "https://ihccms.directus.app/assets/c2581695-039b-4e81-b6dc-9f1af89e68e5?download",
     "source_name": "IHC and RIQ Announce Strategic 10-year Alliance Anchored by Over USD 500 Million in Reinsurance Premiums",
-    "source_origin": "newspost"
+    "source_origin": "newspost",
     "ai_model": "gpt-4.1-mini-2025-04-14",
     "ai_model_type": "mini",
     "opportunities": [

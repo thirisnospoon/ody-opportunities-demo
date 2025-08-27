@@ -24,7 +24,7 @@
     "company_name": "IHC",
     "source_url": "https://ihccms.directus.app/assets/643c9b73-2d58-430d-8a14-94bda31de857?download",
     "source_name": "IHC, ADQ and FAB Pioneer UAE Dirham-backed Stablecoin for the Digital Economy",
-    "source_origin": "newspost"
+    "source_origin": "newspost",
     "ai_model": "gpt-4.1-mini-2025-04-14",
     "ai_model_type": "mini",
     "opportunities": [

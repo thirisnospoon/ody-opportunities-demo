@@ -28,7 +28,7 @@
     "company_name": "IHC",
     "source_url": "https://ihccms.directus.app/assets/7c61200b-11cd-4b04-8607-fdbb38a8b520?download",
     "source_name": "IHC Completes Acquisition of eFunder and Rebrands the Platform as Zelo to Strengthen SME Capital Access in the UAE",
-    "source_origin": "newspost"
+    "source_origin": "newspost",
     "ai_model": "gpt-4.1-mini-2025-04-14",
     "ai_model_type": "mini",
     "opportunities": [

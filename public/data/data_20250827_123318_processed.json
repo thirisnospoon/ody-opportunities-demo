@@ -22,7 +22,7 @@
     "company_name": "IHC",
     "source_url": "https://ihccms.directus.app/assets/04065783-04fd-437c-8abf-d95cda56c22c?download",
     "source_name": "IHC Posts Robust Preliminary Full-Year 2024 Performance with 54.4% Revenue Growth",
-    "source_origin": "newspost"
+    "source_origin": "newspost",
     "ai_model": "gpt-4.1-mini-2025-04-14",
     "ai_model_type": "mini",
     "opportunities": [
