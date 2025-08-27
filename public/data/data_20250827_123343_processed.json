@@ -19,7 +19,7 @@
     "company_name": "IHC",
     "source_url": "https://ihccms.directus.app/assets/08c20936-4739-491b-9b88-2e388de79d92?download",
     "source_name": "IHC Announces First Tranche of AED 5 billion Share Buyback Program with AED 1.8 billion Initial Purchase",
-    "source_origin": "pdf",
+    "source_origin": "newspost"
     "ai_model": "gpt-4.1-mini-2025-04-14",
     "ai_model_type": "mini",
     "opportunities": [
