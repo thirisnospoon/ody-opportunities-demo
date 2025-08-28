@@ -18,8 +18,8 @@ import {
     DialogContent,
     useMediaQuery,
     Paper,
-    Fade,
 } from "@mui/material";
+import Popper from "@mui/material/Popper";
 import { useTheme } from "@mui/material/styles";
 import CloseIcon from "@mui/icons-material/Close";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
@@ -95,7 +95,6 @@ function expandToFlagCodes(countries = []) {
         if (Array.isArray(iso)) codes.push(...iso);
         else codes.push(iso);
     });
-    // unique while preserving order
     return [...new Set(codes)];
 }
 
@@ -149,7 +148,7 @@ function CountryFlagsStrip({ countries, maxVisible = 18, size = 14 }) {
     const rest = codes.length - visible.length;
 
     return (
-        <Stack direction="row" spacing={0.5} alignItems="center" sx={{ flexWrap: "wrap" }}>
+        <Stack direction="row" spacing={0.5} alignItems="center" sx={{ flexWrap: "wrap", maxWidth: "100%" }}>
             {visible.map((c) => (
                 <FlagIcon key={c} code={c} size={size} />
             ))}
@@ -224,8 +223,7 @@ function SoftCard({ children, sx }) {
                 borderRadius: 3,
                 overflow: "hidden",
                 borderColor: (t) => t.palette.divider,
-                bgcolor: (t) =>
-                    t.palette.mode === "light" ? "rgba(0,0,0,0.02)" : "rgba(255,255,255,0.03)",
+                bgcolor: (t) => (t.palette.mode === "light" ? "rgba(0,0,0,0.02)" : "rgba(255,255,255,0.03)"),
                 transition: "transform .18s ease, box-shadow .18s ease",
                 "&:hover": { transform: "translateY(-1px)", boxShadow: 2 },
                 ...sx,
@@ -282,8 +280,7 @@ function TimelineList({ items = [], primaryKey, secondaryKey }) {
                     top: 6,
                     bottom: 6,
                     width: 2,
-                    background:
-                        "linear-gradient(180deg, rgba(124,77,255,0.35) 0%, rgba(0,188,212,0.35) 100%)",
+                    background: "linear-gradient(180deg, rgba(124,77,255,0.35) 0%, rgba(0,188,212,0.35) 100%)",
                 }}
             />
             <AnimatePresence initial={false}>
@@ -311,10 +308,7 @@ function TimelineList({ items = [], primaryKey, secondaryKey }) {
                             }}
                         />
                         <Box sx={{ flex: 1, minWidth: 0 }}>
-                            <Typography
-                                variant="subtitle2"
-                                sx={{ fontWeight: 700, wordBreak: "break-word", overflowWrap: "anywhere" }}
-                            >
+                            <Typography variant="subtitle2" sx={{ fontWeight: 700, wordBreak: "break-word", overflowWrap: "anywhere" }}>
                                 {it?.[primaryKey] ?? "—"}
                             </Typography>
                             {it?.[secondaryKey] && (
@@ -334,13 +328,19 @@ function TimelineList({ items = [], primaryKey, secondaryKey }) {
     );
 }
 
-/* ---------- truncate + hover expand ---------- */
+/* ---------- truncate + hover expand (Popper) ---------- */
 function TruncateWithHover({ text = "", maxChars = 68, placement = "top-start" }) {
     const [open, setOpen] = useState(false);
     const anchorRef = useRef(null);
-    if (!text) return null;
+    const isTruncated = !!text && text.length > maxChars;
+    const truncated = isTruncated ? `${text.slice(0, maxChars).trim()}…` : text;
 
-    const truncated = text.length <= maxChars ? text : `${text.slice(0, maxChars).trim()}…`;
+    const handleEnter = () => {
+        if (isTruncated) setOpen(true);
+    };
+    const handleLeave = () => {
+        if (isTruncated) setOpen(false);
+    };
 
     return (
         <>
@@ -353,45 +353,44 @@ function TruncateWithHover({ text = "", maxChars = 68, placement = "top-start" }
                     WebkitLineClamp: 2,
                     WebkitBoxOrient: "vertical",
                     overflow: "hidden",
-                    cursor: text.length > maxChars ? "help" : "default",
+                    cursor: isTruncated ? "help" : "default",
                     position: "relative",
                     wordBreak: "break-word",
                     overflowWrap: "anywhere",
                 }}
-                onMouseEnter={() => text.length > maxChars && setOpen(true)}
-                onMouseLeave={() => setOpen(false)}
+                onMouseEnter={handleEnter}
+                onMouseLeave={handleLeave}
             >
                 {truncated}
             </Typography>
 
-            <Fade in={open} timeout={120} unmountOnExit>
+            <Popper
+                open={open && isTruncated}
+                anchorEl={anchorRef.current}
+                placement={placement}
+                modifiers={[
+                    { name: "offset", options: { offset: [0, 8] } },
+                    { name: "flip", enabled: true },
+                    { name: "preventOverflow", options: { boundary: "viewport", padding: 8 } },
+                ]}
+                sx={{ zIndex: 2000 }}
+            >
                 <Paper
                     elevation={6}
+                    onMouseEnter={() => setOpen(true)}
+                    onMouseLeave={() => setOpen(false)}
                     sx={{
-                        position: "fixed",
-                        top: anchorRef.current
-                            ? anchorRef.current.getBoundingClientRect().top - 8
-                            : 0,
-                        left: anchorRef.current
-                            ? anchorRef.current.getBoundingClientRect().left
-                            : 0,
-                        transform: "translateY(-100%)",
                         maxWidth: 480,
                         p: 1.25,
                         borderRadius: 2,
                         border: (t) => `1px solid ${t.palette.divider}`,
-                        zIndex: 2000,
                     }}
-                    onMouseLeave={() => setOpen(false)}
                 >
-                    <Typography
-                        variant="body2"
-                        sx={{ whiteSpace: "pre-wrap", wordBreak: "break-word", overflowWrap: "anywhere" }}
-                    >
+                    <Typography variant="body2" sx={{ whiteSpace: "pre-wrap", wordBreak: "break-word", overflowWrap: "anywhere" }}>
                         {text}
                     </Typography>
                 </Paper>
-            </Fade>
+            </Popper>
         </>
     );
 }
@@ -424,7 +423,6 @@ export default function CompanyDialog({ open, company, onClose }) {
         [c.founded, c.company_short_name, c.company_full_name, countries.length, products.length, tags.length]
     );
 
-    // refs for in-page scroll
     const sectionRefs = {
         overview: useRef(null),
         products: useRef(null),
@@ -433,10 +431,6 @@ export default function CompanyDialog({ open, company, onClose }) {
         tags: useRef(null),
         moves: useRef(null),
         partnerships: useRef(null),
-    };
-    const scrollTo = (key) => {
-        const el = sectionRefs[key]?.current;
-        if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
     };
 
     return (
@@ -468,8 +462,7 @@ export default function CompanyDialog({ open, company, onClose }) {
                     p: { xs: 1.25, sm: 2, md: 2.5 },
                     pb: { xs: 1, sm: 1.5 },
                     borderBottom: (t) => `1px solid ${t.palette.divider}`,
-                    background:
-                        "linear-gradient(90deg, rgba(80,70,255,0.10) 0%, rgba(0,188,212,0.10) 100%)",
+                    background: "linear-gradient(90deg, rgba(80,70,255,0.10) 0%, rgba(0,188,212,0.10) 100%)",
                     position: "sticky",
                     top: 0,
                     zIndex: 3,
@@ -477,31 +470,53 @@ export default function CompanyDialog({ open, company, onClose }) {
                 component={motion.div}
                 {...fadeUp}
             >
-                {/* Row 1: logo + names + site + website button + close */}
-                <Stack direction="row" spacing={2} alignItems="center">
-                    <GradientBadge
-                        text={c.company_full_name || c.company_short_name}
-                        size={isSmDown ? 44 : 56}
-                    />
+                {/* HEADER LAYOUT: badge | main info | actions */}
+                <Stack direction="row" alignItems="flex-start" spacing={2}>
+                    {/* Left: Logo */}
+                    <GradientBadge text={c.company_full_name || c.company_short_name} size={isSmDown ? 44 : 56} />
+
+                    {/* Middle: Name + FLAGS + industries + site */}
                     <Box sx={{ flex: 1, minWidth: 0 }}>
-                        <Typography
-                            variant={isMdDown ? "subtitle1" : "h6"}
-                            sx={{ lineHeight: 1.2, fontWeight: 800, wordBreak: "break-word" }}
-                        >
+                        <Typography variant={isMdDown ? "subtitle1" : "h6"} sx={{ lineHeight: 1.2, fontWeight: 800, wordBreak: "break-word" }}>
                             {c.company_full_name || c.company_short_name || "Company"}
                         </Typography>
 
                         <Stack
                             direction="row"
                             spacing={0.75}
+                            alignItems="center"
                             sx={{ mt: 0.75, flexWrap: "wrap", rowGap: 0.5 }}
                         >
+                            {/* >>> FLAGS FIRST (before industries) <<< */}
+                            {!!countries.length && (
+                                <Box
+                                    sx={{
+                                        mr: 0.5,
+                                        maxWidth: { xs: "60%", sm: "50%", md: "40%" },
+                                        overflowX: "auto",
+                                        flexShrink: 0,
+                                        display: "flex",
+                                        alignItems: "center",
+                                        ...noScrollbar,
+                                    }}
+                                >
+                                    <CountryFlagsStrip
+                                        countries={countries}
+                                        size={isSmDown ? 12 : 14}
+                                        maxVisible={isSmDown ? 24 : 36}
+                                    />
+                                </Box>
+                            )}
+
+                            {/* Industries */}
                             {industries.slice(0, isSmDown ? 3 : 5).map((i) => (
                                 <Chip key={i} size="small" label={i} variant="outlined" />
                             ))}
                             {industries.length > (isSmDown ? 3 : 5) && (
                                 <Chip size="small" label={`+${industries.length - (isSmDown ? 3 : 5)}`} variant="outlined" />
                             )}
+
+                            {/* Website chip */}
                             {siteDomain && (
                                 <Chip
                                     size="small"
@@ -514,14 +529,12 @@ export default function CompanyDialog({ open, company, onClose }) {
                         </Stack>
                     </Box>
 
+                    {/* Right: Actions */}
                     <Stack direction="row" spacing={1} alignItems="center" sx={{ ml: 1 }}>
                         {c.company_website &&
                             (isSmDown ? (
                                 <Tooltip title="Open website">
-                                    <IconButton
-                                        aria-label="Open website"
-                                        onClick={() => window.open(c.company_website, "_blank", "noreferrer")}
-                                    >
+                                    <IconButton aria-label="Open website" onClick={() => window.open(c.company_website, "_blank", "noreferrer")}>
                                         <OpenInNewIcon />
                                     </IconButton>
                                 </Tooltip>
@@ -533,8 +546,7 @@ export default function CompanyDialog({ open, company, onClose }) {
                                     sx={{
                                         borderRadius: 999,
                                         px: 2,
-                                        background:
-                                            "linear-gradient(90deg, rgba(80,70,255,1) 0%, rgba(0,188,212,1) 100%)",
+                                        background: "linear-gradient(90deg, rgba(80,70,255,1) 0%, rgba(0,188,212,1) 100%)",
                                     }}
                                     startIcon={<OpenInNewIcon />}
                                 >
@@ -549,30 +561,13 @@ export default function CompanyDialog({ open, company, onClose }) {
                     </Stack>
                 </Stack>
 
-                {/* Row 2: tiny flags strip in header */}
-                {!!countries.length && (
-                    <Box
-                        sx={{
-                            mt: 1,
-                            px: 0.25,
-                            overflowX: "auto",
-                            ...noScrollbar,
-                        }}
-                    >
-                        <CountryFlagsStrip countries={countries} size={14} />
-                    </Box>
-                )}
-
-                {/* Row 3: stat pills */}
+                {/* Stat pills under header row */}
                 <Box
                     component={motion.div}
                     variants={{ animate: { transition: { staggerChildren: 0.04 } } }}
                     initial="initial"
                     animate="animate"
-                    sx={{
-                        mt: 1.25,
-                        ...(isSmDown ? { overflowX: "auto", ...noScrollbar } : {}),
-                    }}
+                    sx={{ mt: 1.25, ...(isSmDown ? { overflowX: "auto", ...noScrollbar } : {}) }}
                 >
                     <Stack
                         direction="row"
@@ -590,13 +585,7 @@ export default function CompanyDialog({ open, company, onClose }) {
                 </Box>
             </DialogTitle>
 
-            <DialogContent
-                dividers={false}
-                sx={{
-                    p: { xs: 1.25, sm: 1.5, md: 2 },
-                    overflowY: "auto",
-                }}
-            >
+            <DialogContent dividers={false} sx={{ p: { xs: 1.25, sm: 1.5, md: 2 }, overflowY: "auto" }}>
                 <Grid container spacing={2}>
                     {/* LEFT COLUMN */}
                     <Grid item xs={12} md={7} lg={8}>
@@ -630,9 +619,7 @@ export default function CompanyDialog({ open, company, onClose }) {
                                                 <Typography variant="subtitle2" sx={{ fontWeight: 700, wordBreak: "break-word", overflowWrap: "anywhere" }}>
                                                     {p.product_name ?? "Product"}
                                                 </Typography>
-                                                {p.product_description && (
-                                                    <TruncateWithHover text={p.product_description} maxChars={66} />
-                                                )}
+                                                {p.product_description && <TruncateWithHover text={p.product_description} maxChars={66} />}
                                             </SoftCard>
                                         </Grid>
                                     ))}
@@ -668,8 +655,6 @@ export default function CompanyDialog({ open, company, onClose }) {
                         {!!countries.length && (
                             <Box ref={sectionRefs.countries}>
                                 <SectionTitle icon={LocationOnIcon}>Active Countries ({countries.length})</SectionTitle>
-
-                                {/* Countries as compact cards (grid like products/services) */}
                                 <Grid container spacing={1.25}>
                                     {countries.map((ac, idx) => {
                                         const name = ac?.country_name || "Country";

@@ -3,44 +3,77 @@
     "company_short_name": "Esyasoft",
     "company_full_name": "Esyasoft Holding Ltd.",
     "company_website": "https://www.esyasoft.com/",
-    "ownership": "Privately Held",
+    "ownership": "Privately Held; part of Sirius International Holding (IHC portfolio); UAE-headquartered.",
     "founded": "2014",
     "industries": [
       "Energy",
       "Information Technology",
-      "IoT"
+      "IoT",
+      "Utilities"
     ],
-    "core_products": "AI-powered technology and analytics solutions for energy transition projects, including Smart Grid Suite, Energy Mobility, Analytics & AI, IoT Products, and Climate Tech.",
+    "core_products": "AI-powered technology and analytics solutions for energy transition projects, including Smart Grid Suite, Meter Data Management System (MDMS), Head-End System (HES) for AMI, Energy Mobility (EV), Analytics & AI, IoT Products, and Climate Tech.",
     "active_countries": [
       {
-        "country_name": "United Kingdom",
-        "activity_description": "Office in London"
-      },
-      {
-        "country_name": "The Netherlands",
-        "activity_description": "Office in Rotterdam"
-      },
-      {
-        "country_name": "Azerbaijan",
-        "activity_description": "Office in Baku"
-      },
-      {
-        "country_name": "United States",
-        "activity_description": "Offices in Washington DC and San Francisco"
-      },
-      {
         "country_name": "United Arab Emirates",
-        "activity_description": "Offices in Dubai and Abu Dhabi"
+        "activity_description": "HQ; part of IHC/Sirius portfolio; offices in Dubai and Abu Dhabi."
       },
       {
         "country_name": "India",
-        "activity_description": "Offices in Bengaluru, New Delhi, Mumbai, Ahmedabad, and Kolkata"
+        "activity_description": "Large AMI/MDMS projects; Adani JV for accelerated smart-meter rollout."
+      },
+      {
+        "country_name": "Azerbaijan",
+        "activity_description": "Nationwide smart-gas program (~2.5M meters; ~US$480M; ~14-year term) with SOCAR/Azerigaz via IntelliGrid/Presight."
+      },
+      {
+        "country_name": "United Kingdom",
+        "activity_description": "Owns Good Energy (GOOD.L); London presence."
+      },
+      {
+        "country_name": "Romania",
+        "activity_description": "Modernisation frameworks/MoU with Electrica (grid modernisation, AMI, EV charging, storage)."
+      },
+      {
+        "country_name": "The Netherlands",
+        "activity_description": "Majority stake in Float IoT; presence in Rotterdam."
+      },
+      {
+        "country_name": "United States",
+        "activity_description": "Offices in Washington DC and San Francisco."
+      },
+      {
+        "country_name": "India",
+        "activity_description": "Offices in Bengaluru, New Delhi, Mumbai, Ahmedabad, and Kolkata."
+      },
+      {
+        "country_name": "United Kingdom",
+        "activity_description": "Office in London."
+      },
+      {
+        "country_name": "The Netherlands",
+        "activity_description": "Office in Rotterdam."
+      },
+      {
+        "country_name": "Azerbaijan",
+        "activity_description": "Office in Baku."
+      },
+      {
+        "country_name": "United Arab Emirates",
+        "activity_description": "Offices in Dubai and Abu Dhabi."
       }
     ],
     "products": [
       {
         "product_name": "Smart Grid Suite",
         "product_description": "Comprehensive Cloud-Edge Platform solutions and services designed to enable the end-to-end digital transformation of energy distribution grids."
+      },
+      {
+        "product_name": "MDMS (Meter Data Management System)",
+        "product_description": "Utility-grade MDMS with billing determinants, analytics, alarms, revenue protection, and support for prepaid/postpaid across electricity, water, and gas."
+      },
+      {
+        "product_name": "Head-End System (HES)",
+        "product_description": "Multi-protocol ingestion layer for meters/devices; cloud-ready and scalable for AMI across electricity/water/gas."
       },
       {
         "product_name": "Energy Mobility",
@@ -55,11 +88,28 @@
         "product_description": "Diverse lineup of devices, from smart meters to sophisticated sensors and controllers, designed for modernizing electricity, water, and gas utility grids."
       },
       {
+        "product_name": "EV Charging & Battery Storage Solutions",
+        "product_description": "Infrastructure and solutions for EV charging networks and grid-scale/behind-the-meter storage."
+      },
+      {
         "product_name": "Climate Tech",
         "product_description": "Addressing climate change challenges by decarbonization, utilizing emerging technologies like blockchain and artificial intelligence."
       }
     ],
-    "services": [],
+    "services": [
+      {
+        "service_name": "End-to-end AMI deployment & integration",
+        "service_description": "Planning, rollout and integration across HES→MDMS→billing/ERP/SCADA, including device onboarding and field operations."
+      },
+      {
+        "service_name": "Analytics, AI & IoT platforms (IntelliGrid)",
+        "service_description": "Advanced analytics and AI frameworks for utilities, delivered via the IntelliGrid JV."
+      },
+      {
+        "service_name": "Financing & modernisation frameworks",
+        "service_description": "Commercial and technical frameworks with utilities (e.g., Electrica) to fund and deliver grid modernisation, AMI, EV charging and storage."
+      }
+    ],
     "tags": [
       "Smart Grid",
       "Energy Transition",
@@ -70,38 +120,67 @@
       "Energy Efficiency",
       "Electric Mobility",
       "Climate Tech",
-      "Decarbonization"
+      "Decarbonization",
+      "AMI",
+      "MDMS",
+      "HES",
+      "EV Charging",
+      "Battery Storage",
+      "Revenue Protection",
+      "IHC",
+      "Sirius Holding",
+      "Presight",
+      "Float IoT",
+      "Good Energy",
+      "SOCAR/Azerigaz",
+      "Electrica Romania"
     ],
     "recent_moves": [
       {
         "move_name": "Acquisition of Good Energy",
-        "move_description": "On April 16, 2025, Esyasoft acquired Good Energy, marking a bold step towards energy transition."
+        "move_description": "On April 16, 2025, Esyasoft agreed a ~£99.4m all-cash takeover of listed UK supplier Good Energy (ticker GOOD.L); completion followed approvals."
       },
       {
-        "move_name": "Joining UN Global Compact",
-        "move_description": "On November 25, 2024, Esyasoft Holding joined the United Nations Global Compact Initiative."
+        "move_name": "Azerbaijan nationwide smart-gas program",
+        "move_description": "US$480m, ~2.5M meters over ~14 years with SOCAR/Azerigaz; program aligned to IntelliGrid/Presight delivery."
+      },
+      {
+        "move_name": "Formation of 'IntelliGrid' JV",
+        "move_description": "On June 6, 2024, Esyasoft and Presight formed 'IntelliGrid' to accelerate AMI and smart-gas/smart-grid deployments."
+      },
+      {
+        "move_name": "Acquisition of Float IoT",
+        "move_description": "On August 12, 2024, Esyasoft acquired a 70% stake in Dutch innovator Float IoT, expanding into smart-water technology."
       },
       {
         "move_name": "Recognition by Gartner",
         "move_description": "On September 2, 2024, Esyasoft was recognized as a Sample Vendor in the Gartner Market Guide for Meter Data Management Systems 2024."
       },
       {
-        "move_name": "Acquisition of Float IoT",
-        "move_description": "On August 12, 2024, Esyasoft acquired a 70% stake in Dutch IoT innovator Float, expanding into the smart water technology solutions market."
+        "move_name": "Joining UN Global Compact",
+        "move_description": "On November 25, 2024, Esyasoft Holding joined the United Nations Global Compact Initiative."
       },
       {
-        "move_name": "Formation of 'IntelliGrid' JV",
-        "move_description": "On June 6, 2024, Esyasoft and Presight formed 'IntelliGrid' JV to revolutionize the energy distribution sector."
-      },
-      {
-        "move_name": "Joint Venture with Adani",
-        "move_description": "On December 27, 2023, Adani announced a Smart Metering Joint Venture with Esyasoft."
+        "move_name": "Joint Venture with Adani (India)",
+        "move_description": "On December 27, 2023, Adani Energy Solutions acquired 49% of Esyasoft’s smart-metering arm, renamed Adani Esyasoft Smart Solutions Ltd., to accelerate AMI rollout in India."
       }
     ],
     "partnerships": [
       {
         "partnership_name": "Strategic Partnership with Landis+Gyr India Ltd.",
         "partnership_description": "On December 7, 2023, Esyasoft and Landis+Gyr India Ltd. forged a strategic partnership to accelerate energy transition."
+      },
+      {
+        "partnership_name": "Presight (IntelliGrid JV)",
+        "partnership_description": "JV to deliver analytics-driven AMI and smart-gas/smart-grid programs."
+      },
+      {
+        "partnership_name": "SOCAR/Azerigaz",
+        "partnership_description": "Long-term nationwide smart-gas metering program in Azerbaijan."
+      },
+      {
+        "partnership_name": "Electrica (Romania)",
+        "partnership_description": "Modernisation frameworks/MoU for AMI, EV charging and storage."
       }
     ]
   },
