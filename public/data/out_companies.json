@@ -615,26 +615,6 @@
     "partnerships": []
   },
   {
-    "company_short_name": "Reem Investment Overseas Limited",
-    "company_full_name": "Reem Investment Overseas Limited",
-    "company_website": "https://reemfinance.ae/",
-    "ownership": "",
-    "founded": "",
-    "industries": [],
-    "core_products": "",
-    "active_countries": [
-      {
-        "country_name": "Mauritius",
-        "activity_description": ""
-      }
-    ],
-    "products": [],
-    "services": [],
-    "tags": [],
-    "recent_moves": [],
-    "partnerships": []
-  },
-  {
     "company_short_name": "Aldar",
     "company_full_name": "Aldar Properties PJSC",
     "company_website": "https://www.aldar.com/",
@@ -756,6 +736,607 @@
       {
         "partnership_name": "Partnership with Environment Agency – Abu Dhabi and Emirates Nature-WWF",
         "partnership_description": "Study of biodiversity and raising awareness of marine ecosystems in Abu Dhabi"
+      }
+    ]
+  },
+  {
+    "company_short_name": "Orion Systems Integrators LTD",
+    "company_full_name": "Orion Systems Integrators Limited",
+    "company_website": "https://www.orioninc.com/",
+    "ownership": "Owned by Inspire Integrated Facilities Management L.L.C.",
+    "founded": "05/12/2018",
+    "industries": [
+      "IT Services",
+      "Business Support Services"
+    ],
+    "core_products": "IT systems development, deployment, and management, including cloud computing, data analytics, and application services.",
+    "active_countries": [
+      {
+        "country_name": "United Kingdom",
+        "activity_description": "Provided business support services."
+      }
+    ],
+    "products": [],
+    "services": [
+      {
+        "service_name": "Cloud Computing Services",
+        "service_description": "Offering enterprises on-demand resources, eliminating upfront capital investments, and providing significant economic benefits."
+      },
+      {
+        "service_name": "Data Analytics",
+        "service_description": "Providing data-driven business processes using digital technologies such as data, analytics, and the cloud."
+      },
+      {
+        "service_name": "Application Services",
+        "service_description": "Designing, developing, integrating, deploying, and managing IT solutions for various industries."
+      }
+    ],
+    "tags": [
+      "IT services",
+      "cloud computing",
+      "data analytics",
+      "application services",
+      "business support services"
+    ],
+    "recent_moves": [
+      {
+        "move_name": "Dissolution",
+        "move_description": "The company was dissolved on 19 November 2024."
+      }
+    ],
+    "partnerships": [
+      {
+        "partnership_name": "Microsoft Cloud Accelerate Program",
+        "partnership_description": "Qualified as a member by demonstrating expertise in cloud services."
+      }
+    ]
+  },
+  {
+    "company_short_name": "Data Intelligence",
+    "company_full_name": "Data Intelligence, LLC",
+    "company_website": "https://di-llc.com/",
+    "ownership": "",
+    "founded": "2005",
+    "industries": [
+      "Information Technology",
+      "Cybersecurity",
+      "Logistics Management"
+    ],
+    "core_products": "Information Technology System Development, Cybersecurity, and Logistics/Warehousing support services for U.S. federal clients.",
+    "active_countries": [
+      {
+        "country_name": "United States",
+        "activity_description": "Providing IT Systems Engineering, Software Development, Cybersecurity, and supporting solutions and services to Department of Defense, Intelligence, and Federal Civilian clients."
+      }
+    ],
+    "products": [],
+    "services": [
+      {
+        "service_name": "Full Lifecycle Systems Development",
+        "service_description": "Rapid design, development, deployment, and sustainment of systems using modern tools and methods."
+      },
+      {
+        "service_name": "Systems Engineering & Integration",
+        "service_description": "Applying repeatable processes based on ISO/IEC/IEEE 12207:2017 standard for defining, controlling, and improving System Life Cycle Processes."
+      },
+      {
+        "service_name": "Cybersecurity",
+        "service_description": "Providing NIST Risk Management Framework (RMF), FISMA, Security Engineering, Software Assurance/Code Quality, and Cybersecurity Operations services."
+      },
+      {
+        "service_name": "Program, Project, and Service Management",
+        "service_description": "Using standard, repeatable processes based on current industry best practices for Program, Project, and Service Management."
+      },
+      {
+        "service_name": "Command & Control – C4ISR, C5ISR",
+        "service_description": "Providing systems engineering and integration services for Command and Control systems."
+      },
+      {
+        "service_name": "Logistics Management",
+        "service_description": "Developing Logistics Management Systems to support client operations."
+      }
+    ],
+    "tags": [
+      "Information Technology",
+      "Cybersecurity",
+      "Logistics Management",
+      "Systems Engineering",
+      "Software Development",
+      "Federal Clients",
+      "Department of Defense",
+      "ISO 9001:2015",
+      "ISO 20000",
+      "ISO 27001",
+      "CMMI Level 3",
+      "Small Business",
+      "DevSecOps",
+      "NIST RMF",
+      "FISMA",
+      "Program Management",
+      "Project Management",
+      "Service Management",
+      "Command and Control",
+      "C4ISR",
+      "C5ISR"
+    ],
+    "recent_moves": [
+      {
+        "move_name": "Awarded GSA OASIS+ MAC Program Small Business IDIQ",
+        "move_description": "On December 20, 2024, Data Intelligence, LLC was awarded the GSA OASIS+ MAC Program Small Business IDIQ to provide Government agencies with total integrated solutions for a multitude of services-based requirements on a global basis."
+      },
+      {
+        "move_name": "Appraised at CMMI Maturity Level 3",
+        "move_description": "On December 11, 2024, Data Intelligence, LLC was appraised at CMMI Maturity Level 3 by ISACA, indicating a focus on continuous performance improvement and producing high-quality products and services."
+      },
+      {
+        "move_name": "Awarded FBI ITSSS-2 BPA",
+        "move_description": "On June 14, 2024, Data Intelligence, LLC was awarded an Information Technology Supplies and Support Services 2nd Generation (ITSSS-2) Blanket Purchase Agreement (BPA) by the Federal Bureau of Investigation (FBI), enabling the provision of a wide range of IT services to the FBI and the Department of Justice."
+      }
+    ],
+    "partnerships": []
+  },
+  {
+    "company_short_name": "Eltizam",
+    "company_full_name": "Eltizam Asset Management Estate LLC",
+    "company_website": "http://www.eltizamgroup.com/",
+    "ownership": "As of July 1, 2023, Eltizam Asset Management Estate LLC is majority-owned by Aldar Properties PJSC, which acquired a 65% stake from International Holding Company PJSC and Abu Dhabi National Exhibitions Company PJSC.",
+    "founded": "",
+    "industries": [
+      "Real Estate",
+      "Asset Management",
+      "Facilities Management"
+    ],
+    "core_products": "Eltizam provides comprehensive asset management services, including property management, facilities management, and real estate development management.",
+    "active_countries": [
+      {
+        "country_name": "United Arab Emirates",
+        "activity_description": "Headquartered in Abu Dhabi, Eltizam offers a full suite of asset management services across the UAE."
+      },
+      {
+        "country_name": "Middle East and North Africa (MENA) region",
+        "activity_description": "Through subsidiaries like Omnius Estate Services, Eltizam provides property management solutions across the MENA region."
+      }
+    ],
+    "products": [
+      {
+        "product_name": "Omnius Estate Services",
+        "product_description": "Technology-powered end-to-end property management services, including property management, financial management, sales and leasing, tenant relationship management, facilities services management, energy management, and portfolio insights and analytics."
+      }
+    ],
+    "services": [
+      {
+        "service_name": "LITE Development & Consulting",
+        "service_description": "Development management services, including design, project, and cost management, overseeing real estate projects from inception to completion."
+      },
+      {
+        "service_name": "Facilities Management",
+        "service_description": "Comprehensive facilities management services ensuring operational quality and customer satisfaction."
+      }
+    ],
+    "tags": [
+      "Asset Management",
+      "Property Management",
+      "Facilities Management",
+      "Real Estate Development",
+      "MENA Region",
+      "Technology-Driven Solutions"
+    ],
+    "recent_moves": [
+      {
+        "move_name": "Acquisition by Aldar Properties PJSC",
+        "move_description": "On July 1, 2023, Aldar Properties PJSC completed the acquisition of a 65% stake in Eltizam Asset Management Estate LLC from International Holding Company PJSC and Abu Dhabi National Exhibitions Company PJSC."
+      },
+      {
+        "move_name": "Launch of LITE Development & Consulting",
+        "move_description": "In March 2022, Eltizam established LITE Development & Consulting to provide comprehensive development management services, including design, project, and cost management."
+      },
+      {
+        "move_name": "Launch of Omnius Estate Services",
+        "move_description": "In August 2025, Eltizam launched Omnius Estate Services, offering technology-powered end-to-end property management services across the MENA region."
+      },
+      {
+        "move_name": "Acquisition of Inspire Integrated",
+        "move_description": "In September 2021, Eltizam acquired Inspire Integrated for AED 37 million to expand its real estate, infrastructure property management, facilities management, and project delivery services."
+      },
+      {
+        "move_name": "Partnership with Colliers",
+        "move_description": "In January 2022, Eltizam expanded its MENA presence through a partnership with Colliers, enhancing its portfolio in existing and emerging markets."
+      }
+    ],
+    "partnerships": [
+      {
+        "partnership_name": "Colliers Partnership",
+        "partnership_description": "In January 2022, Eltizam partnered with Colliers to deepen services and maximize real estate potential for clients in the MENA region."
+      },
+      {
+        "partnership_name": "Transguard Group Service Agreement",
+        "partnership_description": "In April 2019, Eltizam signed a AED 28.7 million service agreement with Transguard Group for the provision of security services to multiple buildings and developments throughout the UAE."
+      }
+    ]
+  },
+  {
+    "company_short_name": "iFM",
+    "company_full_name": "iFM Holdings Limited",
+    "company_website": "https://www.ifmuae.net/",
+    "ownership": "",
+    "founded": "",
+    "industries": [
+      "Facilities Management",
+      "Integrated Services"
+    ],
+    "core_products": "Comprehensive Integrated Facilities Services Solutions across various sectors including residential, commercial, hospitality, healthcare, retail, public, and education.",
+    "active_countries": [
+      {
+        "country_name": "United Arab Emirates",
+        "activity_description": "Providing integrated facilities management services across all seven emirates."
+      }
+    ],
+    "products": [],
+    "services": [
+      {
+        "service_name": "Planned Preventive Maintenance (PPM)",
+        "service_description": "Scheduled maintenance services to prevent equipment failures and ensure optimal performance."
+      },
+      {
+        "service_name": "Reactive Maintenance (RM)",
+        "service_description": "On-demand repair services to address unexpected equipment failures or issues."
+      },
+      {
+        "service_name": "Housekeeping Services",
+        "service_description": "Comprehensive cleaning services to maintain hygiene and cleanliness standards."
+      },
+      {
+        "service_name": "Security Services",
+        "service_description": "Provision of security personnel and systems to ensure safety and security of facilities."
+      },
+      {
+        "service_name": "Pest Control Services",
+        "service_description": "Management and eradication of pests to maintain a healthy environment."
+      }
+    ],
+    "tags": [
+      "Facilities Management",
+      "Integrated Services",
+      "UAE",
+      "Maintenance",
+      "Housekeeping",
+      "Security",
+      "Pest Control",
+      "Residential",
+      "Commercial",
+      "Hospitality",
+      "Healthcare",
+      "Retail",
+      "Public",
+      "Education"
+    ],
+    "recent_moves": [],
+    "partnerships": []
+  },
+  {
+    "company_short_name": "iREC Holdings",
+    "company_full_name": "iREC Holdings Limited",
+    "company_website": "https://irec.group/",
+    "ownership": "iREC Holdings is a subsidiary holding company of Eltizam Asset Management Group, which is ultimately owned by ADQ and IHC.",
+    "founded": "",
+    "industries": [
+      "Real Estate Management",
+      "Community Management",
+      "Property Management"
+    ],
+    "core_products": "iREC Holdings focuses on real estate management activities, including community and property management business lines, and leading advisory services.",
+    "active_countries": [
+      {
+        "country_name": "United Arab Emirates",
+        "activity_description": "Community and property management services."
+      },
+      {
+        "country_name": "Oman",
+        "activity_description": "Community and property management services through Three60 Communities."
+      },
+      {
+        "country_name": "Egypt",
+        "activity_description": "Community and property management services through Three60 Communities."
+      },
+      {
+        "country_name": "Saudi Arabia",
+        "activity_description": "Contracts with the Ministry of Health and asset management for a portfolio of eight hotels."
+      }
+    ],
+    "products": [],
+    "services": [
+      {
+        "service_name": "Property Management",
+        "service_description": "Customized services tailored to the specific needs of each property and owner, ensuring that the property is well-maintained and profitable."
+      },
+      {
+        "service_name": "Community Management",
+        "service_description": "Overseeing a community’s day-to-day operations and well-being, including managing amenities, organizing events, and addressing resident concerns."
+      },
+      {
+        "service_name": "Owners Association Management",
+        "service_description": "Providing administrative, financial, and operational support to homeowner associations, ensuring the community runs smoothly and efficiently."
+      },
+      {
+        "service_name": "Financial Asset Management",
+        "service_description": "Developing and implementing effective investment strategies that help maximize the community’s financial resources while meeting all financial obligations."
+      },
+      {
+        "service_name": "Service Charge Budgeting",
+        "service_description": "Preparing service charge budgets to ensure all necessary expenses are accounted for, and tenants are charged a fair and reasonable service charge."
+      },
+      {
+        "service_name": "Handover Management",
+        "service_description": "Effective handover management services, ensuring that the transfer of ownership is completed on time and with minimal disruption to tenants and other stakeholders."
+      }
+    ],
+    "tags": [
+      "Real Estate Management",
+      "Community Management",
+      "Property Management",
+      "Owners Association Management",
+      "Financial Asset Management",
+      "Service Charge Budgeting",
+      "Handover Management",
+      "United Arab Emirates",
+      "Oman",
+      "Egypt",
+      "Saudi Arabia"
+    ],
+    "recent_moves": [
+      {
+        "move_name": "Acquisition of Kingfield Owners Association and Inspire Properties",
+        "move_description": "In 2021, iREC Holdings acquired Kingfield Owners Association and Inspire Properties, leading to a restructuring of its portfolio of brands operating in property management, owners association management, and technical facilities management sectors."
+      },
+      {
+        "move_name": "Contract with Saudi Arabian Government",
+        "move_description": "Renewed a contract with the government of Saudi Arabia for a major state project and with a Health & Wellness client in KSA."
+      },
+      {
+        "move_name": "Contract with Ministry of Health in Saudi Arabia",
+        "move_description": "Involved in a contract with the Ministry of Health in Saudi Arabia and an asset management contract for a portfolio of eight hotels in Saudi Arabia."
+      }
+    ],
+    "partnerships": []
+  },
+  {
+    "company_short_name": "Teslam",
+    "company_full_name": "Teslam Business Services Philippines INC",
+    "company_website": "https://teslamsolutions.com/",
+    "ownership": "",
+    "founded": "",
+    "industries": [
+      "Offshore Resourcing",
+      "Business Process Outsourcing"
+    ],
+    "core_products": "Flexible and effective offshore staffing solutions tailored to optimize workflows, enhance productivity, and drive sustainable growth.",
+    "active_countries": [
+      {
+        "country_name": "Philippines",
+        "activity_description": "Headquartered in Exquadra Tower, providing offshore resourcing and business process outsourcing services."
+      }
+    ],
+    "products": [],
+    "services": [
+      {
+        "service_name": "Payroll & Accounting",
+        "service_description": "Managing payroll and accounting, ensuring tax and regulation compliance with seamless efficiency."
+      },
+      {
+        "service_name": "HR and Administration",
+        "service_description": "Comprehensive back-office HR support, including recruitment, training, job grading, and succession planning."
+      },
+      {
+        "service_name": "Financial Analysis",
+        "service_description": "Management accounting and reporting services ensuring accurate financial statements, budgeting, variance analysis, and cost management."
+      },
+      {
+        "service_name": "IT",
+        "service_description": "Complete range of IT services including ERP support, network management, and IT security."
+      },
+      {
+        "service_name": "Procurement",
+        "service_description": "Transactional back-office procurement support, handling vendor management and reducing the need for internal personnel."
+      },
+      {
+        "service_name": "Contact Centre",
+        "service_description": "Providing trained individuals to enhance customer experience and build stronger relationships."
+      }
+    ],
+    "tags": [
+      "offshore resourcing",
+      "business process outsourcing",
+      "payroll management",
+      "HR support",
+      "financial analysis",
+      "IT services",
+      "procurement support",
+      "contact center services",
+      "sustainability",
+      "data security"
+    ],
+    "recent_moves": [
+      {
+        "move_name": "Selected GoDaddy for Application Hosting and Computing Services",
+        "move_description": "In 2023, Teslam Solutions selected GoDaddy for application hosting and computing services, integrating with existing systems."
+      }
+    ],
+    "partnerships": []
+  },
+  {
+    "company_short_name": "Kingfield",
+    "company_full_name": "Kingfield Community Management Co LLC",
+    "company_website": "https://kingfield.com/",
+    "ownership": "Kingfield is now part of Asteco.",
+    "founded": "2010",
+    "industries": [
+      "Real Estate",
+      "Community Management"
+    ],
+    "core_products": "Owners Association Management Services",
+    "active_countries": [
+      {
+        "country_name": "United Arab Emirates",
+        "activity_description": "Providing Owners Association Management Services"
+      }
+    ],
+    "products": [],
+    "services": [
+      {
+        "service_name": "Owners Association Management",
+        "service_description": "Comprehensive management services for new and existing Owners Associations, including financial management and service-fee collections."
+      },
+      {
+        "service_name": "Community Management Solutions",
+        "service_description": "Dynamic hands-on management of projects and their contractors to ensure community well-being."
+      },
+      {
+        "service_name": "Financial Asset Management & Reporting",
+        "service_description": "Providing financial management services to ensure transparency and efficiency in community finances."
+      },
+      {
+        "service_name": "Online Service for Residents and Owners",
+        "service_description": "User-friendly digital applications facilitating service fee payment, facility reservations, helpdesk requests, and more."
+      },
+      {
+        "service_name": "Community Event Management",
+        "service_description": "Organizing events to foster community engagement and enhance resident satisfaction."
+      }
+    ],
+    "tags": [
+      "Owners Association Management",
+      "Community Management",
+      "Real Estate Services",
+      "Financial Management",
+      "Sustainability Initiatives",
+      "Digital Community Platforms",
+      "Customer Service Excellence",
+      "Property Management",
+      "Community Engagement",
+      "Risk Management"
+    ],
+    "recent_moves": [
+      {
+        "move_name": "Integration with Asteco",
+        "move_description": "Kingfield has become part of Asteco, expanding capabilities and integrated services for communities."
+      }
+    ],
+    "partnerships": [
+      {
+        "partnership_name": "PropEzy",
+        "partnership_description": "Utilizing PropEzy's digital platforms to enhance community management services."
+      }
+    ]
+  },
+  {
+    "company_short_name": "OrionTEK",
+    "company_full_name": "OrionTEK Innovations for Technology Services Egypt",
+    "company_website": "https://orionteki.com/",
+    "ownership": "OrionTEK is a subsidiary of Eltizam Asset Management Group.",
+    "founded": "2011",
+    "industries": [
+      "Information Technology",
+      "Security Solutions",
+      "System Integration",
+      "Cybersecurity",
+      "Energy Management"
+    ],
+    "core_products": "OrionTEK specializes in IT and security solutions, including system integration, cybersecurity, smart building systems, and energy efficiency management.",
+    "active_countries": [
+      {
+        "country_name": "United Arab Emirates",
+        "activity_description": "Headquarters and primary operations"
+      },
+      {
+        "country_name": "Egypt",
+        "activity_description": "Branch office operations"
+      },
+      {
+        "country_name": "Canada",
+        "activity_description": "Project implementations"
+      },
+      {
+        "country_name": "United Kingdom",
+        "activity_description": "Project implementations"
+      },
+      {
+        "country_name": "New Zealand",
+        "activity_description": "Project implementations"
+      },
+      {
+        "country_name": "Saudi Arabia",
+        "activity_description": "Project implementations"
+      },
+      {
+        "country_name": "Kuwait",
+        "activity_description": "Project implementations"
+      },
+      {
+        "country_name": "Bahrain",
+        "activity_description": "Project implementations"
+      },
+      {
+        "country_name": "Oman",
+        "activity_description": "Project implementations"
+      },
+      {
+        "country_name": "Turkey",
+        "activity_description": "Project implementations"
+      }
+    ],
+    "products": [
+      {
+        "product_name": "Airport Solutions",
+        "product_description": "Smart solutions for baggage handling monitoring, check-in security, flow efficiency, and washrooms."
+      },
+      {
+        "product_name": "System Integration",
+        "product_description": "Security, IT, and AV system integration for airports, malls, residential and commercial developments, theme parks, and hotels."
+      },
+      {
+        "product_name": "Annual Maintenance Services",
+        "product_description": "Planned preventative maintenance (PPM) and 24/7 call-out services."
+      },
+      {
+        "product_name": "Cybersecurity",
+        "product_description": "AI-based cybersecurity solutions."
+      },
+      {
+        "product_name": "Utilities Solutions",
+        "product_description": "Energy efficiency management and utility billing solutions."
+      },
+      {
+        "product_name": "Smart Building Systems",
+        "product_description": "Provision of smart building systems."
+      },
+      {
+        "product_name": "Energy Efficiency",
+        "product_description": "Efficient energy solutions."
+      }
+    ],
+    "services": [],
+    "tags": [
+      "IT solutions",
+      "security solutions",
+      "system integration",
+      "cybersecurity",
+      "smart building systems",
+      "energy efficiency",
+      "airport solutions",
+      "utilities management",
+      "AI technology",
+      "IoT technology"
+    ],
+    "recent_moves": [
+      {
+        "move_name": "Acquisition by Eltizam Asset Management Group",
+        "move_description": "In October 2021, Eltizam Asset Management Group acquired Orion Systems to form OrionTEK, aiming to unlock USD 120 million in future revenues."
+      }
+    ],
+    "partnerships": [
+      {
+        "partnership_name": "Darktrace",
+        "partnership_description": "Collaboration with Darktrace to deliver scalable, secure AI-based cybersecurity solutions."
       }
     ]
   }
