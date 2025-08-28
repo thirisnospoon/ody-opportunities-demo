@@ -54,24 +54,37 @@ function InitialBadge({ text = "" }) {
 const COUNTRY_TO_ISO = {
     Argentina: "AR",
     Azerbaijan: "AZ",
+    Bahrain: "BH",
     Belarus: "BY",
+    Canada: "CA",
     Egypt: "EG",
+    "Gulf Cooperation Council (GCC) countries": ["AE", "SA", "KW", "QA", "OM", "BH"],
     India: "IN",
     Jordan: "JO",
     Kazakhstan: "KZ",
+    Kuwait: "KW",
     Mauritius: "MU",
     Mexico: "MX",
+    "Middle East and North Africa (MENA) region": [
+        "DZ","BH","CY","EG","IR","IQ","IL","JO","KW","LB","LY","MA","OM","PS","QA","SA","SY","TN","TR","AE","YE"
+    ],
     Morocco: "MA",
+    "New Zealand": "NZ",
+    Oman: "OM",
+    Philippines: "PH",
+    Romania: "RO",
     Russia: "RU",
+    "Saudi Arabia": "SA",
     Serbia: "RS",
     Seychelles: "SC",
     Syria: "SY",
     "The Netherlands": "NL",
+    Turkey: "TR",
     "United Arab Emirates": "AE",
     "United Kingdom": "GB",
     "United States": "US",
-    "Gulf Cooperation Council (GCC) countries": ["AE", "SA", "KW", "QA", "OM", "BH"],
 };
+
 
 function FlagIcon({ code, size = 12, radius = 0.5 }) {
     if (!code)
