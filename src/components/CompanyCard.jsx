@@ -16,9 +16,6 @@ import { motion } from "framer-motion";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import LanguageIcon from "@mui/icons-material/Language";
 
-// NOTE: Import 'flag-icons' CSS globally once in your app entry:
-// import 'flag-icons/css/flag-icons.min.css';
-
 function domainFromUrl(url) {
     try {
         const u = new URL(url);
@@ -85,7 +82,6 @@ const COUNTRY_TO_ISO = {
     "United States": "US",
 };
 
-
 function FlagIcon({ code, size = 12, radius = 0.5 }) {
     if (!code)
         return (
@@ -97,6 +93,7 @@ function FlagIcon({ code, size = 12, radius = 0.5 }) {
                     border: (t) => `1px solid ${t.palette.divider}`,
                     display: "grid",
                     placeItems: "center",
+                    flex: "0 0 auto",
                 }}
             >
                 <LanguageIcon fontSize="inherit" sx={{ fontSize: size * 0.7, opacity: 0.7 }} />
@@ -139,7 +136,12 @@ function CardFlags({ countries = [], maxVisible = 10, size = 12 }) {
     if (!unique.length) return null;
 
     return (
-        <Stack direction="row" spacing={0.5} alignItems="center">
+        <Stack
+            direction="row"
+            spacing={0.5}
+            alignItems="center"
+            sx={{ flexWrap: "wrap", maxWidth: "100%", minWidth: 0 }}
+        >
             {visible.map((code) => (
                 <FlagIcon key={code} code={code} size={size} />
             ))}
@@ -152,6 +154,7 @@ function CardFlags({ countries = [], maxVisible = 10, size = 12 }) {
                         height: size + 6,
                         borderRadius: 999,
                         "& .MuiChip-label": { px: 0.75, fontSize: 10 },
+                        flex: "0 0 auto",
                     }}
                 />
             )}
@@ -166,32 +169,35 @@ export default function CompanyCard({ company, onOpen }) {
     const productsCount = (company.products || []).length;
 
     return (
-        <motion.div
+        <Box
+            component={motion.div}
             initial={{ opacity: 0, y: 10, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.25 }}
-            style={{ width: "100%" }}
+            sx={{ width: "100%", maxWidth: "100%", display: "block", minWidth: 0 }}
         >
             <Card
                 variant="outlined"
                 sx={{
                     width: "100%",
-                    height: "100%",
+                    maxWidth: "100%",
                     borderRadius: 3,
                     overflow: "hidden",
                     transition: "transform .18s ease, box-shadow .18s ease",
                     ":hover": { boxShadow: 6, transform: "translateY(-2px)" },
                     display: "flex",
                     flexDirection: "column",
+                    minWidth: 0,
                 }}
             >
                 <CardActionArea
                     onClick={onOpen}
                     sx={{
+                        width: "100%",
+                        maxWidth: "100%",
                         display: "flex",
                         flexDirection: "column",
                         alignItems: "stretch",
-                        height: "100%",
                     }}
                 >
                     <Box
@@ -201,6 +207,7 @@ export default function CompanyCard({ company, onOpen }) {
                             flex: "0 0 auto",
                         }}
                     />
+
                     <CardContent
                         sx={{
                             p: 2,
@@ -208,17 +215,22 @@ export default function CompanyCard({ company, onOpen }) {
                             flexDirection: "column",
                             gap: 1.1,
                             flex: "1 1 auto",
-                            minHeight: 0,
+                            minWidth: 0,
                         }}
                     >
-                        <Stack direction="row" spacing={1.25} alignItems="center">
+                        <Stack direction="row" spacing={1.25} alignItems="center" sx={{ minWidth: 0 }}>
                             <InitialBadge text={company.company_full_name || company.company_short_name || ""} />
-                            <Box sx={{ minWidth: 0, flex: 1 }}>
+                            <Box sx={{ minWidth: 0, flex: 1, overflow: "hidden" }}>
                                 <Typography variant="h6" sx={{ lineHeight: 1.2 }} noWrap>
                                     {company.company_full_name || company.company_short_name}
                                 </Typography>
                                 {company.company_website && (
-                                    <Typography variant="body2" color="text.secondary" noWrap sx={{ minWidth: 0, overflow: "hidden" }}>
+                                    <Typography
+                                        variant="body2"
+                                        color="text.secondary"
+                                        noWrap
+                                        sx={{ minWidth: 0, overflow: "hidden" }}
+                                    >
                                         <MLink
                                             href={company.company_website}
                                             target="_blank"
@@ -248,18 +260,19 @@ export default function CompanyCard({ company, onOpen }) {
                         <CardFlags countries={countries} size={12} />
 
                         {company.core_products && (
-                            <Typography variant="body2" sx={{ mt: 0.25 }} color="text.primary">
+                            <Typography
+                                variant="body2"
+                                sx={{ mt: 0.25, color: "text.primary", wordBreak: "break-word", overflowWrap: "anywhere" }}
+                            >
                                 {company.core_products}
                             </Typography>
                         )}
 
-                        <Stack direction="row" spacing={0.5} sx={{ flexWrap: "wrap", mt: 0.25 }}>
+                        <Stack direction="row" spacing={0.5} sx={{ flexWrap: "wrap", mt: 0.25, minWidth: 0 }}>
                             {industries.slice(0, 3).map((i) => (
                                 <Chip key={i} size="small" label={i} sx={{ mb: 0.5 }} />
                             ))}
-                            {industries.length > 3 && (
-                                <Chip size="small" label={`+${industries.length - 3}`} sx={{ mb: 0.5 }} />
-                            )}
+                            {industries.length > 3 && <Chip size="small" label={`+${industries.length - 3}`} sx={{ mb: 0.5 }} />}
                         </Stack>
                     </CardContent>
 
@@ -271,8 +284,10 @@ export default function CompanyCard({ company, onOpen }) {
                             display: "flex",
                             alignItems: "center",
                             justifyContent: "space-between",
-                            flex: "0 0 auto",
                             backgroundColor: "background.paper",
+                            width: "100%",
+                            maxWidth: "100%",
+                            minWidth: 0,
                         }}
                     >
                         <Stack direction="row" spacing={1.5} alignItems="center">
@@ -298,6 +313,6 @@ export default function CompanyCard({ company, onOpen }) {
                     </Box>
                 </CardActionArea>
             </Card>
-        </motion.div>
+        </Box>
     );
 }

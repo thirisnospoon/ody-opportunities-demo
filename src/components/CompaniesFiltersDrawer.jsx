@@ -33,6 +33,11 @@ function MultiSelect({ label, options = [], value = [], onChange }) {
                         ))}
                     </Box>
                 )}
+                MenuProps={{
+                    PaperProps: {
+                        style: { maxHeight: 300, width: "100%" },
+                    },
+                }}
             >
                 {options.map((opt) => (
                     <MenuItem key={opt} value={opt}>
@@ -66,7 +71,9 @@ export default function CompaniesFiltersDrawer({
                 position: permanent ? "sticky" : "relative",
                 top: permanent ? 16 : "auto",
                 width: "100%",
+                maxWidth: "100%",
                 borderRadius: 3,
+                boxSizing: "border-box",
             }}
         >
             <Stack spacing={2}>
@@ -86,7 +93,7 @@ export default function CompaniesFiltersDrawer({
                     onChange={onChange.countries}
                 />
 
-                <Stack direction="row" spacing={1}>
+                <Stack direction="row" spacing={1} justifyContent="flex-end">
                     {!permanent && (
                         <Button variant="contained" onClick={onClose}>
                             Apply
@@ -100,14 +107,28 @@ export default function CompaniesFiltersDrawer({
         </Paper>
     );
 
-    if (permanent)
-        return (
-            <Box sx={{ width: "100%" }}>{content}</Box>
-        );
+    if (permanent) {
+        return <Box sx={{ width: "100%" }}>{content}</Box>;
+    }
 
     return (
-        <Drawer anchor="bottom" open={open} onClose={onClose}>
-            <Box sx={{ p: 2 }}>{content}</Box>
+        <Drawer
+            anchor="bottom"
+            open={open}
+            onClose={onClose}
+            PaperProps={{
+                sx: {
+                    width: "100%",
+                    maxWidth: "100%",
+                    borderTopLeftRadius: 16,
+                    borderTopRightRadius: 16,
+                    p: 0,
+                },
+            }}
+        >
+            <Box sx={{ p: 2, width: "100%", maxWidth: "100%", overflowY: "auto" }}>
+                {content}
+            </Box>
         </Drawer>
     );
 }

@@ -16,10 +16,7 @@ const PER_PAGE = 12;
 
 const containerVariants = {
     hidden: { opacity: 0 },
-    show: {
-        opacity: 1,
-        transition: { staggerChildren: 0.05, when: "beforeChildren" },
-    },
+    show: { opacity: 1, transition: { staggerChildren: 0.05, when: "beforeChildren" } },
 };
 
 export default function CompaniesPage({ src = "/data/out_companies.json" }) {
@@ -51,15 +48,12 @@ export default function CompaniesPage({ src = "/data/out_companies.json" }) {
     const totalPages = Math.max(1, Math.ceil(total / PER_PAGE));
     const pageSafe = Math.min(page, totalPages);
     const pageStart = (pageSafe - 1) * PER_PAGE;
-    const paged = useMemo(
-        () => filtered.slice(pageStart, pageStart + PER_PAGE),
-        [filtered, pageStart]
-    );
+    const paged = useMemo(() => filtered.slice(pageStart, pageStart + PER_PAGE), [filtered, pageStart]);
 
     const anyFilters = industries.length > 0 || countries.length > 0;
 
     return (
-        <Stack spacing={2}>
+        <Stack spacing={2} sx={{ width: "100%", maxWidth: "100%", overflowX: "hidden" }}>
             <CompaniesToolbar
                 search={search}
                 onSearch={(v) => {
@@ -76,19 +70,16 @@ export default function CompaniesPage({ src = "/data/out_companies.json" }) {
                 total={total}
             />
 
-            {/* Дві колонки: фільтр + контент */}
             <Box
                 sx={{
                     display: "grid",
-                    gridTemplateColumns: {
-                        xs: "1fr",
-                        md: "320px 1fr",
-                        lg: "360px 1fr",
-                    },
+                    gridTemplateColumns: { xs: "1fr", md: "320px 1fr", lg: "360px 1fr" },
                     columnGap: 2,
                     rowGap: 2,
                     alignItems: "start",
                     width: "100%",
+                    maxWidth: "100%",
+                    minWidth: 0,
                 }}
                 component={motion.div}
                 variants={containerVariants}
@@ -96,7 +87,7 @@ export default function CompaniesPage({ src = "/data/out_companies.json" }) {
                 animate="show"
             >
                 {isMdUp && (
-                    <Box sx={{ gridColumn: { xs: "1", md: "1" }, minWidth: 0 }}>
+                    <Box sx={{ gridColumn: "1", minWidth: 0, maxWidth: "100%" }}>
                         <CompaniesFiltersDrawer
                             permanent
                             facets={facets}
@@ -115,7 +106,7 @@ export default function CompaniesPage({ src = "/data/out_companies.json" }) {
                     </Box>
                 )}
 
-                <Box sx={{ gridColumn: { xs: "1", md: "2" }, minWidth: 0 }}>
+                <Box sx={{ gridColumn: { xs: "1", md: "2" }, minWidth: 0, maxWidth: "100%" }}>
                     {loading ? (
                         <Box display="flex" justifyContent="center" py={6}>
                             <CircularProgress />
@@ -125,11 +116,7 @@ export default function CompaniesPage({ src = "/data/out_companies.json" }) {
                     ) : total === 0 ? (
                         <EmptyState
                             title={anyFilters || search ? "No companies match" : "Nothing to show yet"}
-                            subtitle={
-                                anyFilters || search
-                                    ? "Try adjusting your filters or search terms."
-                                    : "Add data to out_companies.json."
-                            }
+                            subtitle={anyFilters || search ? "Try adjusting your filters or search terms." : "Add data to out_companies.json."}
                         />
                     ) : (
                         <>
@@ -138,10 +125,12 @@ export default function CompaniesPage({ src = "/data/out_companies.json" }) {
                                 sx={{
                                     display: "grid",
                                     gridTemplateColumns: {
-                                        xs: "1fr",
+                                        xs: "minmax(0, 1fr)",
                                         sm: "repeat(2, minmax(0, 1fr))",
                                     },
                                     gap: 2,
+                                    minWidth: 0,
+                                    maxWidth: "100%",
                                 }}
                             >
                                 {paged.map((company, idx) => (
@@ -187,11 +176,7 @@ export default function CompaniesPage({ src = "/data/out_companies.json" }) {
                 />
             )}
 
-            <CompanyDialog
-                open={Boolean(selectedCompany)}
-                company={selectedCompany}
-                onClose={() => setSelectedCompany(null)}
-            />
+            <CompanyDialog open={Boolean(selectedCompany)} company={selectedCompany} onClose={() => setSelectedCompany(null)} />
         </Stack>
     );
 }
