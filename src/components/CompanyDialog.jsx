@@ -99,7 +99,6 @@ const COUNTRY_TO_ISO = {
     "United States": "US",
 };
 
-
 function expandToFlagCodes(countries = []) {
     const codes = [];
     countries.forEach((c) => {
@@ -122,6 +121,7 @@ function FlagIcon({ code, size = 14, radius = 0.5 }) {
                     border: (t) => `1px solid ${t.palette.divider}`,
                     display: "grid",
                     placeItems: "center",
+                    background: (t) => (t.palette.mode === "light" ? t.palette.grey[50] : t.palette.grey[900]),
                 }}
             >
                 <LanguageIcon fontSize="inherit" sx={{ fontSize: size * 0.7, opacity: 0.7 }} />
@@ -139,6 +139,8 @@ function FlagIcon({ code, size = 14, radius = 0.5 }) {
                 border: (t) => `1px solid ${t.palette.divider}`,
                 lineHeight: 0,
                 flex: "0 0 auto",
+                boxShadow: 1,
+                background: (t) => (t.palette.mode === "light" ? "#fff" : t.palette.background.paper),
             }}
         >
             <Box
@@ -155,6 +157,7 @@ function FlagIcon({ code, size = 14, radius = 0.5 }) {
     );
 }
 
+/** Desktop/tablet inline flags */
 function CountryFlagsStrip({ countries, maxVisible = 18, size = 14 }) {
     const codes = expandToFlagCodes(countries);
     const visible = codes.slice(0, maxVisible);
@@ -179,6 +182,60 @@ function CountryFlagsStrip({ countries, maxVisible = 18, size = 14 }) {
                 />
             )}
         </Stack>
+    );
+}
+
+/** Mobile-only compact, scrollable flag bar with better visual container */
+function FlagBarMobile({ countries, size = 12, maxVisible = 30 }) {
+    const codes = expandToFlagCodes(countries);
+    const visible = codes.slice(0, maxVisible);
+    const rest = Math.max(0, codes.length - visible.length);
+
+    return (
+        <Box
+            sx={{
+                width: "100%",
+                overflowX: "auto",
+                ...noScrollbar,
+            }}
+        >
+            <Stack
+                direction="row"
+                spacing={0.5}
+                alignItems="center"
+                sx={{
+                    width: "max-content",
+                    p: 0.5,
+                    px: 1,
+                    borderRadius: 999,
+                    border: (t) => `1px solid ${t.palette.divider}`,
+                    bgcolor: (t) =>
+                        t.palette.mode === "light" ? "rgba(0,0,0,0.03)" : "rgba(255,255,255,0.04)",
+                    boxShadow: 1,
+                    backdropFilter: "saturate(140%) blur(4px)",
+                }}
+                component={motion.div}
+                initial={{ opacity: 0, y: 6 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.22 }}
+            >
+                {visible.map((c) => (
+                    <FlagIcon key={c} code={c} size={size} radius={0.75} />
+                ))}
+                {rest > 0 && (
+                    <Chip
+                        size="small"
+                        label={`+${rest}`}
+                        variant="outlined"
+                        sx={{
+                            height: size + 8,
+                            borderRadius: 999,
+                            "& .MuiChip-label": { px: 0.75, fontSize: 11 },
+                        }}
+                    />
+                )}
+            </Stack>
+        </Box>
     );
 }
 
@@ -494,52 +551,83 @@ export default function CompanyDialog({ open, company, onClose }) {
                             {c.company_full_name || c.company_short_name || "Company"}
                         </Typography>
 
-                        <Stack
-                            direction="row"
-                            spacing={0.75}
-                            alignItems="center"
-                            sx={{ mt: 0.75, flexWrap: "wrap", rowGap: 0.5 }}
-                        >
-                            {/* >>> FLAGS FIRST (before industries) <<< */}
-                            {!!countries.length && (
-                                <Box
-                                    sx={{
-                                        mr: 0.5,
-                                        maxWidth: { xs: "60%", sm: "50%", md: "40%" },
-                                        overflowX: "auto",
-                                        flexShrink: 0,
-                                        display: "flex",
-                                        alignItems: "center",
-                                        ...noScrollbar,
-                                    }}
-                                >
-                                    <CountryFlagsStrip
-                                        countries={countries}
-                                        size={isSmDown ? 12 : 14}
-                                        maxVisible={isSmDown ? 24 : 36}
+                        {/* ===== Mobile-first improved top bar arrangement ===== */}
+                        {isSmDown ? (
+                            <Stack spacing={0.75} sx={{ mt: 0.75 }}>
+                                {/* FLAGS FIRST (full-width compact scrollable bar) */}
+                                {!!countries.length && (
+                                    <FlagBarMobile countries={countries} size={12} maxVisible={30} />
+                                )}
+
+                                {/* Industries row */}
+                                {(industries.length > 0 || siteDomain) && (
+                                    <Stack direction="row" spacing={0.75} alignItems="center" sx={{ flexWrap: "wrap", rowGap: 0.5 }}>
+                                        {industries.slice(0, 4).map((i) => (
+                                            <Chip key={i} size="small" label={i} variant="outlined" />
+                                        ))}
+                                        {industries.length > 4 && (
+                                            <Chip size="small" label={`+${industries.length - 4}`} variant="outlined" />
+                                        )}
+
+                                        {/* Website chip */}
+                                        {siteDomain && (
+                                            <Chip
+                                                size="small"
+                                                icon={<OpenInNewIcon sx={{ fontSize: 16 }} />}
+                                                label={siteDomain}
+                                                onClick={() => window.open(c.company_website, "_blank", "noreferrer")}
+                                                sx={{ ml: 0.25 }}
+                                            />
+                                        )}
+                                    </Stack>
+                                )}
+                            </Stack>
+                        ) : (
+                            /* ===== Desktop / tablet inline row ===== */
+                            <Stack
+                                direction="row"
+                                spacing={0.75}
+                                alignItems="center"
+                                sx={{ mt: 0.75, flexWrap: "wrap", rowGap: 0.5 }}
+                            >
+                                {!!countries.length && (
+                                    <Box
+                                        sx={{
+                                            mr: 0.5,
+                                            maxWidth: { xs: "60%", sm: "50%", md: "40%" },
+                                            overflowX: "auto",
+                                            flexShrink: 0,
+                                            display: "flex",
+                                            alignItems: "center",
+                                            ...noScrollbar,
+                                        }}
+                                    >
+                                        <CountryFlagsStrip
+                                            countries={countries}
+                                            size={14}
+                                            maxVisible={36}
+                                        />
+                                    </Box>
+                                )}
+
+                                {industries.slice(0, 5).map((i) => (
+                                    <Chip key={i} size="small" label={i} variant="outlined" />
+                                ))}
+                                {industries.length > 5 && (
+                                    <Chip size="small" label={`+${industries.length - 5}`} variant="outlined" />
+                                )}
+
+                                {siteDomain && (
+                                    <Chip
+                                        size="small"
+                                        icon={<OpenInNewIcon sx={{ fontSize: 16 }} />}
+                                        label={siteDomain}
+                                        onClick={() => window.open(c.company_website, "_blank", "noreferrer")}
+                                        sx={{ ml: 0.5, maxWidth: "100%" }}
                                     />
-                                </Box>
-                            )}
-
-                            {/* Industries */}
-                            {industries.slice(0, isSmDown ? 3 : 5).map((i) => (
-                                <Chip key={i} size="small" label={i} variant="outlined" />
-                            ))}
-                            {industries.length > (isSmDown ? 3 : 5) && (
-                                <Chip size="small" label={`+${industries.length - (isSmDown ? 3 : 5)}`} variant="outlined" />
-                            )}
-
-                            {/* Website chip */}
-                            {siteDomain && (
-                                <Chip
-                                    size="small"
-                                    icon={<OpenInNewIcon sx={{ fontSize: 16 }} />}
-                                    label={siteDomain}
-                                    onClick={() => window.open(c.company_website, "_blank", "noreferrer")}
-                                    sx={{ ml: 0.5, maxWidth: "100%" }}
-                                />
-                            )}
-                        </Stack>
+                                )}
+                            </Stack>
+                        )}
                     </Box>
 
                     {/* Right: Actions */}

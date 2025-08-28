@@ -149,10 +149,13 @@ export default function EventsPage({ dataFolder = "/data" }) {
     const closeDialog = () => setSelectedEvent(null);
 
     return (
-        <Stack spacing={2}>
-            <Paper variant="outlined">
+        <Stack
+            spacing={2}
+            sx={{ width: "100%", maxWidth: "100%", overflowX: "hidden", minWidth: 0 }}
+        >
+            <Paper variant="outlined" sx={{ width: "100%", maxWidth: "100%", overflow: "hidden" }}>
                 <IndustryTabs
-                    industries={facets.industries}
+                    industries={facets?.industries || []}
                     counts={tabCounts}
                     value={tabIndustry}
                     onChange={setTabIndustry}
@@ -163,12 +166,15 @@ export default function EventsPage({ dataFolder = "/data" }) {
                 <Box
                     sx={{
                         display: "grid",
-                        gridTemplateColumns: { md: "360px 1fr" },
+                        gridTemplateColumns: { md: "minmax(0,360px) minmax(0,1fr)" },
                         gap: 2,
+                        width: "100%",
+                        maxWidth: "100%",
+                        minWidth: 0,
                     }}
                 >
                     {/* Left: filters (sticky) */}
-                    <Box>
+                    <Box sx={{ minWidth: 0, maxWidth: "100%" }}>
                         <FiltersDrawer
                             permanent
                             width={{ md: 360 }}
@@ -195,7 +201,7 @@ export default function EventsPage({ dataFolder = "/data" }) {
                     </Box>
 
                     {/* Right: content list - single column */}
-                    <Box>
+                    <Box sx={{ minWidth: 0, maxWidth: "100%" }}>
                         <EventsToolbar
                             search={search}
                             onSearch={setSearch}
@@ -205,13 +211,9 @@ export default function EventsPage({ dataFolder = "/data" }) {
 
                         <StatsBar
                             total={total}
-                            uniqueCompanies={
-                                new Set(filtered.map((o) => o.company_name).filter(Boolean)).size
-                            }
-                            yearsRange={facets.years}
-                            aiModelsCount={
-                                new Set(filtered.map((o) => o.ai_model).filter(Boolean)).size
-                            }
+                            uniqueCompanies={new Set(filtered.map((o) => o.company_name).filter(Boolean)).size}
+                            yearsRange={facets?.years}
+                            aiModelsCount={new Set(filtered.map((o) => o.ai_model).filter(Boolean)).size}
                         />
 
                         {loading ? (
@@ -230,12 +232,14 @@ export default function EventsPage({ dataFolder = "/data" }) {
                                 <Box
                                     sx={{
                                         display: "grid",
-                                        gridTemplateColumns: "1fr",
+                                        gridTemplateColumns: { xs: "minmax(0,1fr)" },
                                         gap: 2,
+                                        minWidth: 0,
+                                        maxWidth: "100%",
                                     }}
                                 >
                                     {paged.map((item, idx) => (
-                                        <Box key={`${item.title}-${idx}`} sx={{ width: "100%" }}>
+                                        <Box key={`${item.title}-${idx}`} sx={{ width: "100%", minWidth: 0 }}>
                                             <EventCard item={item} onOpen={() => openDialog(item)} />
                                         </Box>
                                     ))}
@@ -256,7 +260,7 @@ export default function EventsPage({ dataFolder = "/data" }) {
                 </Box>
             ) : (
                 // Mobile (single column + bottom-sheet filters)
-                <Box>
+                <Box sx={{ width: "100%", maxWidth: "100%", minWidth: 0, overflowX: "hidden" }}>
                     <EventsToolbar
                         search={search}
                         onSearch={setSearch}
@@ -291,13 +295,9 @@ export default function EventsPage({ dataFolder = "/data" }) {
 
                     <StatsBar
                         total={total}
-                        uniqueCompanies={
-                            new Set(filtered.map((o) => o.company_name).filter(Boolean)).size
-                        }
-                        yearsRange={facets.years}
-                        aiModelsCount={
-                            new Set(filtered.map((o) => o.ai_model).filter(Boolean)).size
-                        }
+                        uniqueCompanies={new Set(filtered.map((o) => o.company_name).filter(Boolean)).size}
+                        yearsRange={facets?.years}
+                        aiModelsCount={new Set(filtered.map((o) => o.ai_model).filter(Boolean)).size}
                     />
 
                     {loading ? (
@@ -313,9 +313,17 @@ export default function EventsPage({ dataFolder = "/data" }) {
                         />
                     ) : (
                         <>
-                            <Box sx={{ display: "grid", gridTemplateColumns: "1fr", gap: 2 }}>
+                            <Box
+                                sx={{
+                                    display: "grid",
+                                    gridTemplateColumns: { xs: "minmax(0,1fr)" },
+                                    gap: 2,
+                                    minWidth: 0,
+                                    maxWidth: "100%",
+                                }}
+                            >
                                 {paged.map((item, idx) => (
-                                    <Box key={`${item.title}-${idx}`} sx={{ width: "100%" }}>
+                                    <Box key={`${item.title}-${idx}`} sx={{ width: "100%", minWidth: 0 }}>
                                         <EventCard item={item} onOpen={() => openDialog(item)} />
                                     </Box>
                                 ))}
