@@ -7,7 +7,8 @@ function normalizeFolder(urlOrFolder) {
     return String(urlOrFolder).replace(/\/+$/, "");
 }
 
-/** Resolve sources:
+/**
+ * Resolve sources:
  * - string ending with .json → single file
  * - array → list of files
  * - folder → try <folder>/index.json or <folder>/manifest.json
@@ -16,10 +17,8 @@ function normalizeFolder(urlOrFolder) {
  */
 async function resolveSources(urlOrFolder) {
     if (Array.isArray(urlOrFolder)) return urlOrFolder;
-
     const src = String(urlOrFolder || "").trim();
     if (!src) return [];
-
     if (src.toLowerCase().endsWith(".json")) return [src];
 
     const base = normalizeFolder(src);
@@ -40,7 +39,6 @@ async function resolveSources(urlOrFolder) {
             /* try next candidate */
         }
     }
-
     return [`${base}/data.json`];
 }
 
@@ -107,9 +105,7 @@ export default function useEvents(urlOrFolder) {
             try {
                 setLoading(true);
                 setError(null);
-
                 const sources = await resolveSources(urlOrFolder);
-
                 const responses = await Promise.allSettled(
                     sources.map((u) =>
                         fetch(u, { cache: "no-store", signal: controller.signal }).then((r) => {
@@ -118,12 +114,10 @@ export default function useEvents(urlOrFolder) {
                         })
                     )
                 );
-
                 if (!active) return;
 
                 const merged = [];
                 const errs = [];
-
                 responses.forEach((res) => {
                     if (res.status === "fulfilled") {
                         const json = res.value;
@@ -152,6 +146,5 @@ export default function useEvents(urlOrFolder) {
     }, [urlOrFolder]);
 
     const memoedFacets = useMemo(() => facets, [facets]);
-
     return { data, facets: memoedFacets, loading, error };
 }

@@ -1,0 +1,683 @@
+[
+  {
+    "company_short_name": "Esyasoft",
+    "company_full_name": "Esyasoft Holding Ltd.",
+    "company_website": "https://www.esyasoft.com/",
+    "ownership": "Privately Held",
+    "founded": "2014",
+    "industries": [
+      "Energy",
+      "Information Technology",
+      "IoT"
+    ],
+    "core_products": "AI-powered technology and analytics solutions for energy transition projects, including Smart Grid Suite, Energy Mobility, Analytics & AI, IoT Products, and Climate Tech.",
+    "active_countries": [
+      {
+        "country_name": "United Kingdom",
+        "activity_description": "Office in London"
+      },
+      {
+        "country_name": "The Netherlands",
+        "activity_description": "Office in Rotterdam"
+      },
+      {
+        "country_name": "Azerbaijan",
+        "activity_description": "Office in Baku"
+      },
+      {
+        "country_name": "United States",
+        "activity_description": "Offices in Washington DC and San Francisco"
+      },
+      {
+        "country_name": "United Arab Emirates",
+        "activity_description": "Offices in Dubai and Abu Dhabi"
+      },
+      {
+        "country_name": "India",
+        "activity_description": "Offices in Bengaluru, New Delhi, Mumbai, Ahmedabad, and Kolkata"
+      }
+    ],
+    "products": [
+      {
+        "product_name": "Smart Grid Suite",
+        "product_description": "Comprehensive Cloud-Edge Platform solutions and services designed to enable the end-to-end digital transformation of energy distribution grids."
+      },
+      {
+        "product_name": "Energy Mobility",
+        "product_description": "Implementation of EV infrastructure, enabling a seamless transition to electric mobility."
+      },
+      {
+        "product_name": "Analytics & AI",
+        "product_description": "Cutting-edge analytics and artificial intelligence solutions empowering energy companies with data-driven insights to enhance efficiency, reliability, and sustainability."
+      },
+      {
+        "product_name": "IoT Products",
+        "product_description": "Diverse lineup of devices, from smart meters to sophisticated sensors and controllers, designed for modernizing electricity, water, and gas utility grids."
+      },
+      {
+        "product_name": "Climate Tech",
+        "product_description": "Addressing climate change challenges by decarbonization, utilizing emerging technologies like blockchain and artificial intelligence."
+      }
+    ],
+    "services": [],
+    "tags": [
+      "Smart Grid",
+      "Energy Transition",
+      "AI",
+      "IoT",
+      "Analytics",
+      "Sustainability",
+      "Energy Efficiency",
+      "Electric Mobility",
+      "Climate Tech",
+      "Decarbonization"
+    ],
+    "recent_moves": [
+      {
+        "move_name": "Acquisition of Good Energy",
+        "move_description": "On April 16, 2025, Esyasoft acquired Good Energy, marking a bold step towards energy transition."
+      },
+      {
+        "move_name": "Joining UN Global Compact",
+        "move_description": "On November 25, 2024, Esyasoft Holding joined the United Nations Global Compact Initiative."
+      },
+      {
+        "move_name": "Recognition by Gartner",
+        "move_description": "On September 2, 2024, Esyasoft was recognized as a Sample Vendor in the Gartner Market Guide for Meter Data Management Systems 2024."
+      },
+      {
+        "move_name": "Acquisition of Float IoT",
+        "move_description": "On August 12, 2024, Esyasoft acquired a 70% stake in Dutch IoT innovator Float, expanding into the smart water technology solutions market."
+      },
+      {
+        "move_name": "Formation of 'IntelliGrid' JV",
+        "move_description": "On June 6, 2024, Esyasoft and Presight formed 'IntelliGrid' JV to revolutionize the energy distribution sector."
+      },
+      {
+        "move_name": "Joint Venture with Adani",
+        "move_description": "On December 27, 2023, Adani announced a Smart Metering Joint Venture with Esyasoft."
+      }
+    ],
+    "partnerships": [
+      {
+        "partnership_name": "Strategic Partnership with Landis+Gyr India Ltd.",
+        "partnership_description": "On December 7, 2023, Esyasoft and Landis+Gyr India Ltd. forged a strategic partnership to accelerate energy transition."
+      }
+    ]
+  },
+  {
+    "company_short_name": "Easy Lease Vehicles Rental LLC",
+    "company_full_name": "Easy Lease Vehicles Rental LLC",
+    "company_website": "https://www.easylease.ae/",
+    "ownership": "Easy Lease Vehicles Rental LLC is a subsidiary of Easy Lease Motor Cycle Rental P.J.S.C., which is publicly listed on the Abu Dhabi Securities Exchange under the ticker symbol EASYLEASE. The parent company is owned by IHC Capital Holding LLC (45.07%), Saeed Bin Mohammed Bin Ahmed Al Qassimi (22.50%), and Ahmad Mohammad Alsayed Al Sadah (22.50%).",
+    "founded": "2011",
+    "industries": [
+      "Vehicle Leasing",
+      "Transportation Services"
+    ],
+    "core_products": "Easy Lease Vehicles Rental LLC specializes in providing comprehensive vehicle leasing solutions, including motorcycles and other vehicles, offering full-service leases that cover maintenance, upkeep, and associated overheads.",
+    "active_countries": [
+      {
+        "country_name": "United Arab Emirates",
+        "activity_description": "Provides vehicle leasing and rental services across various emirates."
+      }
+    ],
+    "products": [
+      {
+        "product_name": "Motorcycle Leasing",
+        "product_description": "Full-service motorcycle leasing solutions covering maintenance and support."
+      },
+      {
+        "product_name": "Vehicle Rental",
+        "product_description": "Short-term and long-term vehicle rental services for various needs."
+      }
+    ],
+    "services": [
+      {
+        "service_name": "Fleet Management",
+        "service_description": "Comprehensive management of vehicle fleets, including maintenance and logistics."
+      },
+      {
+        "service_name": "Logistics and Freight Forwarding",
+        "service_description": "Transportation, cargo handling, warehousing, and freight clearing services."
+      },
+      {
+        "service_name": "Mobility Solutions",
+        "service_description": "Limousine services, bus on demand, vehicle rental, and recovery services."
+      }
+    ],
+    "tags": [
+      "vehicle leasing",
+      "motorcycle rental",
+      "fleet management",
+      "transportation services",
+      "logistics",
+      "mobility solutions",
+      "UAE"
+    ],
+    "recent_moves": [
+      {
+        "move_name": "Acquisition of QUBE Car Park Management LLC",
+        "move_description": "Acquired a 70% stake in QUBE Car Park Management LLC for AED 5 million on December 1, 2022."
+      },
+      {
+        "move_name": "Acquisition of Fully Charged LLC",
+        "move_description": "Acquired a 60% stake in Fully Charged LLC on December 5, 2023."
+      },
+      {
+        "move_name": "Partnership with BigBear.ai and Vigilix",
+        "move_description": "Announced a strategic partnership with BigBear.ai and Vigilix for applied AI solutions in the UAE on June 11, 2025."
+      }
+    ],
+    "partnerships": [
+      {
+        "partnership_name": "BigBear.ai and Vigilix",
+        "partnership_description": "Collaborated to develop and implement applied AI solutions in the UAE."
+      }
+    ]
+  },
+  {
+    "company_short_name": "RAPM",
+    "company_full_name": "Royal Architect Project Management LLC",
+    "company_website": "https://www.rapmuae.com/",
+    "ownership": "Subsidiary of Emirates Stallions Group",
+    "founded": "2009",
+    "industries": [
+      "Architecture",
+      "Project Management",
+      "Engineering",
+      "Sustainability",
+      "Cost Consultancy"
+    ],
+    "core_products": "Innovative design and engineering solutions, project management, sustainability, and cost consultancy services for various sectors including hospitality, residential, mixed-use, and retail developments.",
+    "active_countries": [
+      {
+        "country_name": "United Arab Emirates",
+        "activity_description": "Headquarters and primary operations"
+      },
+      {
+        "country_name": "Seychelles",
+        "activity_description": "Hospitality projects such as Canopy by Hilton Anse A La Mouche and Waldorf Astoria Platte Island"
+      },
+      {
+        "country_name": "Serbia",
+        "activity_description": "Hospitality project: Viceroy Kopaonik Hotel"
+      },
+      {
+        "country_name": "Morocco",
+        "activity_description": "Hospitality project: Conrad Arzana Hotel"
+      },
+      {
+        "country_name": "Mexico",
+        "activity_description": "Hospitality project: DoubleTree by Hilton Mazatlan"
+      },
+      {
+        "country_name": "Mauritius",
+        "activity_description": "Hospitality project: Les Demeures Resort"
+      },
+      {
+        "country_name": "Russia",
+        "activity_description": "Hospitality project: thelocal Hotel, Chechnya"
+      },
+      {
+        "country_name": "Kazakhstan",
+        "activity_description": "Hospitality project: Canvas Hotel"
+      },
+      {
+        "country_name": "Belarus",
+        "activity_description": "Hospitality project: Minsk Hotel Apartments"
+      },
+      {
+        "country_name": "Syria",
+        "activity_description": "Hospitality project: Damascus Hotel"
+      },
+      {
+        "country_name": "Argentina",
+        "activity_description": "Hospitality project: Bahia Dorada"
+      },
+      {
+        "country_name": "Egypt",
+        "activity_description": "Hospitality project: Cairo Grand Hotel"
+      },
+      {
+        "country_name": "Jordan",
+        "activity_description": "Hospitality project: Jordan Hotel"
+      }
+    ],
+    "products": [
+      {
+        "product_name": "Design & Engineering",
+        "product_description": "Tailored design solutions for the built environment, including large-scale mixed-use developments, high-rise residential and commercial buildings, hotels, and retail spaces."
+      },
+      {
+        "product_name": "Project Management",
+        "product_description": "Expertise in implementing assignments across sectors such as hospitality, residential, mixed-use, and retail, managing projects of varying value, size, and complexity."
+      },
+      {
+        "product_name": "Cost Management",
+        "product_description": "Comprehensive cost consultancy services to ensure projects are delivered within budget while maintaining quality standards."
+      }
+    ],
+    "services": [
+      {
+        "service_name": "Master Urban Planning",
+        "service_description": "Comprehensive planning services for large-scale urban developments, ensuring sustainable and functional urban environments."
+      },
+      {
+        "service_name": "Commercial Projects",
+        "service_description": "Design and management of commercial spaces, including office buildings and retail centers."
+      },
+      {
+        "service_name": "Hospitality Projects",
+        "service_description": "Development of distinctive hotel projects and mixed-use developments that combine architectural creativity with sustainability."
+      },
+      {
+        "service_name": "Residential Projects",
+        "service_description": "Design and management of residential properties, from high-rise apartments to luxury villas."
+      }
+    ],
+    "tags": [
+      "Architecture",
+      "Project Management",
+      "Engineering",
+      "Sustainability",
+      "Cost Consultancy",
+      "Hospitality",
+      "Residential",
+      "Mixed-Use Developments",
+      "Urban Planning",
+      "Commercial Projects"
+    ],
+    "recent_moves": [
+      {
+        "move_name": "Aurora Rise Headquarters Project",
+        "move_description": "Leading the project management of Aurora Rise Headquarters, a dynamic space designed to foster innovation and collaboration, located on Al Hudayriyat Island."
+      },
+      {
+        "move_name": "Global Project Expansion",
+        "move_description": "Successfully completed over 80 projects across more than 20 countries, setting a benchmark for excellence in the industry."
+      }
+    ],
+    "partnerships": [
+      {
+        "partnership_name": "Emirates Stallions Group",
+        "partnership_description": "As a subsidiary of Emirates Stallions Group, RAPM benefits from a strong network and resources in real estate development and services."
+      }
+    ]
+  },
+  {
+    "company_short_name": "Uplift Transport Services LLC",
+    "company_full_name": "Uplift Transport Services LLC",
+    "company_website": "https://uplifttransport.com/",
+    "ownership": "",
+    "founded": "",
+    "industries": [
+      "Non-Emergency Medical Transportation",
+      "Senior Citizen Transportation"
+    ],
+    "core_products": "Non-emergency medical transportation services including gurney, wheelchair, and senior citizen transportation.",
+    "active_countries": [
+      {
+        "country_name": "United States",
+        "activity_description": "Providing non-emergency medical transportation services in California and beyond."
+      }
+    ],
+    "products": [],
+    "services": [
+      {
+        "service_name": "Ambulatory Transportation",
+        "service_description": "Transportation for patients who can walk independently or with minimal assistance to attend medical appointments."
+      },
+      {
+        "service_name": "Wheelchair Transportation",
+        "service_description": "Non-emergency transportation for clients with disabilities or health conditions requiring wheelchair access."
+      },
+      {
+        "service_name": "Gurney/Stretcher Transport",
+        "service_description": "Transportation for patients with limited mobility who require a stretcher for movement."
+      },
+      {
+        "service_name": "Long Distance Medical Transportation",
+        "service_description": "Comprehensive long-distance medical transportation services with continuous monitoring and care."
+      },
+      {
+        "service_name": "Travel Concierge",
+        "service_description": "Personalized services to support seniors and the disabled in engaging in life-enriching activities."
+      }
+    ],
+    "tags": [
+      "non-emergency medical transportation",
+      "wheelchair transportation",
+      "gurney transport",
+      "senior citizen transportation",
+      "long-distance medical transport",
+      "veteran-run business",
+      "door-through-door service",
+      "accessible transportation services"
+    ],
+    "recent_moves": [],
+    "partnerships": []
+  },
+  {
+    "company_short_name": "Le Noir Cafe",
+    "company_full_name": "Le Noir Cafe – Sole Proprietorship LLC",
+    "company_website": "https://www.lenoircafe.com/",
+    "ownership": "",
+    "founded": "",
+    "industries": [
+      "Restaurants and Other Eating Places",
+      "Beverage Manufacturing",
+      "Specialty Food Retailers"
+    ],
+    "core_products": "Le Noir Cafe offers a diverse menu featuring gourmet breakfasts, all-day dining options, artisanal coffee, handcrafted beverages, and hookahs.",
+    "active_countries": [
+      {
+        "country_name": "United Arab Emirates",
+        "activity_description": "Operating multiple cafe locations across the UAE, including Abu Dhabi, Ras Al Khaimah, Ajman, Umm Al Quwain, and Fujairah."
+      }
+    ],
+    "products": [
+      {
+        "product_name": "Gourmet Breakfasts",
+        "product_description": "A variety of breakfast options crafted with high-quality ingredients to start the day right."
+      },
+      {
+        "product_name": "All-Day Dining Menu",
+        "product_description": "An extensive selection of global cuisines available throughout the day to satisfy diverse palates."
+      },
+      {
+        "product_name": "Artisanal Coffee",
+        "product_description": "Specialty coffee beverages prepared by skilled baristas using premium beans."
+      },
+      {
+        "product_name": "Handcrafted Beverages",
+        "product_description": "A range of refreshing drinks, including mocktails and smoothies, made with fresh ingredients."
+      },
+      {
+        "product_name": "Hookahs",
+        "product_description": "An enticing selection of flavored hookahs for a relaxing experience."
+      }
+    ],
+    "services": [
+      {
+        "service_name": "Dine-In",
+        "service_description": "Welcoming ambiance for customers to enjoy meals and beverages on-site."
+      },
+      {
+        "service_name": "Reservation",
+        "service_description": "Option to book tables in advance for a seamless dining experience."
+      },
+      {
+        "service_name": "Delivery",
+        "service_description": "Convenient delivery service bringing favorite dishes directly to customers' doors."
+      },
+      {
+        "service_name": "Catering",
+        "service_description": "Professional catering services suitable for events of all sizes, featuring bestseller dishes."
+      }
+    ],
+    "tags": [
+      "gourmet breakfasts",
+      "all-day dining",
+      "artisanal coffee",
+      "handcrafted beverages",
+      "hookahs",
+      "cafe",
+      "restaurant",
+      "United Arab Emirates",
+      "Abu Dhabi",
+      "Ras Al Khaimah",
+      "Ajman",
+      "Umm Al Quwain",
+      "Fujairah",
+      "dine-in",
+      "delivery",
+      "catering",
+      "reservation"
+    ],
+    "recent_moves": [
+      {
+        "move_name": "Expansion of Locations",
+        "move_description": "Le Noir Cafe has expanded its presence to 10 locations across the UAE, including new outlets in Ras Al Khaimah, Ajman, Umm Al Quwain, and Fujairah."
+      },
+      {
+        "move_name": "Introduction of Catering Services",
+        "move_description": "Launched professional catering services to accommodate events of all sizes, offering a selection of bestseller dishes."
+      }
+    ],
+    "partnerships": []
+  },
+  {
+    "company_short_name": "Pactive",
+    "company_full_name": "Pactive Sustainable Solutions LLC",
+    "company_website": "http://www.pactivesolutions.com/",
+    "ownership": "Acquired by Khidmah in 2025",
+    "founded": "2015",
+    "industries": [
+      "Energy Efficiency",
+      "Sustainable Building Design",
+      "Renewable Energy",
+      "Green Building Consultancy"
+    ],
+    "core_products": "Energy audits, energy management solutions, renewable energy services, green building consultancy, smart energy services",
+    "active_countries": [
+      {
+        "country_name": "United Arab Emirates",
+        "activity_description": "Providing energy efficiency and sustainable building solutions"
+      },
+      {
+        "country_name": "Gulf Cooperation Council (GCC) countries",
+        "activity_description": "Offering decarbonization and sustainability services"
+      }
+    ],
+    "products": [
+      {
+        "product_name": "Energy Audits",
+        "product_description": "Comprehensive assessments to identify energy-saving opportunities in buildings and industrial facilities"
+      },
+      {
+        "product_name": "Renewable Energy Services",
+        "product_description": "Design and implementation of solar energy solutions, including on-site installations and power purchase agreements"
+      },
+      {
+        "product_name": "Green Building Consultancy",
+        "product_description": "Guidance on achieving green building certifications like LEED and WELL, and developing ESG strategies"
+      },
+      {
+        "product_name": "Smart Energy Services",
+        "product_description": "Integration of AI, IoT, and predictive analytics for real-time energy management and optimization"
+      }
+    ],
+    "services": [
+      {
+        "service_name": "ESCO Services",
+        "service_description": "Energy Performance Contracting for energy retrofit projects with guaranteed savings"
+      },
+      {
+        "service_name": "Energy Auditing",
+        "service_description": "ASHRAE Level I, II, and III audits to identify inefficiencies and recommend improvements"
+      },
+      {
+        "service_name": "Renewable Energy Services",
+        "service_description": "Solar energy solutions, including design, installation, and financing options"
+      },
+      {
+        "service_name": "Green Building Consultancy",
+        "service_description": "Assistance with green building certifications and development of sustainability strategies"
+      },
+      {
+        "service_name": "Smart Energy Services",
+        "service_description": "Implementation of smart energy management systems using advanced technologies"
+      }
+    ],
+    "tags": [
+      "Energy Efficiency",
+      "Sustainable Building Design",
+      "Renewable Energy",
+      "Green Building Consultancy",
+      "Smart Energy Services",
+      "Energy Audits",
+      "ESCO Services",
+      "Decarbonization",
+      "Net Zero",
+      "LEED Certification",
+      "WELL Certification",
+      "Solar Energy Solutions",
+      "Energy Management",
+      "HVAC Optimization",
+      "Building Automation Systems"
+    ],
+    "recent_moves": [
+      {
+        "move_name": "Acquisition by Khidmah",
+        "move_description": "In 2025, Khidmah acquired Pactive Sustainable Solutions to expand its services and geographical reach."
+      }
+    ],
+    "partnerships": []
+  },
+  {
+    "company_short_name": "Reem Investment Overseas Limited",
+    "company_full_name": "Reem Investment Overseas Limited",
+    "company_website": "https://reemfinance.ae/",
+    "ownership": "",
+    "founded": "",
+    "industries": [],
+    "core_products": "",
+    "active_countries": [
+      {
+        "country_name": "Mauritius",
+        "activity_description": ""
+      }
+    ],
+    "products": [],
+    "services": [],
+    "tags": [],
+    "recent_moves": [],
+    "partnerships": []
+  },
+  {
+    "company_short_name": "Aldar",
+    "company_full_name": "Aldar Properties PJSC",
+    "company_website": "https://www.aldar.com/",
+    "ownership": "Publicly traded; major shareholders include Alpha Dhabi and Mubadala Investment Company",
+    "founded": "12/01/2004",
+    "industries": [
+      "Real Estate Development",
+      "Property Management",
+      "Investment"
+    ],
+    "core_products": "Development and management of residential, commercial, retail, leisure, hospitality, education, and medical properties",
+    "active_countries": [
+      {
+        "country_name": "United Arab Emirates",
+        "activity_description": "Development and management of various real estate projects"
+      },
+      {
+        "country_name": "Egypt",
+        "activity_description": "Development of mixed-use communities through Aldar Egypt"
+      },
+      {
+        "country_name": "United Kingdom",
+        "activity_description": "Property development through London Square"
+      }
+    ],
+    "products": [
+      {
+        "product_name": "Residential Communities",
+        "product_description": "Integrated, liveable, and thriving communities across Abu Dhabi’s most desirable destinations"
+      },
+      {
+        "product_name": "Commercial Properties",
+        "product_description": "Office spaces and commercial buildings in strategic locations"
+      },
+      {
+        "product_name": "Retail Spaces",
+        "product_description": "Shopping malls and retail outlets offering diverse shopping experiences"
+      },
+      {
+        "product_name": "Hospitality Venues",
+        "product_description": "Hotels, golf courses, beach clubs, and marinas providing leisure and hospitality services"
+      },
+      {
+        "product_name": "Educational Institutions",
+        "product_description": "Schools and academies offering quality education"
+      }
+    ],
+    "services": [
+      {
+        "service_name": "Property Management",
+        "service_description": "Comprehensive management services for residential, commercial, and retail properties"
+      },
+      {
+        "service_name": "Development Management",
+        "service_description": "Managing government housing and infrastructure projects in the UAE"
+      },
+      {
+        "service_name": "Hospitality Management",
+        "service_description": "Operations across hotels, golf courses, beach clubs, and marinas"
+      },
+      {
+        "service_name": "Educational Services",
+        "service_description": "Ownership and operation of schools and academies"
+      }
+    ],
+    "tags": [
+      "Real Estate",
+      "Property Development",
+      "Property Management",
+      "Investment",
+      "Hospitality",
+      "Education",
+      "Retail",
+      "Commercial Properties",
+      "Residential Communities",
+      "United Arab Emirates",
+      "Egypt",
+      "United Kingdom"
+    ],
+    "recent_moves": [
+      {
+        "move_name": "Launch of 'The Wilds' Residential Community",
+        "move_description": "A unique development designed for families to coexist with local wildlife and reconnect with nature and the great outdoors"
+      },
+      {
+        "move_name": "Acquisition of London Square",
+        "move_description": "Aldar Properties announced it had acquired United Kingdom property developers London Square in a deal worth £230m (AED 1.07bn)"
+      },
+      {
+        "move_name": "Partnership with Hilton for Waldorf Astoria Residences Yas",
+        "move_description": "Aldar partners with Hilton to develop Yas Island’s first branded residences under the iconic Waldorf Astoria brand"
+      },
+      {
+        "move_name": "Issuance of USD 500 million hybrid notes to Apollo",
+        "move_description": "Investment by Apollo enhances resilience of Aldar’s capital structure and is value accretive for shareholders"
+      },
+      {
+        "move_name": "Launch of Sustainability Incentive Programme for Suppliers",
+        "move_description": "Programme uses a rating system to reward suppliers for making sustainable choices, offering both financial and non-financial benefits"
+      }
+    ],
+    "partnerships": [
+      {
+        "partnership_name": "Strategic Partnership with Emaar",
+        "partnership_description": "Aldar announced a strategic partnership with Emaar, a leading developer from Dubai"
+      },
+      {
+        "partnership_name": "Joint Venture with ADQ for SODIC Acquisition",
+        "partnership_description": "Aldar, in consortium with ADQ, owns 85.5% of SODIC in Egypt"
+      },
+      {
+        "partnership_name": "Partnership with Hilton for Waldorf Astoria Residences Yas",
+        "partnership_description": "Development of Yas Island’s first branded residences under the iconic Waldorf Astoria brand"
+      },
+      {
+        "partnership_name": "Partnership with Emirates NBD for Darna Co-branded Visa Credit Card",
+        "partnership_description": "Linked to Aldar’s digital loyalty platform, Darna, offering up to 10% in Darna rewards and exclusive lifestyle perks"
+      },
+      {
+        "partnership_name": "Partnership with Environment Agency – Abu Dhabi and Emirates Nature-WWF",
+        "partnership_description": "Study of biodiversity and raising awareness of marine ecosystems in Abu Dhabi"
+      }
+    ]
+  }
+]
