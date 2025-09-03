@@ -1,7 +1,7 @@
 // components/OpportunityDetailDialog.jsx
 // Standalone popup with production-grade layout and color-coded sections
 
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import {
     Dialog,
     DialogTitle,
@@ -17,6 +17,8 @@ import {
     Divider,
     useMediaQuery,
     Paper,
+    Collapse,
+    Tooltip,
 } from "@mui/material";
 import { useTheme, alpha } from "@mui/material/styles";
 import CloseIcon from "@mui/icons-material/Close";
@@ -31,6 +33,13 @@ import HourglassBottomOutlinedIcon from "@mui/icons-material/HourglassBottomOutl
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import IosShareRoundedIcon from "@mui/icons-material/IosShareRounded";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
+import ExpandMoreRoundedIcon from "@mui/icons-material/ExpandMoreRounded";
+import LaunchRoundedIcon from "@mui/icons-material/LaunchRounded";
+import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
+import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
+import CorporateFareOutlinedIcon from "@mui/icons-material/CorporateFareOutlined";
+import LinkOutlinedIcon from "@mui/icons-material/LinkOutlined";
+import ScienceOutlinedIcon from "@mui/icons-material/ScienceOutlined";
 
 function ScoreRing({ value = 0, size = 72 }) {
     const clamped = Math.max(0, Math.min(10, Number(value) || 0));
@@ -90,12 +99,69 @@ function Section({ title, icon: Icon, color, children, dense }) {
             }}
         >
             <Stack direction="row" spacing={1} alignItems="center" sx={{ mb: 0.75 }}>
-                {Icon ? <Icon fontSize="small" sx={{ color: color }} /> : null}
+                {Icon ? <Icon fontSize="small" sx={{ color }} /> : null}
                 <Typography variant="subtitle2" sx={{ fontWeight: 800 }}>
                     {title}
                 </Typography>
             </Stack>
             {children}
+        </Paper>
+    );
+}
+
+/** Collapsible, closed-by-default section (used for Source event) */
+function CollapsibleSection({
+                                title,
+                                icon: Icon,
+                                color,
+                                children,
+                                defaultOpen = false,
+                            }) {
+    const theme = useTheme();
+    const [open, setOpen] = useState(defaultOpen);
+    const bg = alpha(color || theme.palette.primary.main, 0.06);
+    const border = alpha(color || theme.palette.primary.main, 0.38);
+
+    return (
+        <Paper
+            variant="outlined"
+            sx={{
+                borderRadius: 3,
+                overflow: "hidden",
+                borderColor: border,
+                bgcolor: bg,
+            }}
+        >
+            <Stack
+                direction="row"
+                alignItems="center"
+                spacing={1}
+                onClick={() => setOpen((v) => !v)}
+                sx={{
+                    px: { xs: 1.25, sm: 1.75 },
+                    py: 1.25,
+                    cursor: "pointer",
+                    userSelect: "none",
+                    "&:hover": { bgcolor: alpha(color || theme.palette.primary.main, 0.08) },
+                }}
+            >
+                {Icon ? <Icon fontSize="small" sx={{ color }} /> : null}
+                <Typography variant="subtitle2" sx={{ fontWeight: 800, flex: 1 }}>
+                    {title}
+                </Typography>
+                <ExpandMoreRoundedIcon
+                    sx={{
+                        color,
+                        transition: "transform .2s",
+                        transform: open ? "rotate(180deg)" : "rotate(0deg)",
+                    }}
+                />
+            </Stack>
+            <Collapse in={open} timeout="auto" unmountOnExit>
+                <Box sx={{ px: { xs: 1.25, sm: 1.75 }, pb: { xs: 1.25, sm: 1.75 } }}>
+                    {children}
+                </Box>
+            </Collapse>
         </Paper>
     );
 }
@@ -110,6 +176,15 @@ export default function OpportunityDetailDialog({
     const isSmDown = useMediaQuery(theme.breakpoints.down("sm"));
     const tags = useMemo(() => op?.tags || [], [op]);
     const companies = useMemo(() => op?.companies_mentioned || [], [op]);
+    const se = op?.source_event;
+
+    const hostFromUrl = (url) => {
+        try {
+            return new URL(url).hostname.replace(/^www\./, "");
+        } catch {
+            return "";
+        }
+    };
 
     if (!op) return null;
 
@@ -413,6 +488,252 @@ export default function OpportunityDetailDialog({
                                 </Section>
                             </Box>
                         )}
+
+                        {/* Source event: closed by default, separate, well-styled */}
+                        {se && (
+                            <Box sx={{ mt: 1.25 }}>
+                                <CollapsibleSection
+                                    title="Source event"
+                                    icon={DescriptionOutlinedIcon}
+                                    color={theme.palette.grey[700]}
+                                    defaultOpen={false}
+                                >
+                                    {/* Title + quick actions */}
+                                    <Stack spacing={1}>
+                                        {se.title && (
+                                            <Typography
+                                                variant="subtitle2"
+                                                sx={{ fontWeight: 800, lineHeight: 1.2 }}
+                                            >
+                                                {se.title}
+                                            </Typography>
+                                        )}
+
+                                        {se.description && (
+                                            <Typography
+                                                variant="body2"
+                                                color="text.secondary"
+                                                sx={{ whiteSpace: "pre-wrap" }}
+                                            >
+                                                {se.description}
+                                            </Typography>
+                                        )}
+
+                                        {/* Meta grid */}
+                                        <Grid container spacing={1.25} sx={{ mt: 0.5 }}>
+                                            {/* Tags */}
+                                            {Array.isArray(se.tags) && se.tags.length > 0 && (
+                                                <Grid item xs={12}>
+                                                    <Paper
+                                                        variant="outlined"
+                                                        sx={{
+                                                            p: 1,
+                                                            borderRadius: 2,
+                                                            bgcolor: alpha(theme.palette.secondary.main, 0.06),
+                                                            borderColor: alpha(theme.palette.secondary.main, 0.35),
+                                                        }}
+                                                    >
+                                                        <Stack direction="row" spacing={1} alignItems="center" sx={{ mb: 0.5 }}>
+                                                            <TagIcon fontSize="small" sx={{ color: theme.palette.secondary.main }} />
+                                                            <Typography variant="caption" sx={{ fontWeight: 700 }}>
+                                                                Tags
+                                                            </Typography>
+                                                        </Stack>
+                                                        <Stack
+                                                            direction="row"
+                                                            spacing={0.75}
+                                                            sx={{ flexWrap: "wrap", rowGap: 0.5 }}
+                                                        >
+                                                            {se.tags.map((t) => (
+                                                                <Chip key={t} size="small" label={t} variant="outlined" />
+                                                            ))}
+                                                        </Stack>
+                                                    </Paper>
+                                                </Grid>
+                                            )}
+
+                                            {/* Industry */}
+                                            {Array.isArray(se.industry) && se.industry.length > 0 && (
+                                                <Grid item xs={12} sm={6}>
+                                                    <Paper
+                                                        variant="outlined"
+                                                        sx={{
+                                                            p: 1,
+                                                            borderRadius: 2,
+                                                            bgcolor: alpha(theme.palette.info.main, 0.06),
+                                                            borderColor: alpha(theme.palette.info.main, 0.35),
+                                                            height: "100%",
+                                                        }}
+                                                    >
+                                                        <Stack direction="row" spacing={1} alignItems="center" sx={{ mb: 0.5 }}>
+                                                            <ScienceOutlinedIcon
+                                                                fontSize="small"
+                                                                sx={{ color: theme.palette.info.main }}
+                                                            />
+                                                            <Typography variant="caption" sx={{ fontWeight: 700 }}>
+                                                                Industry
+                                                            </Typography>
+                                                        </Stack>
+                                                        <Stack direction="row" spacing={0.75} sx={{ flexWrap: "wrap", rowGap: 0.5 }}>
+                                                            {se.industry.map((i) => (
+                                                                <Chip key={i} size="small" label={i} />
+                                                            ))}
+                                                        </Stack>
+                                                    </Paper>
+                                                </Grid>
+                                            )}
+
+                                            {/* Companies mentioned */}
+                                            {Array.isArray(se.companies_mentioned) &&
+                                                se.companies_mentioned.length > 0 && (
+                                                    <Grid item xs={12} sm={6}>
+                                                        <Paper
+                                                            variant="outlined"
+                                                            sx={{
+                                                                p: 1,
+                                                                borderRadius: 2,
+                                                                bgcolor: alpha(theme.palette.success.main, 0.06),
+                                                                borderColor: alpha(theme.palette.success.main, 0.35),
+                                                                height: "100%",
+                                                            }}
+                                                        >
+                                                            <Stack direction="row" spacing={1} alignItems="center" sx={{ mb: 0.5 }}>
+                                                                <BusinessOutlinedIcon
+                                                                    fontSize="small"
+                                                                    sx={{ color: theme.palette.success.main }}
+                                                                />
+                                                                <Typography variant="caption" sx={{ fontWeight: 700 }}>
+                                                                    Companies mentioned
+                                                                </Typography>
+                                                            </Stack>
+                                                            <Stack spacing={0.5}>
+                                                                {se.companies_mentioned.map((c) => (
+                                                                    <Chip key={c} size="small" label={c} variant="outlined" />
+                                                                ))}
+                                                            </Stack>
+                                                        </Paper>
+                                                    </Grid>
+                                                )}
+
+                                            {/* Info cards: year, company, source name/origin, AI model */}
+                                            <Grid item xs={12} md={6}>
+                                                <Paper
+                                                    variant="outlined"
+                                                    sx={{
+                                                        p: 1.1,
+                                                        borderRadius: 2,
+                                                        bgcolor: alpha(theme.palette.warning.main, 0.06),
+                                                        borderColor: alpha(theme.palette.warning.main, 0.35),
+                                                    }}
+                                                >
+                                                    <Stack spacing={0.5}>
+                                                        {se.year && (
+                                                            <Stack direction="row" spacing={1} alignItems="center">
+                                                                <CalendarMonthOutlinedIcon fontSize="small" />
+                                                                <Typography variant="body2">
+                                                                    <b>Year:</b> {se.year}
+                                                                </Typography>
+                                                            </Stack>
+                                                        )}
+                                                        {se.company_name && (
+                                                            <Stack direction="row" spacing={1} alignItems="center">
+                                                                <CorporateFareOutlinedIcon fontSize="small" />
+                                                                <Typography variant="body2">
+                                                                    <b>Company:</b> {se.company_name}
+                                                                </Typography>
+                                                            </Stack>
+                                                        )}
+                                                        {se.source_name && (
+                                                            <Stack direction="row" spacing={1} alignItems="center">
+                                                                <DescriptionOutlinedIcon fontSize="small" />
+                                                                <Typography variant="body2">
+                                                                    <b>Source:</b> {se.source_name}
+                                                                </Typography>
+                                                            </Stack>
+                                                        )}
+                                                        {se.source_origin && (
+                                                            <Stack direction="row" spacing={1} alignItems="center">
+                                                                <LinkOutlinedIcon fontSize="small" />
+                                                                <Typography variant="body2">
+                                                                    <b>Origin:</b> {se.source_origin}
+                                                                </Typography>
+                                                            </Stack>
+                                                        )}
+                                                        {(se.ai_model || se.ai_model_type) && (
+                                                            <Stack direction="row" spacing={1} alignItems="center">
+                                                                <ScienceOutlinedIcon fontSize="small" />
+                                                                <Typography variant="body2">
+                                                                    <b>AI:</b> {se.ai_model}
+                                                                    {se.ai_model_type ? ` (${se.ai_model_type})` : ""}
+                                                                </Typography>
+                                                            </Stack>
+                                                        )}
+                                                    </Stack>
+                                                </Paper>
+                                            </Grid>
+
+                                            {/* Open source + copy link */}
+                                            {(se.source_url || se.source_name) && (
+                                                <Grid item xs={12} md={6}>
+                                                    <Paper
+                                                        variant="outlined"
+                                                        sx={{
+                                                            p: 1.1,
+                                                            borderRadius: 2,
+                                                            bgcolor: alpha(theme.palette.primary.main, 0.06),
+                                                            borderColor: alpha(theme.palette.primary.main, 0.35),
+                                                            height: "100%",
+                                                        }}
+                                                    >
+                                                        <Stack spacing={1}>
+                                                            {se.source_url ? (
+                                                                <Stack direction="row" spacing={1} alignItems="center">
+                                                                    <LinkOutlinedIcon fontSize="small" />
+                                                                    <Typography variant="body2" sx={{ wordBreak: "break-all" }}>
+                                                                        {se.source_url}
+                                                                    </Typography>
+                                                                </Stack>
+                                                            ) : null}
+                                                            <Stack direction="row" spacing={1}>
+                                                                {se.source_url && (
+                                                                    <Button
+                                                                        size="small"
+                                                                        variant="contained"
+                                                                        startIcon={<LaunchRoundedIcon />}
+                                                                        component="a"
+                                                                        href={se.source_url}
+                                                                        target="_blank"
+                                                                        rel="noopener"
+                                                                        sx={{ borderRadius: 999 }}
+                                                                    >
+                                                                        Open source {hostFromUrl(se.source_url) ? `(${hostFromUrl(se.source_url)})` : ""}
+                                                                    </Button>
+                                                                )}
+                                                                {se.source_url && (
+                                                                    <Tooltip title="Copy source URL">
+                                                                        <Button
+                                                                            size="small"
+                                                                            variant="outlined"
+                                                                            startIcon={<ContentCopyIcon />}
+                                                                            onClick={() =>
+                                                                                navigator.clipboard?.writeText(se.source_url)
+                                                                            }
+                                                                            sx={{ borderRadius: 999 }}
+                                                                        >
+                                                                            Copy link
+                                                                        </Button>
+                                                                    </Tooltip>
+                                                                )}
+                                                            </Stack>
+                                                        </Stack>
+                                                    </Paper>
+                                                </Grid>
+                                            )}
+                                        </Grid>
+                                    </Stack>
+                                </CollapsibleSection>
+                            </Box>
+                        )}
                     </Grid>
 
                     {/* Sidebar */}
@@ -431,11 +752,7 @@ export default function OpportunityDetailDialog({
                                     </Stack>
                                 </Stack>
                                 <Divider />
-                                <Stack
-                                    direction="row"
-                                    spacing={0.75}
-                                    sx={{ flexWrap: "wrap", rowGap: 0.5 }}
-                                >
+                                <Stack direction="row" spacing={0.75} sx={{ flexWrap: "wrap", rowGap: 0.5 }}>
                                     <Chip size="small" icon={<TagIcon />} label={`${tags.length} tags`} />
                                     {companies.length ? (
                                         <Chip
@@ -464,19 +781,9 @@ export default function OpportunityDetailDialog({
                                     color={theme.palette.secondary.main}
                                     dense
                                 >
-                                    <Stack
-                                        direction="row"
-                                        spacing={0.75}
-                                        sx={{ flexWrap: "wrap", rowGap: 0.5 }}
-                                    >
+                                    <Stack direction="row" spacing={0.75} sx={{ flexWrap: "wrap", rowGap: 0.5 }}>
                                         {tags.map((t) => (
-                                            <Chip
-                                                key={t}
-                                                size="small"
-                                                label={t}
-                                                variant="outlined"
-                                                icon={<TagIcon />}
-                                            />
+                                            <Chip key={t} size="small" label={t} variant="outlined" icon={<TagIcon />} />
                                         ))}
                                     </Stack>
                                 </Section>
@@ -493,13 +800,7 @@ export default function OpportunityDetailDialog({
                                 >
                                     <Stack spacing={0.5}>
                                         {companies.map((c) => (
-                                            <Chip
-                                                key={c}
-                                                size="small"
-                                                label={c}
-                                                variant="outlined"
-                                                icon={<BusinessOutlinedIcon />}
-                                            />
+                                            <Chip key={c} size="small" label={c} variant="outlined" icon={<BusinessOutlinedIcon />} />
                                         ))}
                                     </Stack>
                                 </Section>
