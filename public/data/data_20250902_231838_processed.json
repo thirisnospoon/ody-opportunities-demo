@@ -1,0 +1,197 @@
+[
+  {
+    "title": "IHC Participation at World Economic Forum 2025 in Davos",
+    "description": "IHC, along with six of its leading portfolio companies, participated actively in the 2025 World Economic Forum (WEF) held in Davos, Switzerland. The delegation included CEOs from 2PointZero, Multiply Group, Modon Holding, PureHealth, Sirius International Holding, and Grupo Nutresa. Key activities included hosting the IHC House @ Davos as a hub for multilateral collaboration, engaging with global leaders across industries, holding high-level discussions on transformational solutions, and participating in panels and sessions focused on innovation, sustainability, healthcare, space technology, and investment partnerships. Notable events included a welcome reception, a discussion on innovating cancer care hosted by Burjeel Holdings, a fireside chat with Robert F. Smith and H.E. Mariam Almheiri, engagements with senior leadership of major global financial and investment firms, a panel on space technology presented by Marlan Space, and the Power Our Planet Dinner co-hosted with Ursula von der Leyen and Global Citizen. The presence underscored IHC’s commitment to driving global progress by fostering impactful partnerships and sustainable innovation.",
+    "tags": [
+      "IHC",
+      "2PointZero",
+      "Multiply Group",
+      "Modon Holding",
+      "PureHealth",
+      "Sirius International Holding",
+      "Grupo Nutresa",
+      "World Economic Forum",
+      "WEF 2025",
+      "Davos",
+      "Investment",
+      "Sustainability",
+      "Healthcare Innovation",
+      "Space Technology",
+      "Global Partnerships"
+    ],
+    "industry": [
+      "Investment",
+      "Healthcare",
+      "Technology",
+      "Finance",
+      "Renewable Energy",
+      "Real Estate Development",
+      "Artificial Intelligence",
+      "Engineering"
+    ],
+    "companies_mentioned": [
+      "IHC",
+      "2PointZero",
+      "Multiply Group",
+      "Modon Holding",
+      "PureHealth",
+      "Sirius International Holding",
+      "Grupo Nutresa",
+      "Burjeel Holdings",
+      "Vista Equity Partners",
+      "Blackstone",
+      "BNY",
+      "Barclays",
+      "Cargill",
+      "ServiceNow",
+      "European Space Agency",
+      "Morgan Stanley",
+      "JP Morgan",
+      "Temasek",
+      "General Atlantic",
+      "Teneo",
+      "Global Citizen"
+    ],
+    "year": 2025,
+    "company_name": "IHC",
+    "source_url": "https://ihccms.directus.app/assets/3947786b-ce43-45e6-a7f2-75ffdbb96f5b?download",
+    "source_name": "IHC at Davos: Driving Transformative Solutions and Global Partnerships at the World Economic Forum 2025",
+    "source_origin": "pdf",
+    "ai_model": "gpt-4.1-mini-2025-04-14",
+    "ai_model_type": "mini",
+    "opportunities": [
+      {
+        "title": "Healthcare AI Integration Demonstration at IHC House, Davos",
+        "description": "Companies specializing in artificial intelligence solutions for healthcare can partner with IHC House to organize live demonstrations or pilot projects during WEF 2025. This collaboration would showcase cutting-edge AI diagnostics, patient management systems, or medical imaging tools integrated with PureHealth or other healthcare-focused portfolio companies present at the event. The exposure at Davos provides an influential platform for AI companies to scale globally, and IHC benefits from early access to advanced technologies.",
+        "tags": [
+          "healthcare AI",
+          "medical imaging",
+          "diagnostic tools",
+          "health innovation",
+          "partner showcase",
+          "WEF demonstrations",
+          "patient management",
+          "digital health solutions",
+          "pilot projects",
+          "scale-up opportunities"
+        ],
+        "industry": "Healthcare",
+        "possibility_mark": 8,
+        "roadmap_steps": [
+          "Identify suitable AI healthcare technologies",
+          "Reach out to IHC and event organizers for demonstration opportunities",
+          "Prepare pilot project proposals tailored to PureHealth’s needs",
+          "Plan logistics for on-site demos or real-time integration",
+          "Engage C-suite and medical decision-makers at the event",
+          "Follow up post-event for partnership or commercialization discussions"
+        ],
+        "uuid": "62c3b1dc-deee-46c9-a358-57dc27daf5db"
+      },
+      {
+        "title": "Sustainable Building Solutions Panel Collaboration",
+        "description": "Green tech or sustainable construction material providers can collaborate with Modon Holding by co-hosting a panel at IHC House on sustainable urban development. This session would allow both parties to showcase innovative materials, waste-to-energy solutions, and smart infrastructure to global leaders and urban planners present at Davos, furthering Modon Holding’s and the partner’s sustainability agenda through exposure and potential deals.",
+        "tags": [
+          "sustainable construction",
+          "green building materials",
+          "urban development",
+          "waste-to-energy",
+          "smart infrastructure",
+          "eco-friendly solutions",
+          "WEF panels",
+          "urban planners",
+          "material science",
+          "city innovation"
+        ],
+        "industry": "Real Estate Development",
+        "possibility_mark": 7,
+        "roadmap_steps": [
+          "Develop a proposal outlining the value of a co-hosted panel",
+          "Contact Modon Holding’s event team",
+          "Source subject-matter experts for panel participation",
+          "Prepare case studies and technical demonstrations",
+          "Collaborate on event marketing and invitations",
+          "Engage with attendees to initiate pilot projects or partnerships"
+        ],
+        "uuid": "822f939e-5aae-48f1-90f5-d7bf7bb80dfc"
+      },
+      {
+        "title": "Global Investment Data Analytics Partnership",
+        "description": "Firms specializing in advanced financial analytics or investment data platforms can partner with IHC’s investment team to deliver exclusive workshops or joint sessions at WEF 2025. These would introduce real-time, AI-driven investment risk assessment or portfolio optimization tools tailored to emerging markets, leveraging IHC’s presence and connections with top-tier investors and funds participating in Davos.",
+        "tags": [
+          "investment analytics",
+          "portfolio optimization",
+          "risk assessment tools",
+          "emerging markets",
+          "financial data platforms",
+          "AI-driven finance",
+          "workshops",
+          "WEF attendees",
+          "global investors"
+        ],
+        "industry": "Investment",
+        "possibility_mark": 6,
+        "roadmap_steps": [
+          "Prepare a targeted cooperation pitch and technology demo",
+          "Reach out to IHC’s investment division for partnership discussion",
+          "Co-design an exclusive workshop agenda",
+          "Align data privacy and compliance requirements",
+          "Host live demonstrations with real-world portfolio examples",
+          "Generate post-event follow-up and pilot partnership offers"
+        ],
+        "uuid": "53a6b37c-400a-4550-b4dc-44c3757bd1cf"
+      },
+      {
+        "title": "Space Technology Startups Pitch Session",
+        "description": "Startups developing satellite technology, remote sensing, or space data analytics can team up with Marlan Space and IHC to organize a pitch competition or discovery session at the IHC House during WEF 2025. The event would bring together potential investors, government space agencies, and established space tech entities, accelerating commercial discussions and fostering technology transfer.",
+        "tags": [
+          "space technology",
+          "satellite startups",
+          "remote sensing",
+          "startup pitch",
+          "technology transfer",
+          "space data analytics",
+          "collaborative sessions",
+          "space investment",
+          "WEF networking"
+        ],
+        "industry": "Technology",
+        "possibility_mark": 8,
+        "roadmap_steps": [
+          "Develop a call for applications for space tech startups",
+          "Coordinate with Marlan Space and IHC event planners",
+          "Secure participation from key investors and agencies",
+          "Organize a structured pitch format and judging panel",
+          "Facilitate networking and follow-up meetings after pitches",
+          "Support due diligence or pilot project connections"
+        ],
+        "uuid": "e4b997b1-5684-423a-8fe4-54aeb4cb8c33"
+      },
+      {
+        "title": "Nutritional Innovation Showcases for Global Food Security",
+        "description": "Nutraceuticals or foodtech companies can partner with Grupo Nutresa to host joint presentations or product tastings focused on innovative, health-forward, or sustainable food products during WEF 2025. Targeting attendees interested in food security and wellness, such a collaboration gives exposure to new food technologies while positioning both parties as global thought leaders in nutrition innovation.",
+        "tags": [
+          "functional foods",
+          "nutraceutical innovation",
+          "sustainable food",
+          "food security",
+          "product tastings",
+          "WEF showcases",
+          "wellness foods",
+          "global nutrition",
+          "foodtech collaboration"
+        ],
+        "industry": "Healthcare",
+        "possibility_mark": 7,
+        "roadmap_steps": [
+          "Identify innovative food/nutrition technologies for showcase",
+          "Formulate pitch for integrated event or tasting session",
+          "Reach out to Grupo Nutresa’s partnership team",
+          "Align product logistics and regulatory requirements for Davos",
+          "Develop joint marketing content highlighting impact",
+          "Collect attendee feedback and pursue post-event pilots"
+        ],
+        "uuid": "a95f92c3-949a-47bd-9686-92094e63d58d"
+      }
+    ]
+  }
+]

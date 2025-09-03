@@ -1,0 +1,179 @@
+[
+  {
+    "title": "Launch of UAE Dirham-backed Stablecoin by IHC, ADQ, and FAB",
+    "description": "IHC, ADQ, and First Abu Dhabi Bank (FAB) announced plans to launch a new stablecoin backed by UAE Dirhams, regulated by UAE Central Bank and issued by FAB, intended to revolutionize payment and business transactions locally and globally, operating on the ADI blockchain developed by ADI Foundation. The stablecoin aims to enable secure digital payments and support emerging digital use cases including machine-to-machine and AI, positioning the UAE as a global fintech hub and blockchain innovation leader.",
+    "tags": [
+      "IHC",
+      "ADQ",
+      "First Abu Dhabi Bank",
+      "FAB",
+      "UAE Central Bank",
+      "stablecoin",
+      "Dirham-backed",
+      "ADI Foundation",
+      "blockchain",
+      "digital currency",
+      "fintech",
+      "digital economy",
+      "machine-to-machine",
+      "AI",
+      "UAE"
+    ],
+    "industry": [
+      "Finance",
+      "Fintech",
+      "Technology",
+      "Artificial Intelligence"
+    ],
+    "companies_mentioned": [
+      "IHC",
+      "ADQ",
+      "First Abu Dhabi Bank",
+      "FAB",
+      "ADI Foundation"
+    ],
+    "year": 2025,
+    "company_name": "IHC",
+    "source_url": "https://ihccms.directus.app/assets/643c9b73-2d58-430d-8a14-94bda31de857?download",
+    "source_name": "IHC, ADQ and FAB Pioneer UAE Dirham-backed Stablecoin for the Digital Economy",
+    "source_origin": "pdf",
+    "ai_model": "gpt-4.1-mini-2025-04-14",
+    "ai_model_type": "mini",
+    "opportunities": [
+      {
+        "title": "Integration of Dirham-backed Stablecoin into E-commerce Platforms",
+        "description": "E-commerce platforms operating in or with the UAE market can integrate the new Dirham-backed stablecoin as a payment option. This would provide their customers with a secure, real-time, blockchain-based payment method and attract users interested in digital assets. Integration can also appeal to international merchants seeking easier access to the UAE market and reduce FX volatility for cross-border sales.",
+        "tags": [
+          "e-commerce",
+          "stablecoin payments",
+          "checkout integration",
+          "UAE Dirham",
+          "blockchain payments",
+          "digital wallet",
+          "FX reduction",
+          "real-time settlement",
+          "cross-border commerce",
+          "payment gateway"
+        ],
+        "industry": "Finance",
+        "possibility_mark": 8,
+        "roadmap_steps": [
+          "Assess compatibility of e-commerce platform with blockchain payment solutions",
+          "Contact stablecoin issuing consortium for technical documentation and support",
+          "Develop and test integration within checkout process",
+          "Ensure compliance with UAE payments regulations",
+          "Educate merchants and customers on using stablecoin payments",
+          "Launch and promote new payment method to target market"
+        ],
+        "uuid": "73ac2a86-db65-4c8f-8b36-481dfed0438a"
+      },
+      {
+        "title": "Collaboration with Point-of-Sale (POS) System Providers for Retail Adoption",
+        "description": "Retail POS system providers can partner with the stablecoin issuers to enable UAE shoppers to pay in physical stores using the Dirham-backed stablecoin via QR code or NFC. This brings digital asset payments into mainstream retail environments, benefiting both large and SME merchants by reducing transaction costs and enabling instant settlement.",
+        "tags": [
+          "POS systems",
+          "retail payments",
+          "stablecoin QR code",
+          "in-store transactions",
+          "NFC payments",
+          "blockchain retail",
+          "digital wallets",
+          "merchant adoption",
+          "transaction settlement",
+          "UAE retail"
+        ],
+        "industry": "Fintech",
+        "possibility_mark": 7,
+        "roadmap_steps": [
+          "Research technical requirements for stablecoin integration in POS software",
+          "Initiate partnership discussions with issuing consortium",
+          "Develop firmware/software updates for POS terminals",
+          "Coordinate pilot trials with selected retail partners",
+          "Obtain required certifications and ensure regulatory compliance",
+          "Roll out stablecoin-enabled POS solutions to wider market"
+        ],
+        "uuid": "0a58b4df-9f42-423a-82a2-6f91f9c65f26"
+      },
+      {
+        "title": "Enable Stablecoin Use in Automated B2B Settlement Platforms",
+        "description": "Software companies providing automated B2B payments and AP/AR management solutions can leverage the stablecoin to instantly settle invoices in Dirhams, including smart contract-based transactions for machine-to-machine scenarios. This provides cost savings, reduces settlement risk, and can automate trade processes within the UAE and with international partners.",
+        "tags": [
+          "B2B payments",
+          "AP/AR automation",
+          "machine-to-machine payments",
+          "blockchain settlement",
+          "smart contracts",
+          "corporate finance",
+          "invoice settlement",
+          "UAE businesses",
+          "digital assets",
+          "instant payments"
+        ],
+        "industry": "Technology",
+        "possibility_mark": 8,
+        "roadmap_steps": [
+          "Evaluate existing infrastructure for blockchain payment support",
+          "Establish connections with stablecoin and blockchain API providers",
+          "Develop smart contract templates for common B2B use cases",
+          "Collaborate with corporate clients on pilot use cases",
+          "Obtain legal and regulatory advice for business and cross-border settlements",
+          "Implement commercial launch and ongoing support"
+        ],
+        "uuid": "59b08f32-1b2f-4a3e-9119-9459c4b153fb"
+      },
+      {
+        "title": "Partnering with Cross-border Remittance Service Providers",
+        "description": "Remittance companies can use the Dirham-backed stablecoin to provide faster and lower-cost transfers into and out of the UAE, leveraging the transparency, security, and instant settlement of blockchain. This is especially attractive for corridors between UAE and major expatriate-sending countries.",
+        "tags": [
+          "remittance",
+          "cross-border payments",
+          "stablecoin transfers",
+          "UAE Dirham remittances",
+          "instant settlement",
+          "blockchain remittance",
+          "expatriate workers",
+          "overseas transfers",
+          "international payments",
+          "money transfer operators"
+        ],
+        "industry": "Finance",
+        "possibility_mark": 7,
+        "roadmap_steps": [
+          "Discuss legal and compliance aspects with UAE Central Bank and local partners",
+          "Connect with stablecoin infrastructure providers for integration",
+          "Develop remittance product utilizing stablecoin rails",
+          "Pilot remittance corridor with limited countries/partners",
+          "Expand network and marketing to target expatriate populations"
+        ],
+        "uuid": "e6a9bde3-4265-448a-b330-3e963f427184"
+      },
+      {
+        "title": "Smart City IoT and AI Payments Using Dirham-backed Stablecoin",
+        "description": "Smart city technology companies can partner with the stablecoin issuers to enable automated payments for IoT devices and AI-driven services (e.g., smart meters, mobility services, AI-based utilities billing), providing transparent, programmable, and real-time settlements using the UAE Dirham stablecoin.",
+        "tags": [
+          "smart city",
+          "IoT payments",
+          "AI services billing",
+          "machine-to-machine payment",
+          "blockchain automation",
+          "programmable money",
+          "utilities settlement",
+          "mobility services",
+          "digital infrastructure",
+          "UAE smart city"
+        ],
+        "industry": "Artificial Intelligence",
+        "possibility_mark": 6,
+        "roadmap_steps": [
+          "Identify IoT/AI payment use cases that benefit from stablecoins",
+          "Develop partnerships with blockchain/stablecoin providers",
+          "Build and test pilot smart contracts for automated payments",
+          "Integrate stablecoin support with IoT device firmware",
+          "Work with city authorities and utilities for regulatory and operational approval",
+          "Expand deployment across additional smart city projects"
+        ],
+        "uuid": "8870a4ec-8fa7-464f-8299-74757a94c0d6"
+      }
+    ]
+  }
+]

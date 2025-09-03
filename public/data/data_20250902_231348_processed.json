@@ -1,0 +1,166 @@
+[
+  {
+    "title": "IHC and RIQ Strategic 10-year Reinsurance Partnership",
+    "description": "IHC and RIQ announced a strategic 10-year alliance targeting over USD 500 million in reinsurance premiums through AI-native risk transfer solutions tailored to IHC and its group companies. The partnership aims to enhance Abu Dhabi's position as a global hub for reinsurance and intelligent risk management. RIQ, launched by IHC in partnership with BlackRock and Lunate, will deliver advanced reinsurance solutions leveraging AI-augmented underwriting and data modeling. The partnership includes plans for regulatory authorization by ADGM's FSRA and will enable IHC to deploy intelligent capital to increase resilience and agility across its portfolio.",
+    "tags": [
+      "IHC",
+      "RIQ",
+      "reinsurance",
+      "AI-native platform",
+      "risk transfer",
+      "Abu Dhabi",
+      "ADGM",
+      "BlackRock",
+      "Lunate",
+      "Financial Services Regulatory Authority",
+      "Property and Casualty insurance",
+      "reinsurance premiums",
+      "strategic partnership",
+      "risk modeling",
+      "underwriting"
+    ],
+    "industry": [
+      "Finance",
+      "Fintech",
+      "Investment",
+      "Artificial Intelligence",
+      "Technology"
+    ],
+    "companies_mentioned": [
+      "IHC",
+      "RIQ",
+      "BlackRock",
+      "Lunate"
+    ],
+    "year": 2025,
+    "company_name": "IHC",
+    "source_url": "https://ihccms.directus.app/assets/c2581695-039b-4e81-b6dc-9f1af89e68e5?download",
+    "source_name": "IHC and RIQ Announce Strategic 10-year Alliance Anchored by Over USD 500 Million in Reinsurance Premiums",
+    "source_origin": "pdf",
+    "ai_model": "gpt-4.1-mini-2025-04-14",
+    "ai_model_type": "mini",
+    "opportunities": [
+      {
+        "title": "AI System Integration for Data-Driven Underwriting",
+        "description": "Companies specializing in AI and data analytics can partner with IHC-RIQ to provide advanced data ingestion and cleansing systems, or to develop machine learning tools that enhance underwriting models beyond the existing ecosystem. This would increase accuracy of risk assessments and enable new classes of reinsurance products tailored to untapped markets.",
+        "tags": [
+          "AI integration",
+          "data analytics",
+          "machine learning underwriting",
+          "risk assessment tools",
+          "insurance technology",
+          "regtech",
+          "smart underwriting",
+          "data ingestion",
+          "data cleansing",
+          "fintech partnership"
+        ],
+        "industry": "Artificial Intelligence",
+        "possibility_mark": 8,
+        "roadmap_steps": [
+          "Research IHC-RIQ's existing technical stack and AI models",
+          "Identify compatibility and potential areas of improvement in underwriting workflows",
+          "Develop a proposal or proof-of-concept for AI-driven risk modeling enhancements",
+          "Approach IHC-RIQ with a demo and partnership request",
+          "Negotiate integration and deployment roadmaps"
+        ],
+        "uuid": "6c6900e2-9074-43b1-8f2e-cd634e70d308"
+      },
+      {
+        "title": "Regulatory Technology Solutions for ADGM Compliance",
+        "description": "Regtech companies can collaborate with IHC-RIQ to automate compliance and reporting processes required by the Financial Services Regulatory Authority (FSRA) of ADGM. This streamlines onboarding and ongoing regulatory obligations for the reinsurance business while lowering operational risk and legal exposure.",
+        "tags": [
+          "regtech",
+          "compliance automation",
+          "FSRA",
+          "ADGM",
+          "insurance regulation",
+          "fintech compliance",
+          "regulatory reporting",
+          "reinsurance operations"
+        ],
+        "industry": "Fintech",
+        "possibility_mark": 7,
+        "roadmap_steps": [
+          "Gather detailed information on FSRA and ADGM compliance requirements",
+          "Develop compliance automation prototype integrating with IHC-RIQ systems",
+          "Engage IHC-RIQ's compliance and legal team for a pilot project",
+          "Validate the tool’s impact on operations",
+          "Formalize long-term regtech partnership"
+        ],
+        "uuid": "a38d089c-1c12-4bea-9140-b32b07ad866e"
+      },
+      {
+        "title": "Third-Party Risk Data Enrichment Partnerships",
+        "description": "Data vendors (such as those specializing in climate, cyber, or health risk data) can establish data throughput agreements with IHC-RIQ to enrich their risk engine with new data sources, providing more granular risk modeling and enabling innovative reinsurance products.",
+        "tags": [
+          "risk data enrichment",
+          "third-party data",
+          "climate risk",
+          "cyber insurance",
+          "health risk",
+          "data partnerships",
+          "insurtech",
+          "risk modeling"
+        ],
+        "industry": "Finance",
+        "possibility_mark": 7,
+        "roadmap_steps": [
+          "Identify data categories underrepresented in IHC-RIQ's risk models",
+          "Develop datasets or APIs compatible with AI-native underwriting platforms",
+          "Initiate dialogue with IHC-RIQ risk and data teams",
+          "Pilot integration of enriched datasets into underwriting process",
+          "Negotiate ongoing data supply agreement"
+        ],
+        "uuid": "4861bf50-807c-4c83-a346-197b779b718b"
+      },
+      {
+        "title": "White-Label Solutions for Regional Insurers",
+        "description": "Technology firms can offer white-labeling and customization of IHC-RIQ’s AI-powered reinsurance products for regional (non-group) insurers, enabling rapid digital transformation and more competitive insurance offerings in emerging Middle Eastern and African markets.",
+        "tags": [
+          "white-label",
+          "insurtech",
+          "product customization",
+          "regional insurer partnership",
+          "Middle East insurance",
+          "insurance SaaS",
+          "AI-powered reinsurance"
+        ],
+        "industry": "Technology",
+        "possibility_mark": 6,
+        "roadmap_steps": [
+          "Assess demand and technological readiness among regional insurers",
+          "Develop a white-label SaaS version of reinsurance solutions",
+          "Partner with IHC-RIQ to engineer suitable APIs/interfaces for external clients",
+          "Co-market and onboard pilot insurers",
+          "Scale support and integration teams"
+        ],
+        "uuid": "a9d9793b-4d0d-4033-bc50-18f5abdc6549"
+      },
+      {
+        "title": "Capital Market Access for Alternative Risk Transfer",
+        "description": "Investment platforms or capital market service providers can work with IHC-RIQ to structure and list insurance-linked securities (ILS), such as catastrophe bonds or sidecars, providing alternative capital sources for risk transfer and expanding investor access to diversified reinsurance-linked assets.",
+        "tags": [
+          "insurance-linked securities",
+          "catastrophe bonds",
+          "alternative risk transfer",
+          "capital markets",
+          "investment products",
+          "reinsurance securitization",
+          "capital deployment",
+          "financial innovation"
+        ],
+        "industry": "Investment",
+        "possibility_mark": 6,
+        "roadmap_steps": [
+          "Research regulatory requirements for ILS issuance in ADGM",
+          "Develop frameworks for risk transfer between IHC-RIQ and capital market investors",
+          "Coordinate with IHC-RIQ on structuring the first ILS product",
+          "Engage institutional investors for pilot issuance",
+          "Optimize issuance platform and expand product range"
+        ],
+        "uuid": "f56004cd-2170-4167-b1b8-cdf16cead362"
+      }
+    ]
+  }
+]

@@ -1,0 +1,156 @@
+[
+  {
+    "title": "Launch of RIQ Global Reinsurance Platform",
+    "description": "IHC officially launched 'RIQ' (Reinsurance Intelligence Quotient), an AI-native global reinsurance platform based in Abu Dhabi Global Market (ADGM). The platform is a partnership between IHC, BlackRock, and Lunate, designed to serve global markets with an initial focus on high-growth regions across the Middle East, Asia, and select international jurisdictions. RIQ leverages advanced AI for underwriting precision, risk assessment, and capital deployment, supported by over $1 billion in initial equity and targeting over $10 billion in liabilities. The board is chaired by Dr. Sultan Ahmed Al Jaber, with CEO Mark Wilson leading the company. The platform is progressing through final regulatory steps with the ADGM Financial Services Regulatory Authority (FSRA).",
+    "tags": [
+      "RIQ",
+      "IHC",
+      "BlackRock",
+      "Lunate",
+      "AI-native",
+      "reinsurance",
+      "Abu Dhabi Global Market",
+      "ADGM",
+      "Financial Services Regulatory Authority",
+      "Dr. Sultan Ahmed Al Jaber",
+      "Mark Wilson",
+      "global reinsurance",
+      "capital deployment",
+      "risk transfer",
+      "high-growth markets"
+    ],
+    "industry": [
+      "Finance",
+      "Investment",
+      "Technology",
+      "Artificial Intelligence",
+      "Financial Services"
+    ],
+    "companies_mentioned": [
+      "IHC",
+      "BlackRock",
+      "Lunate"
+    ],
+    "year": 2025,
+    "company_name": "IHC",
+    "source_url": "https://ihccms.directus.app/assets/29708537-b1eb-4c0e-8b2b-70b3461df34a?download",
+    "source_name": "IHC Reveals “RIQ” as Official Name of the New Global Reinsurance Platform  Based in Abu Dhabi",
+    "source_origin": "pdf",
+    "ai_model": "gpt-4.1-mini-2025-04-14",
+    "ai_model_type": "mini",
+    "opportunities": [
+      {
+        "title": "Integration of Regional Insurance Data Providers with RIQ Platform",
+        "description": "Regional insurance data companies can cooperate with RIQ by providing localized risk and actuarial datasets to enhance the AI-driven underwriting and risk assessment functions. This partnership makes sense as it offers high-quality, region-specific data that can improve RIQ's modeling accuracy for Middle East and Asian markets—the initial focus regions for RIQ.",
+        "tags": [
+          "insurance data providers",
+          "actuarial data",
+          "risk modeling",
+          "AI underwriting enhancement",
+          "Middle East",
+          "Asia",
+          "data integration"
+        ],
+        "industry": "Financial Services",
+        "possibility_mark": 8,
+        "roadmap_steps": [
+          "Map region-specific insurance data requirements of RIQ",
+          "Assess available local/regional datasets",
+          "Reach out to RIQ’s business development or data team",
+          "Propose data-sharing or licensing agreement",
+          "Develop secure API/data integration protocols"
+        ],
+        "uuid": "f3696a51-81ed-4616-8f80-96e6dba17ede"
+      },
+      {
+        "title": "AI Model Validation and Auditing Collaboration for Reinsurance Algorithms",
+        "description": "AI auditing or third-party validation firms specializing in financial services can work with RIQ to independently validate its AI underwriting and risk assessment models. This opportunity is realistic due to increasing regulatory demands for explainability and transparency in AI-driven financial platforms.",
+        "tags": [
+          "AI model auditing",
+          "algorithm validation",
+          "regulatory compliance",
+          "financial AI governance",
+          "model transparency",
+          "risk auditing"
+        ],
+        "industry": "Artificial Intelligence",
+        "possibility_mark": 7,
+        "roadmap_steps": [
+          "Research regulatory frameworks relevant to ADGM and RIQ",
+          "Develop AI audit service proposal tailored to reinsurance",
+          "Contact RIQ’s compliance and technical teams",
+          "Pilot an independent audit of a selected model segment",
+          "Deliver compliance and improvement reports"
+        ],
+        "uuid": "3f4ef240-00cf-416a-933a-efe65d5936b7"
+      },
+      {
+        "title": "Deployment of Cybersecurity Solutions for AI-driven Reinsurance Platforms",
+        "description": "Cybersecurity solution providers can propose tailored security packages for AI-native reinsurance platforms like RIQ. With large-scale sensitive financial data flows and reliance on AI infrastructure, securing these environments is crucial and aligns with RIQ advancing through regulatory approvals.",
+        "tags": [
+          "cybersecurity for finance",
+          "AI platform security",
+          "data protection",
+          "financial infrastructure",
+          "regulatory compliance",
+          "reinsurance cybersecurity"
+        ],
+        "industry": "Technology",
+        "possibility_mark": 9,
+        "roadmap_steps": [
+          "Analyze cybersecurity needs of AI-native reinsurance platforms",
+          "Design tailored security and compliance offerings",
+          "Initiate discussions with RIQ IT and compliance leadership",
+          "Conduct security risk assessment for RIQ",
+          "Implement and monitor cybersecurity tools"
+        ],
+        "uuid": "195d3034-fd64-40dc-b438-067c2cac482e"
+      },
+      {
+        "title": "Collaboration with Insurtechs for Embedded Reinsurance Products",
+        "description": "Insurtech firms developing digital insurance products for high-growth markets can partner with RIQ to offer embedded reinsurance capacity, using RIQ’s AI-driven pricing and risk models to back new, digitally-originated insurance offerings. This partnership is realistic given the expansion of embedded insurance and insurtech ecosystems in focus regions.",
+        "tags": [
+          "insurtech collaboration",
+          "embedded insurance",
+          "digital distribution",
+          "reinsurance capacity",
+          "AI pricing",
+          "product innovation",
+          "Middle East Asia"
+        ],
+        "industry": "Finance",
+        "possibility_mark": 8,
+        "roadmap_steps": [
+          "Identify insurtechs targeting digital and high-growth insurance segments",
+          "Develop proof-of-concept for embedded reinsurance APIs",
+          "Initiate technical and commercial discussions with RIQ",
+          "Integrate platforms for live data exchange and risk transfer",
+          "Jointly market new insurance offerings"
+        ],
+        "uuid": "74538564-3dac-4a7e-a954-7dfa9e59c3f4"
+      },
+      {
+        "title": "Advanced Analytics Providers Offering Portfolio Optimization Tools",
+        "description": "Analytics and software firms with expertise in portfolio optimization and capital allocation can supply tools or co-develop modules for the RIQ platform. By improving capital deployment efficiency, these partnerships reinforce RIQ’s competitive edge in deploying $1B+ equity.",
+        "tags": [
+          "portfolio optimization",
+          "capital allocation analytics",
+          "software modules",
+          "reinsurance portfolio",
+          "AI analytics",
+          "liability management"
+        ],
+        "industry": "Investment",
+        "possibility_mark": 7,
+        "roadmap_steps": [
+          "Study RIQ’s capital deployment approach and equity structure",
+          "Build or customize portfolio optimization models",
+          "Present use cases and potential financial impact to RIQ leadership",
+          "Collaborate on pilot implementations within RIQ",
+          "Integrate tools into RIQ’s operating environment"
+        ],
+        "uuid": "80a5dc96-4cc2-4765-adfd-848be83ebb8a"
+      }
+    ]
+  }
+]
