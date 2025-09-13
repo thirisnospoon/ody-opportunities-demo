@@ -11821,5 +11821,1410 @@
         "partnership_description": "Collaboration with Darktrace to deliver scalable, secure AI-based cybersecurity solutions."
       }
     ]
+  },
+  {
+    "company_short_name": "NMDC Energy",
+    "company_full_name": "NMDC Energy PJSC",
+    "company_website": "https://www.nmdc-energy.com/",
+    "ownership": "NMDC Energy PJSC is a majority-owned subsidiary of NMDC Group PJSC.",
+    "founded": "1973",
+    "industries": [
+      "Engineering",
+      "Procurement",
+      "Construction",
+      "Oil and Gas",
+      "Energy"
+    ],
+    "core_products": "Engineering, procurement, and construction (EPC) services for offshore and onshore clients in the energy industry.",
+    "active_countries": [
+      {
+        "country_name": "United Arab Emirates",
+        "activity_description": "Headquarters and primary operations."
+      },
+      {
+        "country_name": "Saudi Arabia",
+        "activity_description": "Operations including a 400,000 sqm fabrication yard in Ras Al Khair."
+      },
+      {
+        "country_name": "Kuwait",
+        "activity_description": "EPC services for energy sector clients."
+      },
+      {
+        "country_name": "India",
+        "activity_description": "EPC services for energy sector clients."
+      },
+      {
+        "country_name": "Taiwan",
+        "activity_description": "EPC contract for pipeline installation for the Tung-Hsiao Power Plant."
+      }
+    ],
+    "products": [
+      {
+        "product_name": "EPC Services",
+        "product_description": "Comprehensive engineering, procurement, and construction solutions for the energy sector."
+      },
+      {
+        "product_name": "Fabrication Services",
+        "product_description": "Fabrication of heavy structures, storage tanks, and pressure vessels."
+      },
+      {
+        "product_name": "Offshore Operations",
+        "product_description": "Offshore construction and installation services for oil and gas facilities."
+      }
+    ],
+    "services": [
+      {
+        "service_name": "Project Management",
+        "service_description": "End-to-end project management for complex energy projects."
+      },
+      {
+        "service_name": "Installation and Commissioning",
+        "service_description": "Installation and commissioning of energy infrastructure."
+      },
+      {
+        "service_name": "Offshore Support Services",
+        "service_description": "Support services for offshore energy operations."
+      }
+    ],
+    "tags": [
+      "EPC solutions",
+      "offshore construction",
+      "onshore construction",
+      "oil and gas",
+      "energy sector",
+      "fabrication services",
+      "project management",
+      "installation and commissioning",
+      "offshore support services",
+      "engineering",
+      "procurement",
+      "construction",
+      "United Arab Emirates",
+      "Saudi Arabia",
+      "Kuwait",
+      "India",
+      "Taiwan"
+    ],
+    "recent_moves": [
+      {
+        "move_name": "Q1 2025 Financial Results",
+        "move_description": "Reported revenues of AED 3.7 billion, up 75% year-on-year, and net profit of AED 217 million, a 25% increase from Q1 2024."
+      },
+      {
+        "move_name": "Inauguration of Ras Al Khair Fabrication Yard",
+        "move_description": "Opened a 400,000 sqm state-of-the-art fabrication yard in Saudi Arabia as part of the Ras Al Khair Special Economic Zone."
+      },
+      {
+        "move_name": "EPC Contract with Taiwan Power Company",
+        "move_description": "Awarded a prestigious EPC contract by Taiwan Power Company for pipeline installation for the Tung-Hsiao Power Plant."
+      },
+      {
+        "move_name": "IPO on ADX",
+        "move_description": "Successfully listed on the Abu Dhabi Securities Exchange in September 2024, with the IPO oversubscribed by 31.3 times, generating total gross demand of AED 88 billion."
+      }
+    ],
+    "partnerships": [
+      {
+        "partnership_name": "Long-Term Agreement with Saudi Aramco",
+        "partnership_description": "Signed a three-year extension to its Long-Term Agreement with Saudi Aramco, with an option for an additional three years, strengthening its long-term partnership."
+      },
+      {
+        "partnership_name": "Strategic Partnership with e&",
+        "partnership_description": "Unveiled a strategic partnership with e&, the global technology and investment group, to introduce 5G and Artificial Intelligence capabilities to upstream operating environments."
+      }
+    ]
+  },
+  {
+    "company_short_name": "Oxinus Holdings",
+    "company_full_name": "Oxinus Holding Limited",
+    "company_website": "https://www.oxinus.holdings/",
+    "ownership": "Subsidiary of Sirius Holding",
+    "founded": "2023",
+    "industries": [
+      "Technology",
+      "Information and Internet"
+    ],
+    "core_products": "High-end digital, software, and hardware products for consumers, businesses, and enterprises.",
+    "active_countries": [
+      {
+        "country_name": "United Arab Emirates",
+        "activity_description": "Headquarters and primary operations"
+      },
+      {
+        "country_name": "India",
+        "activity_description": "Regional operations"
+      },
+      {
+        "country_name": "Tanzania",
+        "activity_description": "Regional operations"
+      },
+      {
+        "country_name": "Kenya",
+        "activity_description": "Regional operations"
+      },
+      {
+        "country_name": "Greece",
+        "activity_description": "Regional operations"
+      },
+      {
+        "country_name": "Uzbekistan",
+        "activity_description": "Regional operations"
+      }
+    ],
+    "products": [
+      {
+        "product_name": "Ox.One",
+        "product_description": "An ecosystem of solutions designed to work standalone or together to help SMEs."
+      },
+      {
+        "product_name": "Ox Gov",
+        "product_description": "Solutions aimed at digitizing the infrastructure of nations."
+      }
+    ],
+    "services": [
+      {
+        "service_name": "Assessment and Planning",
+        "service_description": "Tailored strategy development to meet specific business needs."
+      },
+      {
+        "service_name": "Seamless Onboarding",
+        "service_description": "Efficient data migration and system integration for a smooth transition."
+      },
+      {
+        "service_name": "Training and Support",
+        "service_description": "Comprehensive training programs and ongoing support to empower teams."
+      }
+    ],
+    "tags": [
+      "digital solutions",
+      "technology",
+      "software development",
+      "hardware products",
+      "government solutions",
+      "enterprise solutions",
+      "SME solutions",
+      "digital transformation",
+      "global presence",
+      "innovation"
+    ],
+    "recent_moves": [
+      {
+        "move_name": "Partnership with Magnati",
+        "move_description": "Collaborated to provide F&B payment solutions in the UAE by integrating Oxinus's POS solution, Spotlight, with Magnati's payment processing."
+      },
+      {
+        "move_name": "Launch of OX.one at HoReCa 2024",
+        "move_description": "Introduced the suite of tools offering smart solutions for the catering and hospitality industry in Greece."
+      }
+    ],
+    "partnerships": [
+      {
+        "partnership_name": "Magnati",
+        "partnership_description": "Integrated Oxinus's POS solution, Spotlight, with Magnati's payment processing to provide F&B payment solutions in the UAE."
+      }
+    ]
+  },
+  {
+    "company_short_name": "Sirius International Holding",
+    "company_full_name": "Sirius International Holding Limited",
+    "company_website": "https://siriusholding.com/",
+    "ownership": "Subsidiary of International Holding Company (IHC)",
+    "founded": "2022",
+    "industries": [
+      "Technology",
+      "Digital Transformation",
+      "Sustainability",
+      "Health Technology",
+      "Fintech"
+    ],
+    "core_products": "Digital transformation solutions, sustainability technologies, health technology solutions, fintech services",
+    "active_countries": [
+      {
+        "country_name": "United Arab Emirates",
+        "activity_description": "Headquarters and primary operations"
+      },
+      {
+        "country_name": "Vietnam",
+        "activity_description": "Digital transformation and technological innovation initiatives"
+      },
+      {
+        "country_name": "India",
+        "activity_description": "Sovereign AI and cloud platform services"
+      },
+      {
+        "country_name": "United Kingdom",
+        "activity_description": "Technology and digital transformation services"
+      },
+      {
+        "country_name": "Switzerland",
+        "activity_description": "Technology and digital transformation services"
+      },
+      {
+        "country_name": "Greece",
+        "activity_description": "Technology and digital transformation services"
+      },
+      {
+        "country_name": "Netherlands",
+        "activity_description": "Technology and digital transformation services"
+      },
+      {
+        "country_name": "Estonia",
+        "activity_description": "Technology and digital transformation services"
+      },
+      {
+        "country_name": "Cyprus",
+        "activity_description": "Technology and digital transformation services"
+      },
+      {
+        "country_name": "Brazil",
+        "activity_description": "Technology and digital transformation services"
+      },
+      {
+        "country_name": "Democratic Republic of the Congo",
+        "activity_description": "Technology and digital transformation services"
+      },
+      {
+        "country_name": "Kenya",
+        "activity_description": "Technology and digital transformation services"
+      },
+      {
+        "country_name": "Tanzania",
+        "activity_description": "Technology and digital transformation services"
+      },
+      {
+        "country_name": "Australia",
+        "activity_description": "Technology and digital transformation services"
+      }
+    ],
+    "products": [
+      {
+        "product_name": "Government Transformation Solutions",
+        "product_description": "E-government platforms, digital identity systems, and smart infrastructure"
+      },
+      {
+        "product_name": "Sustainability Technologies",
+        "product_description": "Carbon reduction, water conservation, methane management, and circular economy initiatives"
+      },
+      {
+        "product_name": "Health Technology Solutions",
+        "product_description": "AI-driven diagnostics, telemedicine platforms, and digital health records"
+      },
+      {
+        "product_name": "Fintech Services",
+        "product_description": "Digital payment platforms, blockchain-based financial solutions, and financial inclusion technologies"
+      },
+      {
+        "product_name": "Smart Utility Solutions",
+        "product_description": "Smart meters, electric vehicle charging infrastructure, battery storage systems, and advanced analytics software"
+      },
+      {
+        "product_name": "Blockchain Technology Solutions",
+        "product_description": "Secure data management and enterprise applications"
+      },
+      {
+        "product_name": "Infrastructure Solutions",
+        "product_description": "Systems for aviation, maritime, road transport, and meteorological services"
+      },
+      {
+        "product_name": "Sovereign Data Centers",
+        "product_description": "Edge computing facilities ensuring data security and compliance"
+      },
+      {
+        "product_name": "Cloud Computing Services",
+        "product_description": "Digital infrastructure through strategic acquisitions and partnerships"
+      },
+      {
+        "product_name": "AI and Machine Learning Solutions",
+        "product_description": "Enhancing operational efficiency and innovation across industries"
+      }
+    ],
+    "services": [],
+    "tags": [
+      "Digital Transformation",
+      "Sustainability",
+      "Health Technology",
+      "Fintech",
+      "Government Solutions",
+      "AI",
+      "Blockchain",
+      "Cloud Computing",
+      "Data Security",
+      "Innovation"
+    ],
+    "recent_moves": [
+      {
+        "move_name": "Acquisition of Derby Group",
+        "move_description": "Acquired Derby Group to enhance digital integration and global scaling of digital solutions."
+      },
+      {
+        "move_name": "Establishment of Smart Sustainability Solutions (S3)",
+        "move_description": "Launched S3 to offer industrial-scale solutions for transitioning to a net-zero economy."
+      },
+      {
+        "move_name": "Acquisition of Coredge.io",
+        "move_description": "Through Sirius Digitech, acquired Coredge.io to provide sovereign AI and cloud platform services."
+      },
+      {
+        "move_name": "Partnership with Vietnam's National Digital Transformation Authority",
+        "move_description": "Signed an MOU to promote digital transformation and technological innovation in Vietnam."
+      }
+    ],
+    "partnerships": [
+      {
+        "partnership_name": "Sirius Digitech Joint Venture",
+        "partnership_description": "Joint venture with Adani Group to acquire Coredge.io, enhancing sovereign AI and cloud services."
+      },
+      {
+        "partnership_name": "Collaboration with Vietnam's National Digital Transformation Authority",
+        "partnership_description": "MOU signed to explore and harness opportunities for digital transformation in Vietnam."
+      }
+    ]
+  },
+  {
+    "company_short_name": "Multiply Group",
+    "company_full_name": "Multiply Group International Holding Limited",
+    "company_website": "https://multiply.ae/",
+    "ownership": "Multiply Group is a publicly listed company on the Abu Dhabi Securities Exchange (ADX: MULTIPLY).",
+    "founded": "",
+    "industries": [
+      "Investment Holding",
+      "Mobility",
+      "Media and Communications",
+      "Energy and Utilities",
+      "Wellness and Beauty",
+      "Retail and Apparel"
+    ],
+    "core_products": "Multiply Group invests in and operates businesses globally across various sectors, focusing on transformative, cash-generating businesses.",
+    "active_countries": [
+      {
+        "country_name": "United Arab Emirates",
+        "activity_description": "Headquarters and primary operations"
+      },
+      {
+        "country_name": "Spain",
+        "activity_description": "Majority stake in Tendam, a leading omnichannel apparel group"
+      },
+      {
+        "country_name": "Turkey",
+        "activity_description": "Investments in energy sector through Kalyon Enerji"
+      },
+      {
+        "country_name": "Saudi Arabia",
+        "activity_description": "Expansion of beauty and wellness services"
+      }
+    ],
+    "products": [],
+    "services": [],
+    "tags": [
+      "Investment Holding",
+      "Diversified Portfolio",
+      "Global Operations",
+      "Mobility",
+      "Media and Communications",
+      "Energy and Utilities",
+      "Wellness and Beauty",
+      "Retail and Apparel",
+      "Strategic Investments",
+      "Operational Efficiency"
+    ],
+    "recent_moves": [
+      {
+        "move_name": "Acquisition of 67.91% stake in Tendam",
+        "move_description": "Multiply Group secured a controlling stake in Tendam, Spain's second-largest apparel group, marking its first major investment in the retail and apparel sector."
+      },
+      {
+        "move_name": "Sale of PAL Cooling Holding",
+        "move_description": "Agreed to sell its 100% stake in PAL Cooling Holding to a consortium led by Tabreed and CVC DIF for approximately AED 3.8 billion."
+      },
+      {
+        "move_name": "Investment in Mwasalat Holdings",
+        "move_description": "Emirates Driving Company, a subsidiary of Multiply Group, invested in Mwasalat Holdings to strengthen its position in the UAE mobility sector."
+      }
+    ],
+    "partnerships": [
+      {
+        "partnership_name": "Joint venture with Al Arabia Outdoor Advertising",
+        "partnership_description": "Signed an MoU to create a joint entity dedicated to investing in the global out-of-home advertising sector."
+      },
+      {
+        "partnership_name": "Acquisition of International Energy Holding",
+        "partnership_description": "Acquired 80% of International Energy Holding to expand its utilities portfolio."
+      }
+    ]
+  },
+  {
+    "company_short_name": "Multiply Group",
+    "company_full_name": "Multiply Group PJSC",
+    "company_website": "https://multiply.ae/",
+    "ownership": "Multiply Group PJSC is a subsidiary of IHC Digital Holding LLC.",
+    "founded": "2003",
+    "industries": [
+      "Investment Holding",
+      "Media and Communications",
+      "Energy and Utilities",
+      "Mobility",
+      "Wellness and Beauty",
+      "Retail and Apparel"
+    ],
+    "core_products": "Multiply Group invests in and operates businesses across various sectors, including media and communications, energy and utilities, mobility, wellness and beauty, and retail and apparel.",
+    "active_countries": [
+      {
+        "country_name": "United Arab Emirates",
+        "activity_description": "Headquartered in Abu Dhabi, UAE, with investments and operations across multiple sectors."
+      },
+      {
+        "country_name": "United States",
+        "activity_description": "Investments in companies such as Firefly, a US-based digital marketing firm."
+      },
+      {
+        "country_name": "Spain",
+        "activity_description": "Acquisition of a significant stake in Tendam, a Spanish fashion retailer."
+      }
+    ],
+    "products": [
+      {
+        "product_name": "Media and Communications Services",
+        "product_description": "Advertisement designing, production, and commercial publication printing services."
+      },
+      {
+        "product_name": "District Cooling Services",
+        "product_description": "Installation and maintenance of district cooling and air conditioning systems."
+      },
+      {
+        "product_name": "Driving Training Services",
+        "product_description": "Management and development of motor vehicle driving training programs."
+      },
+      {
+        "product_name": "Wellness and Beauty Products",
+        "product_description": "Trading in cosmetics, perfumes, beauty and personal care equipment, and make-up products."
+      },
+      {
+        "product_name": "Retail and Apparel",
+        "product_description": "Investment in fashion and apparel businesses, including the acquisition of a stake in Tendam."
+      }
+    ],
+    "services": [
+      {
+        "service_name": "Investment Management",
+        "service_description": "Investing in and operating businesses across various sectors to catalyze profitable growth."
+      },
+      {
+        "service_name": "Asset Management",
+        "service_description": "Managing investment properties and financial assets."
+      },
+      {
+        "service_name": "Event Management",
+        "service_description": "Organization and management of exhibitions and events."
+      },
+      {
+        "service_name": "Public Relations Consultancy",
+        "service_description": "Providing public relations consultancy services."
+      }
+    ],
+    "tags": [
+      "Investment Holding",
+      "Media and Communications",
+      "Energy and Utilities",
+      "Mobility",
+      "Wellness and Beauty",
+      "Retail and Apparel",
+      "Abu Dhabi",
+      "United Arab Emirates",
+      "IHC Digital Holding LLC",
+      "Multiply Group PJSC"
+    ],
+    "recent_moves": [
+      {
+        "move_name": "Acquisition of Tendam",
+        "move_description": "Completed the acquisition of Tendam, doubling operational EBITDA and expanding global footprint."
+      },
+      {
+        "move_name": "Investment in Mwasalat Holdings",
+        "move_description": "Emirates Driving Company, a subsidiary of Multiply Group, invested in Mwasalat Holdings, solidifying its position as a UAE mobility champion."
+      },
+      {
+        "move_name": "Sale of PAL Cooling Holding",
+        "move_description": "Agreed to sell PAL Cooling Holding to a consortium formed by Tabreed and CVC DIF for approximately AED 3.8 billion."
+      },
+      {
+        "move_name": "Launch of Multiply Media Group",
+        "move_description": "Launched Multiply Media Group, creating a media powerhouse headquartered in the UAE."
+      }
+    ],
+    "partnerships": [
+      {
+        "partnership_name": "Investment in Firefly",
+        "partnership_description": "Invested $14.9 million in US-based digital marketing firm Firefly."
+      },
+      {
+        "partnership_name": "Stake in Emirates Driving Company",
+        "partnership_description": "Acquired a significant stake in Emirates Driving Company, enhancing its presence in the mobility sector."
+      },
+      {
+        "partnership_name": "Acquisition of Omorfia Group",
+        "partnership_description": "Acquired 51% of Omorfia Group, which includes companies such as Bedashing Beauty Lounge and Tips & Toes."
+      }
+    ]
+  },
+  {
+    "company_short_name": "Viola Communications",
+    "company_full_name": "Viola Communications LLC",
+    "company_website": "https://www.viola.ae/",
+    "ownership": "Part of the Multiply Group",
+    "founded": "2001",
+    "industries": [
+      "Marketing and Advertising",
+      "Public Relations",
+      "Event Management",
+      "Media Production",
+      "Digital Services"
+    ],
+    "core_products": "Fully integrated marketing and communications solutions",
+    "active_countries": [
+      {
+        "country_name": "United Arab Emirates",
+        "activity_description": "Headquartered in Abu Dhabi with offices in Dubai, providing comprehensive marketing and communications services."
+      },
+      {
+        "country_name": "Egypt",
+        "activity_description": "Office in Cairo offering marketing and communications solutions."
+      }
+    ],
+    "products": [
+      {
+        "product_name": "Viola Advertising",
+        "product_description": "Advertising services encompassing creative campaigns and media planning."
+      },
+      {
+        "product_name": "Viola Public Relations",
+        "product_description": "Public relations services including media relations and corporate communications."
+      },
+      {
+        "product_name": "Viola Planning Consultancy",
+        "product_description": "Strategic planning and consultancy services for marketing initiatives."
+      },
+      {
+        "product_name": "Viola Events",
+        "product_description": "Event planning and management services for various corporate and public events."
+      },
+      {
+        "product_name": "Viola Production",
+        "product_description": "Media production services including video and audio content creation."
+      },
+      {
+        "product_name": "Viola Interactive",
+        "product_description": "Digital services focusing on online marketing and interactive media."
+      },
+      {
+        "product_name": "Viola Outdoor",
+        "product_description": "Out-of-home advertising solutions such as lamppost and bridge banners."
+      }
+    ],
+    "services": [
+      {
+        "service_name": "Advertising",
+        "service_description": "Creative advertising campaigns and media planning."
+      },
+      {
+        "service_name": "Public Relations",
+        "service_description": "Media relations, corporate communications, and crisis management."
+      },
+      {
+        "service_name": "Event Management",
+        "service_description": "Planning and execution of corporate and public events."
+      },
+      {
+        "service_name": "Media Production",
+        "service_description": "Production of video, audio, and other media content."
+      },
+      {
+        "service_name": "Digital Marketing",
+        "service_description": "Online marketing strategies including social media and interactive media."
+      },
+      {
+        "service_name": "Out-of-Home Advertising",
+        "service_description": "Advertising solutions for outdoor media spaces."
+      }
+    ],
+    "tags": [
+      "Integrated Marketing Solutions",
+      "Advertising",
+      "Public Relations",
+      "Event Management",
+      "Media Production",
+      "Digital Services",
+      "Out-of-Home Advertising",
+      "Multiply Group",
+      "Abu Dhabi",
+      "Dubai",
+      "Cairo"
+    ],
+    "recent_moves": [
+      {
+        "move_name": "Silver Prize at MENA Digital Awards",
+        "move_description": "Awarded Silver Prize for 'Best Integrated Digital Campaign - Government' at the MENA Digital Awards for work on the Sheikh Zayed Festival."
+      }
+    ],
+    "partnerships": []
+  },
+  {
+    "company_short_name": "Aldar Investment Management Limited",
+    "company_full_name": "Aldar Investment Management Limited",
+    "company_website": "https://www.aldar.com/",
+    "ownership": "Aldar Investment Management Limited is a subsidiary of Aldar Properties PJSC, which is 25% owned by Mubadala and 26% owned by International Holding Company.",
+    "founded": "",
+    "industries": [
+      "Real Estate",
+      "Investment Management"
+    ],
+    "core_products": "Management and development of real estate assets, including residential, commercial, retail, and hospitality properties.",
+    "active_countries": [
+      {
+        "country_name": "United Arab Emirates",
+        "activity_description": "Development and management of real estate properties across various sectors."
+      },
+      {
+        "country_name": "United Kingdom",
+        "activity_description": "Investment in logistics and storage assets through partnership with Carlyle."
+      },
+      {
+        "country_name": "Egypt",
+        "activity_description": "Real estate development through subsidiary SODIC."
+      }
+    ],
+    "products": [
+      {
+        "product_name": "Residential Properties",
+        "product_description": "Development and sale of residential units, including apartments, townhouses, and villas."
+      },
+      {
+        "product_name": "Commercial Properties",
+        "product_description": "Development and leasing of office spaces and commercial buildings."
+      },
+      {
+        "product_name": "Retail Properties",
+        "product_description": "Development and management of shopping malls and retail centers."
+      },
+      {
+        "product_name": "Hospitality Properties",
+        "product_description": "Development and management of hotels, resorts, and other hospitality venues."
+      }
+    ],
+    "services": [
+      {
+        "service_name": "Property Management",
+        "service_description": "Comprehensive management services for residential, commercial, and retail properties."
+      },
+      {
+        "service_name": "Investment Management",
+        "service_description": "Management of real estate investment portfolios and assets."
+      },
+      {
+        "service_name": "Development Management",
+        "service_description": "Overseeing the planning, design, and construction of real estate projects."
+      }
+    ],
+    "tags": [
+      "Real Estate Development",
+      "Property Management",
+      "Investment Management",
+      "Residential Properties",
+      "Commercial Properties",
+      "Retail Properties",
+      "Hospitality Properties",
+      "United Arab Emirates",
+      "United Kingdom",
+      "Egypt"
+    ],
+    "recent_moves": [
+      {
+        "move_name": "Sale of Mamsha Gardens Residential Building",
+        "move_description": "Sold a residential building at Mamsha Gardens to Hong Kong-based GAW Capital Partners for AED 586 million in May 2025."
+      },
+      {
+        "move_name": "Record Net Profit in H1 2025",
+        "move_description": "Reported a 24% year-on-year increase in net profit to AED 4.1 billion in the first half of 2025."
+      },
+      {
+        "move_name": "Apollo Global Management Investment",
+        "move_description": "Raised $500 million through a private placement with Apollo Global Management in January 2025."
+      },
+      {
+        "move_name": "Partnership with Carlyle",
+        "move_description": "Invested AED 407 million in UK and European logistics and storage assets through a partnership with Carlyle in February 2024."
+      },
+      {
+        "move_name": "Debut Green Sukuk Issuance",
+        "move_description": "Raised $500 million through its debut green sukuk in May 2023 to support sustainable projects."
+      }
+    ],
+    "partnerships": [
+      {
+        "partnership_name": "Apollo Global Management",
+        "partnership_description": "Entered into a $1.4 billion transaction with Apollo in 2022, including investments in land joint ventures and equity stakes."
+      },
+      {
+        "partnership_name": "Carlyle",
+        "partnership_description": "Partnered with Carlyle in February 2024 to invest in UK and European logistics and storage real estate assets."
+      }
+    ]
+  },
+  {
+    "company_short_name": "Aldar Hansel SPV Restricted SPV LTD",
+    "company_full_name": "Aldar Hansel SPV Restricted SPV LTD",
+    "company_website": "https://www.aldar.com/",
+    "ownership": "",
+    "founded": "",
+    "industries": [],
+    "core_products": "",
+    "active_countries": [],
+    "products": [],
+    "services": [],
+    "tags": [],
+    "recent_moves": [],
+    "partnerships": []
+  },
+  {
+    "company_short_name": "Aldar Estates",
+    "company_full_name": "Aldar Estates Holding Limited",
+    "company_website": "https://www.aldar.com/",
+    "ownership": "Aldar Estates is a subsidiary of Aldar Properties PJSC, which is 25% owned by Mubadala and 26% owned by International Holding Company.",
+    "founded": "",
+    "industries": [
+      "Real Estate Services",
+      "Property Management",
+      "Facilities Management"
+    ],
+    "core_products": "Integrated real estate services including property and facilities management, security services, landscaping, valuation and advisory, and consultancy services.",
+    "active_countries": [
+      {
+        "country_name": "United Arab Emirates",
+        "activity_description": "Providing comprehensive real estate services across the UAE."
+      }
+    ],
+    "products": [],
+    "services": [
+      {
+        "service_name": "Property Management",
+        "service_description": "Managing residential and commercial properties to maximize asset potential."
+      },
+      {
+        "service_name": "Facilities Management",
+        "service_description": "Offering integrated facilities management services to ensure operational efficiency."
+      },
+      {
+        "service_name": "Security Services",
+        "service_description": "Providing security solutions to safeguard properties and assets."
+      },
+      {
+        "service_name": "Landscaping",
+        "service_description": "Delivering landscaping services including design, installation, and maintenance."
+      },
+      {
+        "service_name": "Valuation & Advisory",
+        "service_description": "Offering valuation and advisory services for real estate assets."
+      },
+      {
+        "service_name": "Consultancy Services",
+        "service_description": "Providing expert consultancy across the real estate lifecycle."
+      }
+    ],
+    "tags": [
+      "Real Estate Services",
+      "Property Management",
+      "Facilities Management",
+      "Security Services",
+      "Landscaping",
+      "Valuation",
+      "Advisory",
+      "Consultancy",
+      "UAE",
+      "Aldar Properties"
+    ],
+    "recent_moves": [
+      {
+        "move_name": "Acquisition of FAB Properties",
+        "move_description": "In September 2023, Aldar Estates acquired FAB Properties, adding 22,000 residential units to its management portfolio."
+      },
+      {
+        "move_name": "Merger with Eltizam Asset Management Group",
+        "move_description": "In July 2023, Aldar Estates merged with Eltizam Asset Management Group, significantly expanding its property and facilities management services."
+      },
+      {
+        "move_name": "Acquisition of Basatin Landscaping",
+        "move_description": "In May 2023, Aldar Estates acquired a 75% stake in Basatin Landscaping, enhancing its landscaping service offerings."
+      }
+    ],
+    "partnerships": [
+      {
+        "partnership_name": "Strategic Partnership with IHC and ADNEC Group",
+        "partnership_description": "In July 2023, Aldar Estates formed a strategic partnership with International Holding Company and ADNEC Group, merging their property and facilities management businesses to create the region's largest integrated real estate services provider."
+      }
+    ]
+  },
+  {
+    "company_short_name": "Aldar",
+    "company_full_name": "Aldar Properties PJSC",
+    "company_website": "https://www.aldar.com/",
+    "ownership": "",
+    "founded": "",
+    "industries": [
+      "Real Estate Development",
+      "Investment"
+    ],
+    "core_products": "Development and management of residential, commercial, retail, hospitality, and education assets.",
+    "active_countries": [
+      {
+        "country_name": "United Arab Emirates",
+        "activity_description": "Development and management of real estate assets across various emirates, including Abu Dhabi, Dubai, and Ras Al Khaimah."
+      }
+    ],
+    "products": [
+      {
+        "product_name": "Residential Properties",
+        "product_description": "Development of over 26,000 homes across Abu Dhabi, including apartments and villas."
+      },
+      {
+        "product_name": "Commercial Properties",
+        "product_description": "Management of a diverse portfolio of commercial assets, including office spaces and retail centers."
+      },
+      {
+        "product_name": "Hospitality Assets",
+        "product_description": "Ownership and management of hospitality properties, including hotels and resorts."
+      },
+      {
+        "product_name": "Educational Facilities",
+        "product_description": "Development and management of schools and academies."
+      }
+    ],
+    "services": [
+      {
+        "service_name": "Property Development",
+        "service_description": "Design and construction of residential, commercial, and mixed-use developments."
+      },
+      {
+        "service_name": "Property Management",
+        "service_description": "Management of a diverse portfolio of income-generating assets, including residential, retail, commercial, hospitality, and education properties."
+      },
+      {
+        "service_name": "Investment Management",
+        "service_description": "Strategic investments in real estate assets to generate long-term value."
+      }
+    ],
+    "tags": [
+      "Real Estate",
+      "Property Development",
+      "Investment",
+      "Hospitality",
+      "Education",
+      "Retail",
+      "Commercial Properties",
+      "Residential Properties",
+      "United Arab Emirates",
+      "Abu Dhabi",
+      "Dubai",
+      "Ras Al Khaimah"
+    ],
+    "recent_moves": [
+      {
+        "move_name": "Acquisition of Al Hamra Mall",
+        "move_description": "In February 2022, Aldar acquired Al Hamra Mall in Ras Al Khaimah for AED 410 million, marking its first investment in the emirate."
+      },
+      {
+        "move_name": "Redevelopment of Al Jimi Mall and Al Hamra Mall",
+        "move_description": "In July 2023, Aldar announced a AED 500 million investment plan to redevelop Al Jimi Mall in Al Ain and Al Hamra Mall in Ras Al Khaimah, aiming to enhance customer experience and expand retail offerings."
+      },
+      {
+        "move_name": "Acquisition of DoubleTree by Hilton Resort & Spa Marjan Island",
+        "move_description": "In July 2022, Aldar acquired the beachfront resort and an adjacent development plot for AED 810 million, expanding its hospitality portfolio in Ras Al Khaimah."
+      },
+      {
+        "move_name": "Acquisition of Beachfront Plot on Al Marjan Island",
+        "move_description": "In November 2022, Aldar acquired a prime beachfront plot on Al Marjan Island in Ras Al Khaimah, paving the way for a residential development with over 2,000 apartments."
+      }
+    ],
+    "partnerships": [
+      {
+        "partnership_name": "Strategic Partnership with Mubadala",
+        "partnership_description": "In January 2025, Aldar progressed its partnership with Mubadala, closing three joint ventures related to luxury development, income-generating assets, and industrial logistics park development."
+      },
+      {
+        "partnership_name": "Partnership with Dubai Holding",
+        "partnership_description": "Aldar formed a strategic joint venture with Dubai Holding to develop three master-planned communities in Dubai, focusing on residential, commercial, retail, and logistics assets."
+      },
+      {
+        "partnership_name": "Logistics Partnership with DP World",
+        "partnership_description": "Aldar entered into a logistics partnership with DP World to enhance its logistics asset class in Dubai."
+      },
+      {
+        "partnership_name": "Partnership with Emirates Steel",
+        "partnership_description": "Aldar partnered with Emirates Steel to access hydrogen-based steel rebar for use in Abu Dhabi’s first net zero carbon mosque."
+      }
+    ]
+  },
+  {
+    "company_short_name": "Aldar Education",
+    "company_full_name": "Aldar Education Sole Proprietorship LLC",
+    "company_website": "https://www.aldar.com/",
+    "ownership": "Wholly owned subsidiary of Aldar Properties",
+    "founded": "",
+    "industries": [
+      "Education",
+      "Educational Support Services"
+    ],
+    "core_products": "Operation and management of educational institutions offering various curricula",
+    "active_countries": [
+      {
+        "country_name": "United Arab Emirates",
+        "activity_description": "Owns and manages multiple schools across Abu Dhabi and Dubai"
+      },
+      {
+        "country_name": "Bahrain",
+        "activity_description": "Establishing Cranleigh Bahrain, a British International Curriculum school opening in 2024"
+      }
+    ],
+    "products": [
+      {
+        "product_name": "Aldar Academies",
+        "product_description": "A network of schools offering various curricula in Abu Dhabi"
+      },
+      {
+        "product_name": "Cranleigh Abu Dhabi",
+        "product_description": "A premium British curriculum school in Abu Dhabi"
+      },
+      {
+        "product_name": "Kent College Dubai",
+        "product_description": "A British curriculum school in Dubai"
+      },
+      {
+        "product_name": "Virginia International Private School",
+        "product_description": "An educational institution in Abu Dhabi"
+      }
+    ],
+    "services": [
+      {
+        "service_name": "School Management",
+        "service_description": "Operation and administration of educational institutions"
+      },
+      {
+        "service_name": "Teacher Training Academy",
+        "service_description": "Professional development and training programs for educators"
+      }
+    ],
+    "tags": [
+      "Education",
+      "School Management",
+      "Teacher Training",
+      "British Curriculum",
+      "International Expansion",
+      "Digital Transformation",
+      "Educational Investment",
+      "Student Capacity Expansion",
+      "Premium Schools",
+      "Mid-Market Schools"
+    ],
+    "recent_moves": [
+      {
+        "move_name": "Investment in Education Portfolio",
+        "move_description": "Announced plans to invest AED 1 billion into Aldar Education to diversify and expand its education portfolio in Abu Dhabi"
+      },
+      {
+        "move_name": "Expansion into Dubai and Bahrain",
+        "move_description": "Invested AED 350 million to acquire Kent College Dubai and Virginia International Private School in Abu Dhabi, and to establish Cranleigh Bahrain"
+      },
+      {
+        "move_name": "Digital Transformation Strategy",
+        "move_description": "Launched a digital transformation strategy to enhance the educational experience through technology integration"
+      },
+      {
+        "move_name": "Great Place to Work Certification",
+        "move_description": "Became the world's first education group to earn a Great Place to Work certification"
+      }
+    ],
+    "partnerships": [
+      {
+        "partnership_name": "Cranleigh Bahrain",
+        "partnership_description": "Collaboration to establish the first branded premium school in Bahrain offering a British International Curriculum"
+      }
+    ]
+  },
+  {
+    "company_short_name": "Aldar Estates",
+    "company_full_name": "Aldar Estates Investment Sole Proprietorship LLC",
+    "company_website": "https://www.aldar.com/",
+    "ownership": "Aldar Estates is a subsidiary of Aldar Properties PJSC, a leading real estate developer in the United Arab Emirates.",
+    "founded": "2021",
+    "industries": [
+      "Real Estate Services",
+      "Property Management",
+      "Facilities Management"
+    ],
+    "core_products": "Integrated real estate services including property management, facilities management, valuation and advisory, building consultancy, and franchising services.",
+    "active_countries": [
+      {
+        "country_name": "United Arab Emirates",
+        "activity_description": "Provides comprehensive real estate and facilities management services across various emirates."
+      }
+    ],
+    "products": [
+      {
+        "product_name": "Property Management",
+        "product_description": "Comprehensive management services for residential, commercial, and retail properties."
+      },
+      {
+        "product_name": "Facilities Management",
+        "product_description": "Maintenance and operational services ensuring optimal functionality of properties."
+      },
+      {
+        "product_name": "Valuation and Advisory",
+        "product_description": "Professional valuation and consultancy services for real estate assets."
+      },
+      {
+        "product_name": "Building Consultancy",
+        "product_description": "Expert advice and services related to building design, construction, and maintenance."
+      },
+      {
+        "product_name": "Franchising Services",
+        "product_description": "Opportunities for businesses to operate under Aldar Estates' established brand and systems."
+      }
+    ],
+    "services": [
+      {
+        "service_name": "Community Management",
+        "service_description": "Management services focused on enhancing community living experiences."
+      },
+      {
+        "service_name": "Security Services",
+        "service_description": "Comprehensive security solutions including guarding, audits, and equipment installations."
+      },
+      {
+        "service_name": "Sustainable Solutions",
+        "service_description": "Energy and decarbonization solutions to drive efficiency and sustainability."
+      },
+      {
+        "service_name": "Landscaping Services",
+        "service_description": "Design and maintenance of sustainable landscapes for various properties."
+      }
+    ],
+    "tags": [
+      "Real Estate Services",
+      "Property Management",
+      "Facilities Management",
+      "Valuation",
+      "Advisory",
+      "Building Consultancy",
+      "Franchising",
+      "Community Management",
+      "Security Services",
+      "Sustainability",
+      "Landscaping"
+    ],
+    "recent_moves": [
+      {
+        "move_name": "Acquisition of Asteco Property Management",
+        "move_description": "In February 2021, Aldar Estates acquired Asteco Property Management, expanding its portfolio by an additional 18,575 units under property management and more than 5,000 units under ownership association management."
+      },
+      {
+        "move_name": "Merger with Eltizam Asset Management Group",
+        "move_description": "In July 2023, Aldar Estates merged with Eltizam Asset Management Group, creating the GCC's largest property and facilities management company."
+      },
+      {
+        "move_name": "Acquisition of FAB Properties",
+        "move_description": "In September 2023, Aldar Estates acquired FAB Properties, adding 22,000 residential units to its management portfolio."
+      },
+      {
+        "move_name": "Acquisition of Basatin Landscaping",
+        "move_description": "In May 2023, Aldar Estates acquired a 75% stake in Basatin Landscaping, enhancing its landscaping services."
+      }
+    ],
+    "partnerships": [
+      {
+        "partnership_name": "Merger with Eltizam Asset Management Group",
+        "partnership_description": "In July 2023, Aldar Estates merged with Eltizam Asset Management Group, creating the GCC's largest property and facilities management company."
+      },
+      {
+        "partnership_name": "Acquisition of FAB Properties",
+        "partnership_description": "In September 2023, Aldar Estates acquired FAB Properties, adding 22,000 residential units to its management portfolio."
+      },
+      {
+        "partnership_name": "Acquisition of Basatin Landscaping",
+        "partnership_description": "In May 2023, Aldar Estates acquired a 75% stake in Basatin Landscaping, enhancing its landscaping services."
+      }
+    ]
+  },
+  {
+    "company_short_name": "Nammos Holding STA Ltd",
+    "company_full_name": "Nammos Holding STA Ltd",
+    "company_website": "https://www.nammos.com/",
+    "ownership": "",
+    "founded": "",
+    "industries": [
+      "Hospitality",
+      "Gastronomy"
+    ],
+    "core_products": "Luxury dining and beach club experiences",
+    "active_countries": [
+      {
+        "country_name": "Greece",
+        "activity_description": "Operating Nammos Mykonos, a luxury beach club and restaurant"
+      },
+      {
+        "country_name": "United Arab Emirates",
+        "activity_description": "Operating Nammos Dubai, offering upscale dining and beach experiences"
+      },
+      {
+        "country_name": "France",
+        "activity_description": "Operating Nammos Cannes, providing luxury dining and entertainment"
+      },
+      {
+        "country_name": "Cyprus",
+        "activity_description": "Operating Nammos Limassol, offering high-end dining and beach club services"
+      },
+      {
+        "country_name": "Italy",
+        "activity_description": "Operating Nammos Sardinia, delivering luxury beach club experiences"
+      }
+    ],
+    "products": [
+      {
+        "product_name": "Nammos Mykonos",
+        "product_description": "A luxury beach club and restaurant located in Psarou Beach, Mykonos, offering Mediterranean and Asian-inspired cuisine."
+      },
+      {
+        "product_name": "Nammos Dubai",
+        "product_description": "An upscale dining and beach experience situated at Jumeirah Beach, Dubai, blending Mediterranean flavors with Middle Eastern influences."
+      },
+      {
+        "product_name": "Nammos Cannes",
+        "product_description": "A luxury dining and entertainment venue located in Cannes, France, offering exquisite gastronomy and vibrant nightlife."
+      },
+      {
+        "product_name": "Nammos Limassol",
+        "product_description": "A high-end dining and beach club experience in Limassol, Cyprus, combining Mediterranean cuisine with a lively atmosphere."
+      },
+      {
+        "product_name": "Nammos Sardinia",
+        "product_description": "A luxury beach club in Sardinia, Italy, providing premium dining and beachside entertainment."
+      }
+    ],
+    "services": [
+      {
+        "service_name": "Luxury Dining",
+        "service_description": "Offering high-end Mediterranean and Asian-inspired cuisine in a sophisticated setting."
+      },
+      {
+        "service_name": "Beach Club Experience",
+        "service_description": "Providing exclusive beachside services, including cabanas, sunbeds, and personalized service."
+      },
+      {
+        "service_name": "Private Celebrations",
+        "service_description": "Hosting private events and celebrations with tailored services and bespoke experiences."
+      },
+      {
+        "service_name": "Yachting Services",
+        "service_description": "Offering premium services for yacht owners and guests, including docking and catering."
+      }
+    ],
+    "tags": [
+      "Luxury Dining",
+      "Beach Club",
+      "Mediterranean Cuisine",
+      "Hospitality",
+      "Gastronomy",
+      "Entertainment",
+      "Private Events",
+      "Yachting Services"
+    ],
+    "recent_moves": [
+      {
+        "move_name": "Expansion to Cannes",
+        "move_description": "Opened Nammos Cannes, bringing the brand's luxury dining and entertainment to the French Riviera."
+      },
+      {
+        "move_name": "Launch of Nammos Limassol",
+        "move_description": "Introduced Nammos Limassol in Cyprus, offering high-end dining and beach club services."
+      },
+      {
+        "move_name": "Opening of Nammos Sardinia",
+        "move_description": "Expanded to Italy with the launch of Nammos Sardinia, providing luxury beach club experiences."
+      }
+    ],
+    "partnerships": [
+      {
+        "partnership_name": "Four Seasons Resort Dubai",
+        "partnership_description": "Collaborated to establish Nammos Dubai at the Four Seasons Resort, enhancing the luxury beach experience."
+      },
+      {
+        "partnership_name": "Palm Beach Cannes",
+        "partnership_description": "Partnered to create Nammos Cannes, revitalizing the Palm Beach area with upscale dining and entertainment."
+      }
+    ]
+  },
+  {
+    "company_short_name": "Omorfia Group",
+    "company_full_name": "Omorfia Group LLC",
+    "company_website": "https://omorfiagroup.com/",
+    "ownership": "Omorfia Group is the flagship beauty entity within the Abu Dhabi-based investment firm Multiply Group.",
+    "founded": "",
+    "industries": [
+      "Beauty",
+      "Wellness"
+    ],
+    "core_products": "Omorfia Group offers a diverse range of beauty and wellness services through its portfolio of brands, including salons, spas, and beauty product distribution.",
+    "active_countries": [
+      {
+        "country_name": "United Arab Emirates",
+        "activity_description": "Operates multiple beauty and wellness brands across various emirates."
+      },
+      {
+        "country_name": "Saudi Arabia",
+        "activity_description": "Presence through brands like Tips & Toes."
+      },
+      {
+        "country_name": "Qatar",
+        "activity_description": "Franchise operations of N.BAR."
+      },
+      {
+        "country_name": "Canada",
+        "activity_description": "Franchise operations of N.BAR."
+      },
+      {
+        "country_name": "United Kingdom",
+        "activity_description": "Franchise operations of N.BAR."
+      }
+    ],
+    "products": [
+      {
+        "product_name": "Nail Care Services",
+        "product_description": "Professional manicures and pedicures offered through brands like N.BAR and Tips & Toes."
+      },
+      {
+        "product_name": "Hair Styling",
+        "product_description": "Haircuts, coloring, and styling services available at salons such as Jetset Hair Salon."
+      },
+      {
+        "product_name": "Spa Treatments",
+        "product_description": "Relaxation and therapeutic services provided by brands like Jazz Lounge Spa and Fisio."
+      },
+      {
+        "product_name": "Men's Grooming",
+        "product_description": "Specialized grooming services for men offered at 1847 Grooming for Men."
+      },
+      {
+        "product_name": "Beauty Product Distribution",
+        "product_description": "Supply of high-end beauty products through Wellbe Trading and Creative Beauty Source."
+      }
+    ],
+    "services": [
+      {
+        "service_name": "Beauty Salons",
+        "service_description": "Comprehensive beauty services including nail care, hair styling, and spa treatments."
+      },
+      {
+        "service_name": "Men's Grooming Lounges",
+        "service_description": "Premium grooming services tailored for male clientele."
+      },
+      {
+        "service_name": "Wellness Centers",
+        "service_description": "Holistic wellness and therapeutic services."
+      },
+      {
+        "service_name": "Beauty Product Distribution",
+        "service_description": "Distribution of high-end beauty products to salons and retail outlets."
+      }
+    ],
+    "tags": [
+      "Beauty",
+      "Wellness",
+      "Salons",
+      "Spas",
+      "Men's Grooming",
+      "Beauty Products",
+      "UAE",
+      "Middle East",
+      "Luxury Services",
+      "Customer Experience"
+    ],
+    "recent_moves": [
+      {
+        "move_name": "Acquisition of The Grooming Company Holding",
+        "move_description": "In June 2024, Omorfia Group acquired 100% ownership of The Grooming Company Holding, adding 62 locations across 5 countries to its portfolio."
+      },
+      {
+        "move_name": "Acquisition of The Juice Spa and Salon",
+        "move_description": "In January 2024, Omorfia Group acquired The Juice Spa and Salon, expanding its presence with 10 additional locations in the UAE."
+      },
+      {
+        "move_name": "Merger with Ben Suhail Group",
+        "move_description": "In October 2021, Omorfia Group merged with Ben Suhail Group, integrating brands like Tips & Toes and Bedashing into its portfolio."
+      }
+    ],
+    "partnerships": [
+      {
+        "partnership_name": "Joint Venture with Ben Suhail Group",
+        "partnership_description": "In October 2021, Omorfia Group formed a joint venture with Ben Suhail Group, combining their beauty brands under the Omorfia Group umbrella."
+      }
+    ]
+  },
+  {
+    "company_short_name": "Pactive",
+    "company_full_name": "Pactive Sustainable Solutions LLC",
+    "company_website": "https://pactivesolutions.com/",
+    "ownership": "",
+    "founded": "2015",
+    "industries": [
+      "Energy Efficiency",
+      "Sustainable Building Design",
+      "Renewable Energy",
+      "Decarbonization"
+    ],
+    "core_products": "Energy efficiency and sustainable building design solutions, including energy audits, green building consultancy, and renewable energy services.",
+    "active_countries": [
+      {
+        "country_name": "United Arab Emirates",
+        "activity_description": "Providing energy efficiency and sustainable building design solutions."
+      },
+      {
+        "country_name": "Gulf Cooperation Council (GCC) countries",
+        "activity_description": "Offering decarbonization and sustainability services."
+      }
+    ],
+    "products": [],
+    "services": [
+      {
+        "service_name": "ESCO Services",
+        "service_description": "Comprehensive energy services to achieve energy efficiency, reduce carbon emissions, and lower operating costs."
+      },
+      {
+        "service_name": "Energy Auditing",
+        "service_description": "Conducting ASHRAE Level I, II, and III energy audits to identify inefficiencies and recommend optimization strategies."
+      },
+      {
+        "service_name": "Green Building Consultancy",
+        "service_description": "Assisting in achieving green building certifications, developing ESG strategies, and formulating net-zero strategies."
+      },
+      {
+        "service_name": "Smart Energy Services",
+        "service_description": "Implementing advanced technologies like AI, IoT, and predictive analytics for energy management and optimization."
+      },
+      {
+        "service_name": "Renewable Energy Services",
+        "service_description": "Designing and implementing renewable energy solutions, including solar energy systems and hybrid solutions."
+      }
+    ],
+    "tags": [
+      "Energy Efficiency",
+      "Sustainable Building Design",
+      "Renewable Energy",
+      "Decarbonization",
+      "Green Building Certification",
+      "Energy Audits",
+      "Smart Energy Management",
+      "Net-Zero Strategy",
+      "ESCO Services",
+      "Environmental, Social, and Governance (ESG) Consulting"
+    ],
+    "recent_moves": [],
+    "partnerships": []
   }
 ]
